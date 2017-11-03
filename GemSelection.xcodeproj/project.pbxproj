@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4600F4DC1FAD0380000954D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4600F4DB1FAD037F000954D3 /* GoogleService-Info.plist */; };
 		4668A3F51F9FE63100CB64A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4668A3F41F9FE63100CB64A7 /* AppDelegate.swift */; };
 		4668A3F71F9FE63100CB64A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4668A3F61F9FE63100CB64A7 /* ViewController.swift */; };
 		4668A3FA1F9FE63100CB64A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4668A3F81F9FE63100CB64A7 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4600F4DB1FAD037F000954D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4668A3F11F9FE63100CB64A7 /* GemSelection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GemSelection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4668A3F41F9FE63100CB64A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4668A3F61F9FE63100CB64A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				4668A3F81F9FE63100CB64A7 /* Main.storyboard */,
 				4668A3FB1F9FE63100CB64A7 /* Assets.xcassets */,
 				4668A3FD1F9FE63100CB64A7 /* LaunchScreen.storyboard */,
+				4600F4DB1FAD037F000954D3 /* GoogleService-Info.plist */,
 				4668A4001F9FE63100CB64A7 /* Info.plist */,
 			);
 			path = GemSelection;
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4668A3FF1F9FE63100CB64A7 /* LaunchScreen.storyboard in Resources */,
+				4600F4DC1FAD0380000954D3 /* GoogleService-Info.plist in Resources */,
 				4668A3FC1F9FE63100CB64A7 /* Assets.xcassets in Resources */,
 				4668A3FA1F9FE63100CB64A7 /* Main.storyboard in Resources */,
 			);
