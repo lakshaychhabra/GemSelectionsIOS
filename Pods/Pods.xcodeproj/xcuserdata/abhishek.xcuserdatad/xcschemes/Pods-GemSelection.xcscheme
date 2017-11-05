@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "10631ED48DB0FC098EDC4DACC68E0667"
+               BlueprintIdentifier = "2CE333E8022DFCA64FE0ABF31A8F221E"
                BuildableName = "Pods_GemSelection.framework"
                BlueprintName = "Pods-GemSelection"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "10631ED48DB0FC098EDC4DACC68E0667"
+            BlueprintIdentifier = "2CE333E8022DFCA64FE0ABF31A8F221E"
             BuildableName = "Pods_GemSelection.framework"
             BlueprintName = "Pods-GemSelection"
             ReferencedContainer = "container:Pods.xcodeproj">

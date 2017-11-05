@@ -9,6 +9,7 @@ target 'GemSelection' do
  
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
-  pod 'Firebase/Auth'		
+  pod 'Firebase/Auth'	
+  pod 'DropDown'	
 
 end
