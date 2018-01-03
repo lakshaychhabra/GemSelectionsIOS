@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
-class MainMenu: UITableViewController {
+import MessageUI
+class MainMenu: UITableViewController,MFMailComposeViewControllerDelegate {
 
     var rowIdentifierssection1 = ["loginrow","preciousgemstonerow","diamondrow","jwelleryrow","semipreciousgemsrow","triangulargemsrow","cabochonrow","birthstonesrow","gemstonesandastrologyrow","gemstonerecommendationrow","rudraksharow","handicraftsrow","perfumerow","stoneidolsrow","yantrarow","saphaticitemsrow","japamalarow","kavachrow","faqrow"]
     var rowIdentifierssection2 = ["connectwithusrow","callusrow","mailusrow","visitusrow"]
@@ -92,7 +92,31 @@ class MainMenu: UITableViewController {
         }
     }
 
-   
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 1 {
+            if indexPath.row == 2{
+            
+                if MFMailComposeViewController.canSendMail(){
+                    let mailVC = MFMailComposeViewController()
+                    mailVC.mailComposeDelegate = self
+                    mailVC.setToRecipients(["care@khannagems.com"])
+                    revealViewController().revealToggle(animated: false)
+                    self.revealViewController().frontViewController.present(mailVC, animated: true, completion: nil)
+                }
+                else{
+                    self.revealViewController().frontViewController.showToast(message: "Mail App not Configured")
+                }
+            }
+            }
+            
+        }
+     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        if result == .cancelled {
+            print("cancel")
+        }
+        controller.dismiss(animated: true, completion: nil)
+    }
+    }
 
-}
+
 

@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		00DDCB731FFD402200F00415 /* WebViewBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDCB711FFD402200F00415 /* WebViewBig.swift */; };
 		00DDCB741FFD402200F00415 /* WebViewBig.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00DDCB721FFD402200F00415 /* WebViewBig.xib */; };
-		00DDCB771FFD474900F00415 /* ConnectWithUS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDCB751FFD474900F00415 /* ConnectWithUS.swift */; };
-		00DDCB781FFD474900F00415 /* ConnectWithUS.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00DDCB761FFD474900F00415 /* ConnectWithUS.xib */; };
+		00F343F71FFD511300CF03D9 /* ConnectWithUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F343F61FFD511300CF03D9 /* ConnectWithUs.swift */; };
 		4600F4DC1FAD0380000954D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4600F4DB1FAD037F000954D3 /* GoogleService-Info.plist */; };
 		4600F4E01FAD0456000954D3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4600F4DF1FAD0455000954D3 /* SWRevealViewController.m */; };
 		466859621FAF4AB700340BDB /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466859611FAF4AB700340BDB /* MainMenu.swift */; };
@@ -27,8 +26,7 @@
 /* Begin PBXFileReference section */
 		00DDCB711FFD402200F00415 /* WebViewBig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewBig.swift; sourceTree = "<group>"; };
 		00DDCB721FFD402200F00415 /* WebViewBig.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewBig.xib; sourceTree = "<group>"; };
-		00DDCB751FFD474900F00415 /* ConnectWithUS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectWithUS.swift; sourceTree = "<group>"; };
-		00DDCB761FFD474900F00415 /* ConnectWithUS.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnectWithUS.xib; sourceTree = "<group>"; };
+		00F343F61FFD511300CF03D9 /* ConnectWithUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectWithUs.swift; sourceTree = "<group>"; };
 		3ACC03413D291C75AAB1EDC2 /* Pods-GemSelection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemSelection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GemSelection/Pods-GemSelection.debug.xcconfig"; sourceTree = "<group>"; };
 		42B6B50811E25A6DA7F3BFA3 /* Pods_GemSelection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GemSelection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4600F4DB1FAD037F000954D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -95,16 +93,15 @@
 				4668A3F41F9FE63100CB64A7 /* AppDelegate.swift */,
 				4668A3F61F9FE63100CB64A7 /* HomePage.swift */,
 				466859611FAF4AB700340BDB /* MainMenu.swift */,
+				00F343F61FFD511300CF03D9 /* ConnectWithUs.swift */,
+				4600F4DB1FAD037F000954D3 /* GoogleService-Info.plist */,
 				4668A3FD1F9FE63100CB64A7 /* LaunchScreen.storyboard */,
 				4668A3F81F9FE63100CB64A7 /* Main.storyboard */,
 				4668A3FB1F9FE63100CB64A7 /* Assets.xcassets */,
 				464FBFE01FAD09EA005CC980 /* GemSelectionapp-Bridging-Header.h */,
-				4600F4DB1FAD037F000954D3 /* GoogleService-Info.plist */,
 				4668A4001F9FE63100CB64A7 /* Info.plist */,
 				00DDCB711FFD402200F00415 /* WebViewBig.swift */,
 				00DDCB721FFD402200F00415 /* WebViewBig.xib */,
-				00DDCB751FFD474900F00415 /* ConnectWithUS.swift */,
-				00DDCB761FFD474900F00415 /* ConnectWithUS.xib */,
 			);
 			path = GemSelection;
 			sourceTree = "<group>";
@@ -204,7 +201,6 @@
 				4668A3FC1F9FE63100CB64A7 /* Assets.xcassets in Resources */,
 				00DDCB741FFD402200F00415 /* WebViewBig.xib in Resources */,
 				4668A3FA1F9FE63100CB64A7 /* Main.storyboard in Resources */,
-				00DDCB781FFD474900F00415 /* ConnectWithUS.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,13 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00DDCB771FFD474900F00415 /* ConnectWithUS.swift in Sources */,
 				00DDCB731FFD402200F00415 /* WebViewBig.swift in Sources */,
 				4668A3F71F9FE63100CB64A7 /* HomePage.swift in Sources */,
 				4668A3F51F9FE63100CB64A7 /* AppDelegate.swift in Sources */,
 				4600F4E01FAD0456000954D3 /* SWRevealViewController.m in Sources */,
 				466859621FAF4AB700340BDB /* MainMenu.swift in Sources */,
 				46CDAA961FAF809200212601 /* BuyNowWindow.swift in Sources */,
+				00F343F71FFD511300CF03D9 /* ConnectWithUs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
