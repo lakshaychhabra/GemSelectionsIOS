@@ -10,8 +10,8 @@ import UIKit
 
 class MainMenu: UITableViewController {
 
-    var rowIdentifierssection1 = ["loginrow","homerow","rudraksharow","japamalarow","handicraftsrow","stoneidolsrow","ittarrow","yantrarow","kavachrow","saphaticitemsrow","triangulargemsrow","semipreciousgemsrow","birthstonesrow","diamondrow","jwelleryrow","faqrow"]
-    var rowIdentifierssection2 = ["callusrow","mailusrow","visitusrow","findusrow"]
+    var rowIdentifierssection1 = ["loginrow","preciousgemstonerow","diamondrow","jwelleryrow","semipreciousgemsrow","triangulargemsrow","cabochonrow","birthstonesrow","gemstonesandastrologyrow","gemstonerecommendationrow","rudraksharow","handicraftsrow","perfumerow","stoneidolsrow","yantrarow","saphaticitemsrow","japamalarow","kavachrow","faqrow"]
+    var rowIdentifierssection2 = ["connectwithusrow","callusrow","mailusrow","visitusrow"]
     var rowIdentifierssection3 = ["sharerow","rateapprow"]
     
     override func viewDidLoad() {
@@ -95,3 +95,4 @@ class MainMenu: UITableViewController {
    
 
 }
+

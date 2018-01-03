@@ -11,6 +11,7 @@ import DropDown
 class HomePage: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
     @IBAction func buyNowBtn(_ sender: Any) {
+    ShowWebView(urll: "https://khannagems.com/")
     }
     @IBOutlet weak var moreBtn: UIBarButtonItem!
     @IBOutlet weak var menuBtn: UIBarButtonItem!
