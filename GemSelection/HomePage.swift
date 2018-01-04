@@ -51,6 +51,10 @@ func initialiazeDropDownMain(){
         dropDownMain.dataSource = ["Payment Methods", "Govt. Lab Certificates    ▶︎", "Testimonials","About Shipment","Membership                    ▶︎","Astrology","Puja","Frequently Asked Ques.","About                              ▶︎","Exit"]
         dropDownMain.selectionAction = { [unowned self] (index: Int, item: String) in
             self.elementSelectedInMainDropDown = index
+            print("index = \(index)")
+            if self.elementSelectedInMainDropDown == 9{
+                exit(0);
+            }
             self.dropDownMain.hide()
             self.showDropDownSecondary()
         }

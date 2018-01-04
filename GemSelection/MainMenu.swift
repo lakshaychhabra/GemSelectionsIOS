@@ -8,6 +8,7 @@
 
 import UIKit
 import MessageUI
+import MapKit
 class MainMenu: UITableViewController,MFMailComposeViewControllerDelegate {
 
     var rowIdentifierssection1 = ["loginrow","preciousgemstonerow","diamondrow","jwelleryrow","semipreciousgemsrow","triangulargemsrow","cabochonrow","birthstonesrow","gemstonesandastrologyrow","gemstonerecommendationrow","rudraksharow","handicraftsrow","perfumerow","stoneidolsrow","yantrarow","saphaticitemsrow","japamalarow","kavachrow","faqrow"]
@@ -94,23 +95,58 @@ class MainMenu: UITableViewController,MFMailComposeViewControllerDelegate {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 1 {
+            if indexPath.row == 1{
+                callPhone()
+            }
             if indexPath.row == 2{
-            
-                if MFMailComposeViewController.canSendMail(){
-                    let mailVC = MFMailComposeViewController()
-                    mailVC.mailComposeDelegate = self
-                    mailVC.setToRecipients(["care@khannagems.com"])
-                    revealViewController().revealToggle(animated: false)
-                    self.revealViewController().frontViewController.present(mailVC, animated: true, completion: nil)
-                }
-                else{
-                    self.revealViewController().frontViewController.showToast(message: "Mail App not Configured")
-                }
+              showMail()
+                
             }
-            }
-            
+           
         }
-     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        
+    }
+    
+ 
+    
+    func callPhone(){
+        let alert = UIAlertController(title: "Call Us", message: "Which Phone Number ?", preferredStyle: .alert)
+        let number1 = UIAlertAction(title: "+919213932017", style: .default, handler: { (action) in
+            if let url = URL(string: "tel://\("+919213932017")"), UIApplication.shared.canOpenURL(url) {
+                if #available(iOS 10, *) {
+                    UIApplication.shared.open(url)
+                } else {
+                    UIApplication.shared.openURL(url)
+                }
+            }
+        })
+        let number2 = UIAlertAction(title: "+919999136878", style: .default, handler: { (action) in
+            if let url = URL(string: "tel://\("+919999136878")"), UIApplication.shared.canOpenURL(url) {
+                if #available(iOS 10, *) {
+                    UIApplication.shared.open(url)
+                } else {
+                    UIApplication.shared.openURL(url)
+                }
+            }
+        })
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(number1) ; alert.addAction(number2) ; alert.addAction(cancel)
+        self.revealViewController().revealToggle(animated: true)
+        self.revealViewController().frontViewController.present(alert, animated: true, completion: nil)
+    }
+    func showMail(){
+        if MFMailComposeViewController.canSendMail(){
+            let mailVC = MFMailComposeViewController()
+            mailVC.mailComposeDelegate = self
+            mailVC.setToRecipients(["care@khannagems.com"])
+            revealViewController().revealToggle(animated: false)
+            self.revealViewController().frontViewController.present(mailVC, animated: true, completion: nil)
+        }
+        else{
+            self.revealViewController().frontViewController.showToast(message: "Mail App not Configured")
+        }
+    }
+func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         if result == .cancelled {
             print("cancel")
         }
@@ -120,3 +156,36 @@ class MainMenu: UITableViewController,MFMailComposeViewControllerDelegate {
 
 
 
+
+
+class VistUs: UIViewController{
+    @IBOutlet weak var _locateBtn: UIButton!
+    @IBOutlet weak var _directionBtn: UIButton!
+    @IBOutlet weak var menuBtn: UIBarButtonItem!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if self.revealViewController() != nil {
+            menuBtn.target = self.revealViewController()
+            menuBtn.target = self.revealViewController()
+            menuBtn.action = #selector
+                (SWRevealViewController.rightRevealToggle(_:))
+            menuBtn.action = #selector
+                (SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        _locateBtn.layer.borderWidth = 4.0
+        _locateBtn.layer.borderColor = UIColor(red: 202, green: 167, blue: 87, alpha: 1.0).cgColor
+        _directionBtn.layer.borderWidth = 4.0
+        _directionBtn.layer.borderColor = UIColor(red: 202, green: 167, blue: 87, alpha: 1.0).cgColor
+    }
+    @IBAction func _locationAction(_ sender: Any) {
+        UIApplication.shared.canOpenURL(URL(string: "https://www.google.co.in/maps/place/Gem+Selections/@28.621027,77.0766403,17z/data=!3m1!4b1!4m5!3m4!1s0x390d04c805992bd5:0xd1f831c24cf6e237!8m2!3d28.621027!4d77.078829?hl=en")!)
+
+    }
+    
+    @IBAction func _directionAction(_ sender: Any) {
+        UIApplication.shared.canOpenURL(URL(string: "https://www.google.co.in/maps/dir/Janakpuri+WestMetro+Station,+Shivaji+Marg,+Janakpuri+District+Center,+Janakpuri,+New+Delhi,+Delhi/Gem+Selections,+Shop+No..+8%26+11,+A+-3,+DDA+MARKET,+Janakpuri,+Block+A3,+Janakpuri,+New+Delhi,+Delhi+110058/@28.6252913,77.0714624,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x390d04c0f23874db:0x7f63d009f51b7a06!2m2!1d77.077761!2d28.629448!1m5!1m1!1s0x390d04c805992bd5:0xd1f831c24cf6e237!2m2!1d77.078829!2d28.621027!3e0?hl=en")!)
+    }
+    
+}
