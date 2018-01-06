@@ -47,37 +47,63 @@ override func viewDidLoad() {
     }
     
 //DROP DOWN INITIALIZATION :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    let evc = Extra()
 func initialiazeDropDownMain(){
-        dropDownMain.dataSource = ["Payment Methods", "Govt. Lab Certificates    ▶︎", "Testimonials","About Shipment","Membership                    ▶︎","Astrology","Puja","Frequently Asked Ques.","About                              ▶︎","Exit"]
+        dropDownMain.dataSource = ["Govt. Lab Certificates    ▶︎", "Testimonials","About Shipment","Membership                    ▶︎","Astrology","Puja","Frequently Asked Ques.","About                              ▶︎","Exit"]
         dropDownMain.selectionAction = { [unowned self] (index: Int, item: String) in
             self.elementSelectedInMainDropDown = index
-            print("index = \(index)")
-            if self.elementSelectedInMainDropDown == 9{
+            
+            if self.elementSelectedInMainDropDown == 8{
                 exit(0);
             }
+            if self.elementSelectedInMainDropDown == 1{
+                isCerti = 1 ; ship = 0
+                whichCerti = 21
+                self.navigationController?.pushViewController(self.evc, animated: true)
+            }
+            if self.elementSelectedInMainDropDown == 2 {
+                ship = 1
+                self.navigationController?.pushViewController(self.evc, animated: true)
+                
+            }
+            if self.elementSelectedInMainDropDown == 4 {
+                UIApplication.shared.open(URL(string: "http://www.astropankaj.com/")!, options: [:], completionHandler: nil)
+            }
+            if self.elementSelectedInMainDropDown == 5 {
+                UIApplication.shared.open(URL(string: "http://www.vedmandirtrust.com/")!, options: [:], completionHandler: nil)
+            }
             self.dropDownMain.hide()
-            self.showDropDownSecondary()
+            self.showDropDownSecondary();
         }
 }
+    
     func showDropDownSecondary(){
         switch elementSelectedInMainDropDown {
-        case 1:
+        case 0:
             dropDownSecondary.dataSource = ["Natural Saphire","Treated Sapphire","Heated Sapphire"]
             dropDownSecondary.show()
             dropDownSecondary.selectionAction = { [unowned self] (index: Int, item: String) in
                 self.dropDownSecondary.hide()
+                isCerti = 1 ; ship = 0
+                whichCerti = index ; self.navigationController?.pushViewController(self.evc, animated: true)
+               
             }
-        case 4:
+        case 3:
             dropDownSecondary.dataSource = ["ALL INDIA MANAGEMENT ASSOCIATIONS","INDIAN DIAMOND INSTITUTE","SURAT GEMOLOGY INSTITUTE"]
             dropDownSecondary.show()
             dropDownSecondary.selectionAction = { [unowned self] (index: Int, item: String) in
                 self.dropDownSecondary.hide()
+                isCerti = 1 ; ship = 0
+                whichCerti = index+3 ; self.navigationController?.pushViewController(self.evc, animated: true)
+                
             }
-        case 8:
-            dropDownSecondary.dataSource = ["Anout Us","Management Team","Pankaj Khanna","Khanna Gems Pvt. Ltd.","Sonipat"]
+        case 7:
+            dropDownSecondary.dataSource = ["Anout Us","Management Team","Pankaj Khanna","©Khanna Gems Pvt. Ltd."]
             dropDownSecondary.show()
             dropDownSecondary.selectionAction = { [unowned self] (index: Int, item: String) in
                 self.dropDownSecondary.hide()
+                xindex = index ; isCerti = 0 ; ship = 0
+                self.navigationController?.pushViewController(self.evc, animated: true)
             }
         default:
             break
@@ -147,14 +173,21 @@ func initialiazeDropDownMain(){
     }
 }
 
-
-
-
-
 class HomeCell : UICollectionViewCell{
     @IBOutlet weak var _upperLabel: UILabel!
     @IBOutlet weak var _stoneImage: UIImageView!
     @IBOutlet weak var _lowerLabel: UILabel!
-    
+
 }
 
+extension String{
+    func convertHtml() -> NSAttributedString{
+        guard let data = data(using: .utf8) else { print("\nNhai ho paya\n"); return NSAttributedString() }
+        do{
+            return try NSAttributedString(data: data, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType, NSCharacterEncodingDocumentAttribute: String.Encoding.utf8.rawValue], documentAttributes: nil)
+        }catch{
+            print("\nbilkul nahi ho paya\n")
+            return NSAttributedString()
+        }
+    }
+}

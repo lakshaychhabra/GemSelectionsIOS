@@ -94,6 +94,18 @@ class MainMenu: UITableViewController,MFMailComposeViewControllerDelegate {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            if indexPath.row == 13{
+                print("13")
+            };if indexPath.row == 15{
+                print("15")
+                whichJss = 15
+            };if indexPath.row == 16{
+                print("16")
+                whichJss = 16
+            }
+            
+        }
         if indexPath.section == 1 {
             if indexPath.row == 1{
                 callPhone()

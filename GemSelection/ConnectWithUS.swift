@@ -23,7 +23,8 @@ class ConnectWithUs: UITableViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
     }
-    lazy var rowIdentifier = ["fb","twitter","Instagram","Youtube","linkedin","flickr","snapchat","pinterest","stumbleupon","googleplus","vk","follo"]
+    lazy var rowIdentifier = ["fb","twitter","Instagram","Youtube","linkedin","flickr","snapchat","pinterest","tumblr","stumbleupon","googleplus","vk","follo"]
+    lazy var rowLinks = ["https://www.facebook.com/GemSelections.in/","https://www.twitter.com/Gem_Selections",        "https://www.instagram.com/gemselections/","https://www.youtube.com/channel/UCt3nkzLE2NKMuwu3V0KQtbw",        "https://www.linkedin.com/company/khanna-gems-pvt.-limited","https://www.flickr.com/photos/gemselections/","https://www.snapchat.com/","https://www.pinterest.com/gemselections01/","https://gemselections.tumblr.com/","https://www.stumbleupon.com/stumbler/GemSelections","https://plus.google.com/+GemSelectionsNewDelhi", "https://vk.com/gemselectionsindia","https://www.follo.in/pankajkhanna","http://gemselections.blogspot.in/?m=1"]
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -40,6 +41,14 @@ class ConnectWithUs: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 58
     }
-    
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 6{
+            showToast(message: "Find Us on Snapchat as 'gemselections'")
+        }
+        else{
+            UIApplication.shared.open(URL(string: rowLinks[indexPath.row])!, options: [:], completionHandler: nil)
+        }
+    }
 }
+
+
