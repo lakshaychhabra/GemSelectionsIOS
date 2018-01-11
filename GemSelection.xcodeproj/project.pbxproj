@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		0042D7BA20012FBE00DF8722 /* Japamala,saphticitems,stoneidols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042D7B920012FBE00DF8722 /* Japamala,saphticitems,stoneidols.swift */; };
 		0042D7BC200157D100DF8722 /* Diamond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042D7BB200157D100DF8722 /* Diamond.swift */; };
+		0044357920068A4D008C4ECF /* YantraGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044357720068A4D008C4ECF /* YantraGroup.swift */; };
+		0044357A20068A4D008C4ECF /* YantraPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044357820068A4D008C4ECF /* YantraPopUp.swift */; };
+		00884BB82003FEB400ECF7FD /* WebViewBig.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00884BB72003FEB400ECF7FD /* WebViewBig.xib */; };
+		00A594AD2006A28F009ACA05 /* HandiMultipleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A594AA2006A28D009ACA05 /* HandiMultipleView.swift */; };
+		00A594AE2006A28F009ACA05 /* HandicraftsPots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A594AB2006A28E009ACA05 /* HandicraftsPots.swift */; };
+		00A594AF2006A28F009ACA05 /* handiSideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A594AC2006A28E009ACA05 /* handiSideBar.swift */; };
+		00D998112007D65500D10D3F /* Perfumes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D998102007D65500D10D3F /* Perfumes.swift */; };
 		00DDCB731FFD402200F00415 /* WebViewBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDCB711FFD402200F00415 /* WebViewBig.swift */; };
-		00DDCB741FFD402200F00415 /* WebViewBig.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00DDCB721FFD402200F00415 /* WebViewBig.xib */; };
 		00F343F71FFD511300CF03D9 /* ConnectWithUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F343F61FFD511300CF03D9 /* ConnectWithUs.swift */; };
 		00F6AB461FFFD362003907B5 /* Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6AB441FFFD362003907B5 /* Extra.swift */; };
 		00F6AB471FFFD362003907B5 /* Extra.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F6AB451FFFD362003907B5 /* Extra.xib */; };
-		00F6AB4A20000010003907B5 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6AB4820000010003907B5 /* FAQ.swift */; };
-		00F6AB4B20000010003907B5 /* FAQ.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F6AB4920000010003907B5 /* FAQ.xib */; };
 		00F6AB4D200003B8003907B5 /* Kavach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6AB4C200003B8003907B5 /* Kavach.swift */; };
 		4600F4DC1FAD0380000954D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4600F4DB1FAD037F000954D3 /* GoogleService-Info.plist */; };
 		4600F4E01FAD0456000954D3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4600F4DF1FAD0455000954D3 /* SWRevealViewController.m */; };
@@ -31,13 +35,17 @@
 /* Begin PBXFileReference section */
 		0042D7B920012FBE00DF8722 /* Japamala,saphticitems,stoneidols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Japamala,saphticitems,stoneidols.swift"; sourceTree = "<group>"; };
 		0042D7BB200157D100DF8722 /* Diamond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diamond.swift; sourceTree = "<group>"; };
+		0044357720068A4D008C4ECF /* YantraGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YantraGroup.swift; sourceTree = "<group>"; };
+		0044357820068A4D008C4ECF /* YantraPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YantraPopUp.swift; sourceTree = "<group>"; };
+		00884BB72003FEB400ECF7FD /* WebViewBig.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewBig.xib; sourceTree = "<group>"; };
+		00A594AA2006A28D009ACA05 /* HandiMultipleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandiMultipleView.swift; sourceTree = "<group>"; };
+		00A594AB2006A28E009ACA05 /* HandicraftsPots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandicraftsPots.swift; sourceTree = "<group>"; };
+		00A594AC2006A28E009ACA05 /* handiSideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = handiSideBar.swift; sourceTree = "<group>"; };
+		00D998102007D65500D10D3F /* Perfumes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfumes.swift; sourceTree = "<group>"; };
 		00DDCB711FFD402200F00415 /* WebViewBig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewBig.swift; sourceTree = "<group>"; };
-		00DDCB721FFD402200F00415 /* WebViewBig.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewBig.xib; sourceTree = "<group>"; };
 		00F343F61FFD511300CF03D9 /* ConnectWithUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectWithUs.swift; sourceTree = "<group>"; };
 		00F6AB441FFFD362003907B5 /* Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extra.swift; sourceTree = "<group>"; };
 		00F6AB451FFFD362003907B5 /* Extra.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Extra.xib; sourceTree = "<group>"; };
-		00F6AB4820000010003907B5 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
-		00F6AB4920000010003907B5 /* FAQ.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FAQ.xib; sourceTree = "<group>"; };
 		00F6AB4C200003B8003907B5 /* Kavach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kavach.swift; sourceTree = "<group>"; };
 		3ACC03413D291C75AAB1EDC2 /* Pods-GemSelection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemSelection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GemSelection/Pods-GemSelection.debug.xcconfig"; sourceTree = "<group>"; };
 		42B6B50811E25A6DA7F3BFA3 /* Pods_GemSelection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GemSelection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,14 +114,18 @@
 				00F6AB4C200003B8003907B5 /* Kavach.swift */,
 				0042D7B920012FBE00DF8722 /* Japamala,saphticitems,stoneidols.swift */,
 				0042D7BB200157D100DF8722 /* Diamond.swift */,
+				0044357720068A4D008C4ECF /* YantraGroup.swift */,
+				0044357820068A4D008C4ECF /* YantraPopUp.swift */,
+				00D998102007D65500D10D3F /* Perfumes.swift */,
 				00DDCB711FFD402200F00415 /* WebViewBig.swift */,
-				00DDCB721FFD402200F00415 /* WebViewBig.xib */,
+				00884BB72003FEB400ECF7FD /* WebViewBig.xib */,
 				00F6AB441FFFD362003907B5 /* Extra.swift */,
 				00F6AB451FFFD362003907B5 /* Extra.xib */,
-				00F6AB4820000010003907B5 /* FAQ.swift */,
-				00F6AB4920000010003907B5 /* FAQ.xib */,
 				4668A3FD1F9FE63100CB64A7 /* LaunchScreen.storyboard */,
 				4668A3F81F9FE63100CB64A7 /* Main.storyboard */,
+				00A594AB2006A28E009ACA05 /* HandicraftsPots.swift */,
+				00A594AA2006A28D009ACA05 /* HandiMultipleView.swift */,
+				00A594AC2006A28E009ACA05 /* handiSideBar.swift */,
 				4668A3FB1F9FE63100CB64A7 /* Assets.xcassets */,
 				464FBFE01FAD09EA005CC980 /* GemSelectionapp-Bridging-Header.h */,
 				4600F4DB1FAD037F000954D3 /* GoogleService-Info.plist */,
@@ -202,12 +214,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F6AB4B20000010003907B5 /* FAQ.xib in Resources */,
+				00884BB82003FEB400ECF7FD /* WebViewBig.xib in Resources */,
 				4668A3FF1F9FE63100CB64A7 /* LaunchScreen.storyboard in Resources */,
 				4600F4DC1FAD0380000954D3 /* GoogleService-Info.plist in Resources */,
 				00F6AB471FFFD362003907B5 /* Extra.xib in Resources */,
 				4668A3FC1F9FE63100CB64A7 /* Assets.xcassets in Resources */,
-				00DDCB741FFD402200F00415 /* WebViewBig.xib in Resources */,
 				4668A3FA1F9FE63100CB64A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,17 +290,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D998112007D65500D10D3F /* Perfumes.swift in Sources */,
 				0042D7BA20012FBE00DF8722 /* Japamala,saphticitems,stoneidols.swift in Sources */,
 				00DDCB731FFD402200F00415 /* WebViewBig.swift in Sources */,
+				0044357A20068A4D008C4ECF /* YantraPopUp.swift in Sources */,
 				4668A3F71F9FE63100CB64A7 /* HomePage.swift in Sources */,
+				00A594AE2006A28F009ACA05 /* HandicraftsPots.swift in Sources */,
 				00F6AB461FFFD362003907B5 /* Extra.swift in Sources */,
 				4668A3F51F9FE63100CB64A7 /* AppDelegate.swift in Sources */,
 				4600F4E01FAD0456000954D3 /* SWRevealViewController.m in Sources */,
 				466859621FAF4AB700340BDB /* MainMenu.swift in Sources */,
 				00F6AB4D200003B8003907B5 /* Kavach.swift in Sources */,
+				0044357920068A4D008C4ECF /* YantraGroup.swift in Sources */,
+				00A594AF2006A28F009ACA05 /* handiSideBar.swift in Sources */,
 				00F343F71FFD511300CF03D9 /* ConnectWithUs.swift in Sources */,
-				00F6AB4A20000010003907B5 /* FAQ.swift in Sources */,
 				0042D7BC200157D100DF8722 /* Diamond.swift in Sources */,
+				00A594AD2006A28F009ACA05 /* HandiMultipleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

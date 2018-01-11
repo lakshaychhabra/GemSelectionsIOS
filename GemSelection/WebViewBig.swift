@@ -9,12 +9,14 @@
 import UIKit
 import WebKit
 var weburl = "https://khannagems.com/"
-class WebViewBig: UIViewController {
+class WebViewBig: UIViewController,WKNavigationDelegate {
+    @IBOutlet weak var _activityIndicator: UIActivityIndicatorView!
     
     @IBOutlet weak var _webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self._webView.navigationDelegate = self
     	
     }
     
@@ -23,7 +25,12 @@ class WebViewBig: UIViewController {
         let rrequest = URLRequest(url: url!)
         _webView.load(rrequest)
     }
-
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        _activityIndicator.isHidden = false
+    }
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        _activityIndicator.isHidden = true
+    }
 }
 
 

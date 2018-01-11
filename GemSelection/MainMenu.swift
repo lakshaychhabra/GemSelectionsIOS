@@ -192,12 +192,11 @@ class VistUs: UIViewController{
         _directionBtn.layer.borderColor = UIColor(red: 202, green: 167, blue: 87, alpha: 1.0).cgColor
     }
     @IBAction func _locationAction(_ sender: Any) {
-        UIApplication.shared.canOpenURL(URL(string: "https://www.google.co.in/maps/place/Gem+Selections/@28.621027,77.0766403,17z/data=!3m1!4b1!4m5!3m4!1s0x390d04c805992bd5:0xd1f831c24cf6e237!8m2!3d28.621027!4d77.078829?hl=en")!)
-
+        UIApplication.shared.open(URL(string: "https://www.google.co.in/maps/place/Gem+Selections/@28.621027,77.0766403,17z/data=!3m1!4b1!4m5!3m4!1s0x390d04c805992bd5:0xd1f831c24cf6e237!8m2!3d28.621027!4d77.078829?hl=en")!, options: [:], completionHandler: nil)
     }
     
     @IBAction func _directionAction(_ sender: Any) {
-        UIApplication.shared.canOpenURL(URL(string: "https://www.google.co.in/maps/dir/Janakpuri+WestMetro+Station,+Shivaji+Marg,+Janakpuri+District+Center,+Janakpuri,+New+Delhi,+Delhi/Gem+Selections,+Shop+No..+8%26+11,+A+-3,+DDA+MARKET,+Janakpuri,+Block+A3,+Janakpuri,+New+Delhi,+Delhi+110058/@28.6252913,77.0714624,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x390d04c0f23874db:0x7f63d009f51b7a06!2m2!1d77.077761!2d28.629448!1m5!1m1!1s0x390d04c805992bd5:0xd1f831c24cf6e237!2m2!1d77.078829!2d28.621027!3e0?hl=en")!)
+        UIApplication.shared.open(URL(string: "https://www.google.co.in/maps/dir/Janakpuri+WestMetro+Station,+Shivaji+Marg,+Janakpuri+District+Center,+Janakpuri,+New+Delhi,+Delhi/Gem+Selections,+Shop+No..+8%26+11,+A+-3,+DDA+MARKET,+Janakpuri,+Block+A3,+Janakpuri,+New+Delhi,+Delhi+110058/@28.6252913,77.0714624,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x390d04c0f23874db:0x7f63d009f51b7a06!2m2!1d77.077761!2d28.629448!1m5!1m1!1s0x390d04c805992bd5:0xd1f831c24cf6e237!2m2!1d77.078829!2d28.621027!3e0?hl=en")!, options: [:], completionHandler: nil)
     }
     
 }
