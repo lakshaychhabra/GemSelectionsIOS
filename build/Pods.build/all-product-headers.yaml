@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/krishna/Documents/GitHub/GemSelectionsIOS/build/Debug-iphonesimulator/DropDown/DropDown.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "DropDown-Swift.h",
+          'external-contents': "/Users/krishna/Documents/GitHub/GemSelectionsIOS/build/Debug-iphonesimulator/DropDown/DropDown.framework/Headers/DropDown-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "DropDown-umbrella.h",
+          'external-contents': "/Users/krishna/Documents/GitHub/GemSelectionsIOS/Pods/Target Support Files/DropDown/DropDown-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/krishna/Documents/GitHub/GemSelectionsIOS/build/Debug-iphonesimulator/DropDown/DropDown.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/krishna/Documents/GitHub/GemSelectionsIOS/build/Pods.build/Debug-iphonesimulator/DropDown.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
