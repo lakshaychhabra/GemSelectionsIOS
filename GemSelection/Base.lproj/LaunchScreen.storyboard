@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PEG-Nn-Ujp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5nJ-la-v4X">
+            <objects>
+                <viewController id="PEG-Nn-Ujp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fOn-TA-8hT"/>
+                        <viewControllerLayoutGuide type="bottom" id="X8a-pb-Bq7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A1f-xk-jxv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gemselection" translatesAutoresizingMaskIntoConstraints="NO" id="Yfu-s8-D3j">
+                                <rect key="frame" x="78" y="50" width="220" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="v4z-QE-8LN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© KHANNA GEMS PVT. LTD." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyv-mi-hUM">
+                                <rect key="frame" x="0.0" y="627" width="375" height="22"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" red="0.35811016089999997" green="0.36187974160000003" blue="0.36187974160000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gem Selections" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgM-HV-UnT">
+                                <rect key="frame" x="0.0" y="240" width="375" height="187"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="62"/>
+                                <color key="textColor" red="0.78073668480000002" green="0.60801362989999996" blue="0.32424521449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(A Unit of Khanna Gems Pvt. Limited)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dni-5b-J6a">
+                                <rect key="frame" x="-10" y="425" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.35811016089999997" green="0.36187974160000003" blue="0.36187974160000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GgM-HV-UnT" firstAttribute="trailing" secondItem="Qyv-mi-hUM" secondAttribute="trailing" id="5zs-7a-Alk"/>
+                            <constraint firstItem="GgM-HV-UnT" firstAttribute="leading" secondItem="Qyv-mi-hUM" secondAttribute="leading" id="7LH-id-DXd"/>
+                            <constraint firstItem="dni-5b-J6a" firstAttribute="leading" secondItem="A1f-xk-jxv" secondAttribute="leadingMargin" constant="-26" id="F7c-2K-Rik"/>
+                            <constraint firstItem="GgM-HV-UnT" firstAttribute="centerX" secondItem="dni-5b-J6a" secondAttribute="centerX" id="HzH-Ln-aMd"/>
+                            <constraint firstItem="GgM-HV-UnT" firstAttribute="leading" secondItem="A1f-xk-jxv" secondAttribute="leading" id="QDv-9r-uQa"/>
+                            <constraint firstItem="dni-5b-J6a" firstAttribute="top" secondItem="A1f-xk-jxv" secondAttribute="top" constant="425" id="Qi5-TT-0iR"/>
+                            <constraint firstItem="X8a-pb-Bq7" firstAttribute="top" secondItem="Qyv-mi-hUM" secondAttribute="bottom" constant="18" id="T6w-Om-UA0"/>
+                            <constraint firstItem="Yfu-s8-D3j" firstAttribute="centerX" secondItem="GgM-HV-UnT" secondAttribute="centerX" id="bUP-SB-GJQ"/>
+                            <constraint firstItem="GgM-HV-UnT" firstAttribute="top" secondItem="Yfu-s8-D3j" secondAttribute="bottom" constant="40" id="deI-KI-KlW"/>
+                            <constraint firstItem="Yfu-s8-D3j" firstAttribute="top" secondItem="fOn-TA-8hT" secondAttribute="bottom" constant="30" id="jaN-x8-zK2"/>
+                            <constraint firstItem="GgM-HV-UnT" firstAttribute="centerY" secondItem="A1f-xk-jxv" secondAttribute="centerY" id="pIC-Bs-4TR"/>
+                            <constraint firstAttribute="trailing" secondItem="GgM-HV-UnT" secondAttribute="trailing" id="uUn-6i-RGh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ja7-Yl-824"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="79n-qa-abU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-129" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gemselection" width="220" height="240"/>
+    </resources>
+</document>
