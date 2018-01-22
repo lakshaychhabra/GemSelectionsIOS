@@ -2023,6 +2023,7 @@ Cg
                                             </state>
                                             <connections>
                                                 <action selector="victorianJwellery:" destination="vp3-g3-nLu" eventType="touchUpInside" id="Ihe-y2-NfH"/>
+                                                <segue destination="ZBe-1d-Khh" kind="show" id="BVk-Lg-ivb"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubq-xK-mNR">
@@ -3327,7 +3328,7 @@ Yantra are of three kinds </string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="59"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jcj-ur-zzj" id="YG9-8M-s4C">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="58.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7p-pc-dhU">
@@ -3347,7 +3348,7 @@ Yantra are of three kinds </string>
                                 <rect key="frame" x="0.0" y="87" width="375" height="467"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jtS-fB-e5F" id="IzM-9C-rhe">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="466.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VI5-uC-RZ0">
@@ -8200,7 +8201,8 @@ Cgo
         <segue reference="9Qe-gu-HTd"/>
         <segue reference="Gem-nf-haP"/>
         <segue reference="edC-m0-78k"/>
-        <segue reference="aef-wz-Rk5"/>
+        <segue reference="BVk-Lg-ivb"/>
+        <segue reference="f61-XW-1RG"/>
         <segue reference="WbO-Hf-BGX"/>
         <segue reference="OZS-50-oiM"/>
         <segue reference="uzV-Ju-wnf"/>

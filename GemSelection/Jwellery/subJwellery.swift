@@ -17,7 +17,7 @@ class Diamond_Gem_Tudded: UIViewController,UITableViewDataSource,UITableViewDele
     @IBOutlet weak var _webView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("\(whichJwellery) == whichJwellery")
     }
    
 
@@ -31,7 +31,8 @@ class Diamond_Gem_Tudded: UIViewController,UITableViewDataSource,UITableViewDele
         if whichJwellery == 1 {
             return diamondTypes.count
         }
-        /*if whichJwellery == 3*/else{
+       
+        else{
             return gemJwelleryTypes.count
         }
         
@@ -77,20 +78,25 @@ let notificationNme = NSNotification.Name("NotificationIdf")
             aView.removeFromSuperview()
         }
     }
+    var kisme = ["diamond","","gem-studded"]
     override func viewWillAppear(_ animated: Bool) {
         if whichJwellery == 1 {
             ActualNumberOfImages = [80,58,49,95,37,21,26]
             ImageCounts = [80,93,77,95,39,21,34]
-            Prefixes = ["DJS 71290","DP 39810","DJT 53100","DR 2140","DB 980","DNS 8710","DSS 10090"]
+            Prefixes = ["DJS 7129","DP 3981","DJT 5310","DR 214","DB 98","DNS 871","DSS 1009"]
             internalTypes = ["set","pendant","tops","rings","bracelet","nosepin","studds"]
         }
         if whichJwellery == 2 {
-            
+            whichDiamondToShow = 0
+            ActualNumberOfImages = [135]
+            ImageCounts = [135]
+            Prefixes = ["VJ 9346"]
+            internalTypes = ["victorian"]
         }
         if whichJwellery == 3{
-            ActualNumberOfImages = [53,37,57,74,36]
+            ActualNumberOfImages = [53,36,52,74,36]
             ImageCounts = [53,41,99,89,36]
-            Prefixes = ["GSJS 16490","GSP31920","GSE 59821","GSB 49830"]
+            Prefixes = ["GSJS 1649","GSP3192","GSE 5983"," GSR 2318","GSB 4983"]
             internalTypes = ["set","pendants","earrings","rings","bracelets"]
         }
         self.view.addSubview(aView)
@@ -103,14 +109,15 @@ let notificationNme = NSNotification.Name("NotificationIdf")
         activity.startAnimating()
     	self.collectionView?.isUserInteractionEnabled = false
         for intt in 1...ImageCounts[whichDiamondToShow]{
-            let imageNumber = String(format: "%02d", intt)
-            let reference = storageRef.child("jewellery-images/diamond/\(imageSet)/\(imageInital)\(imageNumber).png")
+            let imageNumber = String(format: "%03d", intt)
+            let reference = storageRef.child("jewellery-images/\(kisme[whichJwellery-1])/\(imageSet)/\(imageInital)\(imageNumber).png")
             reference.getData(maxSize: 23*1024*1024, completion: { (data, error) in
                 if let error = error{
                     print(error.localizedDescription)
                 }
                 else{
-                    
+                    print("success\(self.currentImages.count)")
+                    print("url = ewellery-images/\(self.kisme[whichJwellery-1])/\(imageSet)/\(imageInital)\(imageNumber).png\n")
                     let imgggg = UIImage(data: data!)
                     self.currentImages.append(imgggg!)
                     if self.currentImages.count == ActualNumberOfImages[whichDiamondToShow]{
