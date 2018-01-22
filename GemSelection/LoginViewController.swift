@@ -96,7 +96,7 @@ class LoginViewController: UIViewController {
                     print("\n\nho gya change")
                 }
                 self.ref.child("users").child(user!.uid).child("contact").setValue(phone)
-                self.ref.child("users").child(user!.uid).child("emil").setValue(email)
+                self.ref.child("users").child(user!.uid).child("email").setValue(email)
                 self.ref.child("users").child(user!.uid).child("name").setValue(name)
                 self.performSegue(withIdentifier: "signinsuccess", sender: self)
             }

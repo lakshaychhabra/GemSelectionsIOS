@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gemselection.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3vv-NY-ftE">
+                                <rect key="frame" x="78" y="50" width="220" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="L5o-xA-GPM"/>
+                                    <constraint firstAttribute="width" secondItem="3vv-NY-ftE" secondAttribute="height" multiplier="22:15" id="sbA-2U-FRZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© KHANNA GEMS PVT. LTD." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvK-w3-MzN">
+                                <rect key="frame" x="0.0" y="613" width="375" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bvK-w3-MzN" secondAttribute="height" multiplier="75:7" id="SpM-j5-S9B"/>
+                                    <constraint firstAttribute="height" constant="35" id="bXg-T3-uYD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" red="0.35811016089999997" green="0.36187974160000003" blue="0.36187974160000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gem Selections" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sl-BR-t6N">
+                                <rect key="frame" x="0.0" y="240" width="375" height="186"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2sl-BR-t6N" secondAttribute="height" multiplier="125:62" id="BcI-8U-fDX"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="186" id="HZN-pi-FEJ"/>
+                                    <constraint firstAttribute="height" constant="186" id="RPu-RS-ccK"/>
+                                    <constraint firstAttribute="width" secondItem="2sl-BR-t6N" secondAttribute="height" multiplier="125:62" id="qbY-vP-DEN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="62"/>
+                                <color key="textColor" red="0.78073668479919434" green="0.60801362991333008" blue="0.32424521446228027" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(A Unit of Khanna Gems Pvt. Limited)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6c-dw-U97">
+                                <rect key="frame" x="-9.5" y="411.5" width="394" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="D6c-dw-U97" secondAttribute="height" multiplier="96:5" id="HgX-Ju-ISg"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="VgF-lU-aL6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.35811016094808135" green="0.36187974158964009" blue="0.36187974158964009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="bvK-w3-MzN" secondAttribute="bottom" constant="19" id="ATo-Qf-BTK"/>
+                            <constraint firstItem="D6c-dw-U97" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Qmq-7D-I4E"/>
+                            <constraint firstItem="3vv-NY-ftE" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="30" id="b1G-Nz-2hx"/>
+                            <constraint firstItem="3vv-NY-ftE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="c1W-ma-p3a"/>
+                            <constraint firstItem="bvK-w3-MzN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="f7Q-YF-R43"/>
+                            <constraint firstItem="D6c-dw-U97" firstAttribute="top" secondItem="3vv-NY-ftE" secondAttribute="bottom" constant="211.5" id="fxA-yH-0yb"/>
+                            <constraint firstItem="2sl-BR-t6N" firstAttribute="top" secondItem="3vv-NY-ftE" secondAttribute="bottom" constant="40" id="nMu-0h-d27"/>
+                            <constraint firstItem="2sl-BR-t6N" firstAttribute="top" secondItem="3vv-NY-ftE" secondAttribute="bottom" constant="40" id="sdl-Jb-VOe"/>
+                            <constraint firstItem="2sl-BR-t6N" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="u4V-WY-yHv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gemselection.jpg" width="220" height="240"/>
+    </resources>
+</document>

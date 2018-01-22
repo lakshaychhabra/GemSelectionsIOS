@@ -11,5 +11,8 @@ target 'GemSelection' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'	
   pod 'DropDown'	
+  pod 'Firebase/Storage'
+pod 'FirebaseUI/Storage'
+
 
 end

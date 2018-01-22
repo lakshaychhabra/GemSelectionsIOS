@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DesignJwellery" customModule="GemSelection" customModuleProvider="target">
+            <connections>
+                <outlet property="_emailTF" destination="Kqm-6o-OeF" id="pOu-7q-PMg"/>
+                <outlet property="_imageofJwellery" destination="WAv-MV-md9" id="Q0o-WG-Mu5"/>
+                <outlet property="_nameTF" destination="FOV-fD-K2H" id="JR9-LT-nDM"/>
+                <outlet property="_numberTF" destination="7dD-dh-26Y" id="POs-c8-iog"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can create your own masterpiece in just few simple steps" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpF-mN-tkr">
+                    <rect key="frame" x="16" y="20" width="343" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jpF-mN-tkr" secondAttribute="height" multiplier="49:10" id="cvl-o7-3MQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WAv-MV-md9">
+                    <rect key="frame" x="67" y="98" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="WAv-MV-md9" secondAttribute="height" multiplier="15:8" id="GF5-4t-u32"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWA-XZ-KiF">
+                    <rect key="frame" x="120" y="261" width="135" height="69"/>
+                    <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="pWA-XZ-KiF" secondAttribute="height" multiplier="45:23" id="Dbd-YU-4O9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <state key="normal" title="RETAKE">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="retakeBtn:" destination="-1" eventType="touchUpInside" id="Fdx-0W-xFi"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FOV-fD-K2H">
+                    <rect key="frame" x="16" y="358" width="343" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="FOV-fD-K2H" secondAttribute="height" multiplier="343:30" id="E3v-J1-pfL"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kqm-6o-OeF">
+                    <rect key="frame" x="16" y="396" width="343" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Kqm-6o-OeF" secondAttribute="height" multiplier="343:30" id="w6m-ZB-Q0z"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7dD-dh-26Y">
+                    <rect key="frame" x="16" y="434" width="343" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="7dD-dh-26Y" secondAttribute="height" multiplier="343:30" id="fea-O8-Dk7"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEh-IM-xha">
+                    <rect key="frame" x="105" y="521" width="165" height="69"/>
+                    <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="DEh-IM-xha" secondAttribute="height" multiplier="55:23" id="Mex-zK-gss"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <state key="normal" title="SUBMIT THE DESIGN">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="submitBtn:" destination="-1" eventType="touchUpInside" id="Oxq-nf-gs7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jpF-mN-tkr" secondAttribute="trailing" constant="16" id="7sD-Lo-yvA"/>
+                <constraint firstItem="Kqm-6o-OeF" firstAttribute="top" secondItem="FOV-fD-K2H" secondAttribute="bottom" constant="8" id="8gm-eE-MQQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7dD-dh-26Y" secondAttribute="trailing" constant="16" id="8hL-cl-UtY"/>
+                <constraint firstItem="jpF-mN-tkr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="BGj-O0-RM5"/>
+                <constraint firstItem="pWA-XZ-KiF" firstAttribute="top" secondItem="WAv-MV-md9" secondAttribute="bottom" constant="35" id="Ctt-CH-MMr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FOV-fD-K2H" secondAttribute="trailing" constant="16" id="FOs-Iy-DMU"/>
+                <constraint firstItem="pWA-XZ-KiF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="120" id="HMQ-H9-Xsx"/>
+                <constraint firstItem="7dD-dh-26Y" firstAttribute="top" secondItem="Kqm-6o-OeF" secondAttribute="bottom" constant="8" id="Jiv-f6-Syd"/>
+                <constraint firstItem="FOV-fD-K2H" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="MQl-dO-zEP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WAv-MV-md9" secondAttribute="trailing" constant="68" id="PAm-np-YA9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pWA-XZ-KiF" secondAttribute="trailing" constant="120" id="Q8t-zB-9Ed"/>
+                <constraint firstItem="7dD-dh-26Y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Z0t-7W-Vin"/>
+                <constraint firstItem="WAv-MV-md9" firstAttribute="top" secondItem="jpF-mN-tkr" secondAttribute="bottom" constant="8" id="ZrT-ge-SHa"/>
+                <constraint firstItem="Kqm-6o-OeF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="d5A-Q0-vHa"/>
+                <constraint firstItem="WAv-MV-md9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="67" id="hcF-3V-rEa"/>
+                <constraint firstItem="DEh-IM-xha" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="105" id="jb9-ob-zOp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DEh-IM-xha" secondAttribute="trailing" constant="105" id="lNi-32-jrA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Kqm-6o-OeF" secondAttribute="trailing" constant="16" id="tJV-89-NzP"/>
+                <constraint firstItem="jpF-mN-tkr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="uH1-CD-iR5"/>
+                <constraint firstItem="FOV-fD-K2H" firstAttribute="top" secondItem="pWA-XZ-KiF" secondAttribute="bottom" constant="28" id="wLv-f9-xKg"/>
+                <constraint firstItem="DEh-IM-xha" firstAttribute="top" secondItem="7dD-dh-26Y" secondAttribute="bottom" constant="57" id="xgL-g0-usb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

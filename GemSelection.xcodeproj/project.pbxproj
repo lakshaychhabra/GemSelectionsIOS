@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00176EBB20123785009E92B8 /* JwelleryMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00176EBA20123785009E92B8 /* JwelleryMain.swift */; };
+		00176EBE20124BAE009E92B8 /* DesignJwellery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00176EBC20124BAE009E92B8 /* DesignJwellery.swift */; };
+		00176EBF20124BAE009E92B8 /* DesignJwellery.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00176EBD20124BAE009E92B8 /* DesignJwellery.xib */; };
+		00176EC1201348B6009E92B8 /* subJwellery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00176EC0201348B6009E92B8 /* subJwellery.swift */; };
+		00176EC72013940B009E92B8 /* GemSelection in Resources */ = {isa = PBXBuildFile; fileRef = 00176EC62013940A009E92B8 /* GemSelection */; };
+		00176EC920139484009E92B8 /* SideBarRudraksh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00176EC820139483009E92B8 /* SideBarRudraksh.swift */; };
+		00176ECB20139496009E92B8 /* RudrakshaGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00176ECA20139495009E92B8 /* RudrakshaGroup.swift */; };
+		00176ECD201394A2009E92B8 /* RudrakshaPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00176ECC201394A1009E92B8 /* RudrakshaPopupView.swift */; };
 		002A93C3200D356400688259 /* Birthstones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002A93C2200D356400688259 /* Birthstones.swift */; };
 		002A93C5200D359600688259 /* Cabochons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002A93C4200D359600688259 /* Cabochons.swift */; };
 		0037B198200E7482003697BA /* SemiPreciousGems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037B197200E7482003697BA /* SemiPreciousGems.swift */; };
 		0037B19A200E8FCF003697BA /* HomePageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037B199200E8FCF003697BA /* HomePageData.swift */; };
+		0037B19D200FA15B003697BA /* HomeStoneSingles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037B19B200FA15B003697BA /* HomeStoneSingles.swift */; };
+		0037B19E200FA15B003697BA /* HomeStoneSingles.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0037B19C200FA15B003697BA /* HomeStoneSingles.xib */; };
 		0042D7BA20012FBE00DF8722 /* Japamala,saphticitems,stoneidols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042D7B920012FBE00DF8722 /* Japamala,saphticitems,stoneidols.swift */; };
 		0042D7BC200157D100DF8722 /* Diamond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042D7BB200157D100DF8722 /* Diamond.swift */; };
 		0044357920068A4D008C4ECF /* YantraGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044357720068A4D008C4ECF /* YantraGroup.swift */; };
 		0044357A20068A4D008C4ECF /* YantraPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0044357820068A4D008C4ECF /* YantraPopUp.swift */; };
+		0084AD40200FB7F600A663CF /* HomeStonesDetailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0084AD3F200FB7F600A663CF /* HomeStonesDetailed.swift */; };
 		00884BB82003FEB400ECF7FD /* WebViewBig.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00884BB72003FEB400ECF7FD /* WebViewBig.xib */; };
 		00944BBF200D156E0025306A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00944BBE200D156D0025306A /* LoginViewController.swift */; };
 		00A594AD2006A28F009ACA05 /* HandiMultipleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A594AA2006A28D009ACA05 /* HandiMultipleView.swift */; };
@@ -41,14 +52,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00176EBA20123785009E92B8 /* JwelleryMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JwelleryMain.swift; sourceTree = "<group>"; };
+		00176EBC20124BAE009E92B8 /* DesignJwellery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignJwellery.swift; sourceTree = "<group>"; };
+		00176EBD20124BAE009E92B8 /* DesignJwellery.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DesignJwellery.xib; sourceTree = "<group>"; };
+		00176EC0201348B6009E92B8 /* subJwellery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subJwellery.swift; sourceTree = "<group>"; };
+		00176EC62013940A009E92B8 /* GemSelection */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GemSelection; sourceTree = "<group>"; };
+		00176EC820139483009E92B8 /* SideBarRudraksh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarRudraksh.swift; sourceTree = "<group>"; };
+		00176ECA20139495009E92B8 /* RudrakshaGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RudrakshaGroup.swift; sourceTree = "<group>"; };
+		00176ECC201394A1009E92B8 /* RudrakshaPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RudrakshaPopupView.swift; sourceTree = "<group>"; };
 		002A93C2200D356400688259 /* Birthstones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthstones.swift; sourceTree = "<group>"; };
 		002A93C4200D359600688259 /* Cabochons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cabochons.swift; sourceTree = "<group>"; };
 		0037B197200E7482003697BA /* SemiPreciousGems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiPreciousGems.swift; sourceTree = "<group>"; };
 		0037B199200E8FCF003697BA /* HomePageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageData.swift; sourceTree = "<group>"; };
+		0037B19B200FA15B003697BA /* HomeStoneSingles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStoneSingles.swift; sourceTree = "<group>"; };
+		0037B19C200FA15B003697BA /* HomeStoneSingles.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeStoneSingles.xib; sourceTree = "<group>"; };
 		0042D7B920012FBE00DF8722 /* Japamala,saphticitems,stoneidols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Japamala,saphticitems,stoneidols.swift"; sourceTree = "<group>"; };
 		0042D7BB200157D100DF8722 /* Diamond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diamond.swift; sourceTree = "<group>"; };
 		0044357720068A4D008C4ECF /* YantraGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YantraGroup.swift; sourceTree = "<group>"; };
 		0044357820068A4D008C4ECF /* YantraPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YantraPopUp.swift; sourceTree = "<group>"; };
+		0084AD3F200FB7F600A663CF /* HomeStonesDetailed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStonesDetailed.swift; sourceTree = "<group>"; };
 		00884BB72003FEB400ECF7FD /* WebViewBig.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewBig.xib; sourceTree = "<group>"; };
 		00944BBE200D156D0025306A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		00A594AA2006A28D009ACA05 /* HandiMultipleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandiMultipleView.swift; sourceTree = "<group>"; };
@@ -92,6 +114,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00176EB92012376F009E92B8 /* Jwellery */ = {
+			isa = PBXGroup;
+			children = (
+				00176EBA20123785009E92B8 /* JwelleryMain.swift */,
+				00176EC0201348B6009E92B8 /* subJwellery.swift */,
+				00176EBC20124BAE009E92B8 /* DesignJwellery.swift */,
+				00176EBD20124BAE009E92B8 /* DesignJwellery.xib */,
+			);
+			path = Jwellery;
+			sourceTree = "<group>";
+		};
+		00176ECE201394A6009E92B8 /* Rudraksha */ = {
+			isa = PBXGroup;
+			children = (
+				00176EC820139483009E92B8 /* SideBarRudraksh.swift */,
+				00176ECA20139495009E92B8 /* RudrakshaGroup.swift */,
+				00176ECC201394A1009E92B8 /* RudrakshaPopupView.swift */,
+			);
+			path = Rudraksha;
+			sourceTree = "<group>";
+		};
+		0037B19F200FA40E003697BA /* HOME */ = {
+			isa = PBXGroup;
+			children = (
+				4668A3F61F9FE63100CB64A7 /* HomePage.swift */,
+				0037B199200E8FCF003697BA /* HomePageData.swift */,
+				0037B19B200FA15B003697BA /* HomeStoneSingles.swift */,
+				0037B19C200FA15B003697BA /* HomeStoneSingles.xib */,
+				0084AD3F200FB7F600A663CF /* HomeStonesDetailed.swift */,
+			);
+			path = HOME;
+			sourceTree = "<group>";
+		};
 		4600F4E11FAD0494000954D3 /* SWReveal */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,9 +178,11 @@
 		4668A3F31F9FE63100CB64A7 /* GemSelection */ = {
 			isa = PBXGroup;
 			children = (
+				00176ECE201394A6009E92B8 /* Rudraksha */,
+				00176EB92012376F009E92B8 /* Jwellery */,
+				0037B19F200FA40E003697BA /* HOME */,
 				4668A3F41F9FE63100CB64A7 /* AppDelegate.swift */,
-				4668A3F61F9FE63100CB64A7 /* HomePage.swift */,
-				0037B199200E8FCF003697BA /* HomePageData.swift */,
+				00176EC62013940A009E92B8 /* GemSelection */,
 				466859611FAF4AB700340BDB /* MainMenu.swift */,
 				00F343F61FFD511300CF03D9 /* ConnectWithUs.swift */,
 				00F6AB4C200003B8003907B5 /* Kavach.swift */,
@@ -239,7 +296,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				00884BB82003FEB400ECF7FD /* WebViewBig.xib in Resources */,
+				0037B19E200FA15B003697BA /* HomeStoneSingles.xib in Resources */,
 				4668A3FF1F9FE63100CB64A7 /* LaunchScreen.storyboard in Resources */,
+				00176EBF20124BAE009E92B8 /* DesignJwellery.xib in Resources */,
+				00176EC72013940B009E92B8 /* GemSelection in Resources */,
 				4600F4DC1FAD0380000954D3 /* GoogleService-Info.plist in Resources */,
 				00F6AB471FFFD362003907B5 /* Extra.xib in Resources */,
 				4668A3FC1F9FE63100CB64A7 /* Assets.xcassets in Resources */,
@@ -278,6 +338,7 @@
 				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -286,6 +347,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -316,19 +378,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00176EC920139484009E92B8 /* SideBarRudraksh.swift in Sources */,
+				0084AD40200FB7F600A663CF /* HomeStonesDetailed.swift in Sources */,
 				002A93C3200D356400688259 /* Birthstones.swift in Sources */,
 				00D998112007D65500D10D3F /* Perfumes.swift in Sources */,
 				002A93C5200D359600688259 /* Cabochons.swift in Sources */,
 				0042D7BA20012FBE00DF8722 /* Japamala,saphticitems,stoneidols.swift in Sources */,
+				00176EBB20123785009E92B8 /* JwelleryMain.swift in Sources */,
+				00176ECD201394A2009E92B8 /* RudrakshaPopupView.swift in Sources */,
 				00C86E9D200BE1AE0060E04E /* TriangleGemstones.swift in Sources */,
 				0037B19A200E8FCF003697BA /* HomePageData.swift in Sources */,
 				00DDCB731FFD402200F00415 /* WebViewBig.swift in Sources */,
 				0044357A20068A4D008C4ECF /* YantraPopUp.swift in Sources */,
 				4668A3F71F9FE63100CB64A7 /* HomePage.swift in Sources */,
+				00176ECB20139496009E92B8 /* RudrakshaGroup.swift in Sources */,
+				0037B19D200FA15B003697BA /* HomeStoneSingles.swift in Sources */,
 				00A594AE2006A28F009ACA05 /* HandicraftsPots.swift in Sources */,
 				00C86E9B200BC7810060E04E /* GemstoneAstrology.swift in Sources */,
 				00944BBF200D156E0025306A /* LoginViewController.swift in Sources */,
+				00176EBE20124BAE009E92B8 /* DesignJwellery.swift in Sources */,
 				00F6AB461FFFD362003907B5 /* Extra.swift in Sources */,
+				00176EC1201348B6009E92B8 /* subJwellery.swift in Sources */,
 				4668A3F51F9FE63100CB64A7 /* AppDelegate.swift in Sources */,
 				4600F4E01FAD0456000954D3 /* SWRevealViewController.m in Sources */,
 				466859621FAF4AB700340BDB /* MainMenu.swift in Sources */,
@@ -482,7 +552,7 @@
 				DEVELOPMENT_TEAM = BXJMU6MAWM;
 				INFOPLIST_FILE = GemSelection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atlas.GemSelection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlas.GemSelection1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GemSelectionapp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -501,7 +571,7 @@
 				DEVELOPMENT_TEAM = BXJMU6MAWM;
 				INFOPLIST_FILE = GemSelection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atlas.GemSelection;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlas.GemSelection1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GemSelectionapp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
