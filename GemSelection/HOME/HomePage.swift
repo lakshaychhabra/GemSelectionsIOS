@@ -167,7 +167,7 @@ let homeData = HomeData()
         if indexPath.section == 0{
             return CGSize(width: self.collectionView!.frame.width-20, height: self.view.frame.height/2.7)
         } else {
-              return CGSize(width: 150, height: 200)
+              return CGSize(width: 182, height: 208)
         }
     }
 
@@ -185,7 +185,7 @@ let homeData = HomeData()
         if section == 0 {
            return UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 10)
         } else {
-            return UIEdgeInsets(top: 0, left: 5, bottom: 40, right: 5)
+            return UIEdgeInsets(top: 5, left: 0, bottom: 35, right: 0)
             
         }
     }
