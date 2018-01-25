@@ -9,23 +9,35 @@
 import UIKit
 import MessageUI
 import MapKit
+import Firebase
+var isloggedin:Int = 0
 class MainMenu: UITableViewController,MFMailComposeViewControllerDelegate {
-
+    var handle: AuthStateDidChangeListenerHandle? ;  var ref: DatabaseReference!
     var rowIdentifierssection1 = ["loginrow","preciousgemstonerow","diamondrow","jwelleryrow","semipreciousgemsrow","triangulargemsrow","cabochonrow","birthstonesrow","gemstonesandastrologyrow","gemstonerecommendationrow","rudraksharow","handicraftsrow","perfumerow","stoneidolsrow","yantrarow","saphaticitemsrow","japamalarow","kavachrow","faqrow"]
     var rowIdentifierssection2 = ["connectwithusrow","callusrow","mailusrow","visitusrow"]
     var rowIdentifierssection3 = ["sharerow","rateapprow"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+     
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    var currentUser	= "GemSelections"
+    
+    var currentUserEmail = "(A Unit of Khanna Gems Pvt. Limited)"
+    override func viewWillAppear(_ animated: Bool) {
+        if Auth.auth().currentUser != nil {
+            let user = Auth.auth().currentUser
+            self.currentUser = (user?.displayName)!
+            self.currentUserEmail = (user?.email)!
+            isloggedin = 1
+        } else {
+          print("na hao")
+        }
+    
     }
-
-
+    override func viewWillDisappear(_ animated: Bool) {
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
@@ -44,13 +56,45 @@ class MainMenu: UITableViewController,MFMailComposeViewControllerDelegate {
         
     }
 
-    
+    func signOutUser(){
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+             currentUser = "GemSelections"
+             currentUserEmail = "(A Unit of Khanna Gems Pvt. Limited)"
+            isloggedin = 0
+            let indexpath = IndexPath(row: 0, section: 0)
+            self.tableView.reloadRows(at: [indexpath], with: .top)
+
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+            print("aala maaf")
+        }
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var finalcell = UITableViewCell()
         
         if(indexPath.section == 0){
+            if indexPath.row == 0{
+                let cell = tableView.dequeueReusableCell(withIdentifier: rowIdentifierssection1[indexPath.row], for: indexPath) as! loginRow
+                cell._userEmail.text = currentUserEmail
+                cell._userName.text = currentUser
+                cell._logoutBtn.addTarget(self, action: #selector(signOutUser), for: .touchDown)
+                if isloggedin == 0{
+                    cell._loginBtn.isUserInteractionEnabled = true ; cell._logoutBtn.isUserInteractionEnabled = false
+                    cell._loginBtn.setTitleColor(UIColor.white, for: .normal)
+                    cell._logoutBtn.setTitleColor(UIColor.gray.withAlphaComponent(0.5), for: .normal)
+                }
+                else if isloggedin == 1{
+                    cell._logoutBtn.isUserInteractionEnabled = true ; cell._loginBtn.isUserInteractionEnabled = false
+                    cell._logoutBtn.setTitleColor(UIColor.white, for: .normal)
+                    cell._loginBtn.setTitleColor(UIColor.gray.withAlphaComponent(0.5), for: .normal)
+                }
+                finalcell = cell
+            }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: rowIdentifierssection1[indexPath.row], for: indexPath)
-            finalcell = cell
+                finalcell = cell
+            }
         }
         if(indexPath.section == 1){
             let cell = tableView.dequeueReusableCell(withIdentifier: rowIdentifierssection2[indexPath.row], for: indexPath)
@@ -166,7 +210,13 @@ func mailComposeController(_ controller: MFMailComposeViewController, didFinishW
     }
     }
 
-
+class loginRow:UITableViewCell{
+    @IBOutlet weak var _logoutBtn: UIButton!
+    @IBOutlet weak var _loginBtn: UIButton!
+    @IBOutlet weak var _userName: UILabel!
+    @IBOutlet weak var _userEmail: UILabel!
+    
+}
 
 
 

@@ -2,7 +2,7 @@
 import UIKit
 
 class handiSideBar: UITableViewController {
-    var identify = ["2","3","4","5","6","7","8","9","10","11"]
+    var identify = ["1","3","4","5","6","7","8","9","10","11"]
     override func viewDidLoad() {
         super.viewDidLoad()
   print(handicraftgiftsContent.count,"hcount")
@@ -29,22 +29,22 @@ class handiSideBar: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
-        case 3:
+        case 2:
             performSegue(withIdentifier: "clocksegue", sender: self)
-        case 4:
+        case 3:
             performSegue(withIdentifier: "tilesegue", sender: self)
             print("tiles..")
-        case 5:
+        case 4:
             performSegue(withIdentifier: "hgiftsegue", sender: self)
-        case 6:
+        case 5:
             performSegue(withIdentifier: "ostsegue", sender: self)
-        case 7:
+        case 6:
             performSegue(withIdentifier: "sgsegue", sender: self)
-        case 8:
+        case 7:
             performSegue(withIdentifier: "bssegue", sender: self)
-        case 9:
+        case 8:
             performSegue(withIdentifier: "sssegue", sender: self)
-        case 10:
+        case 9:
             performSegue(withIdentifier: "sttsegue", sender: self)
         default: break
             

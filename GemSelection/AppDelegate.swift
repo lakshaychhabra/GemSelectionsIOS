@@ -8,6 +8,7 @@
 
 import UIKit
 import DropDown
+import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -20,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationBarAppearace.barTintColor = UIColor(red: 208/255.0, green: 162/255.0, blue: 96/255.0, alpha: 1.0)
         navigationBarAppearace.isTranslucent = true
         DropDown.startListeningToKeyboard()
-
+        FirebaseApp.configure()
         return true
     }
 

@@ -82,6 +82,7 @@ class Extra: UIViewController {
 
 
 //FAQPopUP:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+var isfaqcomingfromHome:Bool = false
 class FaqPopUp: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
 
@@ -101,6 +102,26 @@ class FaqPopUp: UIViewController,UITableViewDelegate,UITableViewDataSource{
                 (SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+    }
+    func back(){
+        self.navigationController?.popViewController(animated: true)
+        isfaqcomingfromHome = false
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        if isfaqcomingfromHome == true {
+            let leftBarBtn = UIBarButtonItem(image:#imageLiteral(resourceName: "ic_arrow_back_white"), style: .plain, target: self, action: #selector(back))
+            self.navigationItem.leftBarButtonItem = leftBarBtn
+        }
+        if isfaqcomingfromHome == false{
+            if self.revealViewController() != nil {
+                menuBtn.target = self.revealViewController()
+                menuBtn.target = self.revealViewController()
+                menuBtn.action = #selector
+                    (SWRevealViewController.rightRevealToggle(_:))
+                menuBtn.action = #selector
+                    (SWRevealViewController.revealToggle(_:))
+                self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            }}
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

@@ -13,6 +13,6 @@ target 'GemSelection' do
   pod 'DropDown'	
   pod 'Firebase/Storage'
 pod 'FirebaseUI/Storage'
-
+pod 'MarqueeLabel'
 
 end
