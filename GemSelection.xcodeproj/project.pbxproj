@@ -50,6 +50,8 @@
 		4668A3FC1F9FE63100CB64A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4668A3FB1F9FE63100CB64A7 /* Assets.xcassets */; };
 		4668A3FF1F9FE63100CB64A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4668A3FD1F9FE63100CB64A7 /* LaunchScreen.storyboard */; };
 		9ECE7629DEBBECF14EBCB29C /* Pods_GemSelection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B6B50811E25A6DA7F3BFA3 /* Pods_GemSelection.framework */; };
+		F12E278820BD53910000E82C /* SectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12E278720BD53910000E82C /* SectionHeaderCollectionReusableView.swift */; };
+		F1C80B3120BC9FA200AF0F88 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C80B3020BC9FA200AF0F88 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +104,8 @@
 		4668A3FE1F9FE63100CB64A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4668A4001F9FE63100CB64A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		929E9134C2D0791ABF2605B6 /* Pods-GemSelection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemSelection.release.xcconfig"; path = "Pods/Target Support Files/Pods-GemSelection/Pods-GemSelection.release.xcconfig"; sourceTree = "<group>"; };
+		F12E278720BD53910000E82C /* SectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		F1C80B3020BC9FA200AF0F88 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 				0037B19B200FA15B003697BA /* HomeStoneSingles.swift */,
 				0037B19C200FA15B003697BA /* HomeStoneSingles.xib */,
 				0084AD3F200FB7F600A663CF /* HomeStonesDetailed.swift */,
+				F12E278720BD53910000E82C /* SectionHeaderCollectionReusableView.swift */,
 			);
 			path = HOME;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 				002A93C2200D356400688259 /* Birthstones.swift */,
 				002A93C4200D359600688259 /* Cabochons.swift */,
 				00944BBE200D156D0025306A /* LoginViewController.swift */,
+				F1C80B3020BC9FA200AF0F88 /* SignUpViewController.swift */,
 				00176ECE201394A6009E92B8 /* Rudraksha */,
 				008BF4CC2018B65100C4749E /* Semi Precious Gems */,
 				00DDCB711FFD402200F00415 /* WebViewBig.swift */,
@@ -402,6 +408,7 @@
 				00F85A0D201883C800796A8B /* SemiPreciousGemsData.swift in Sources */,
 				0037B19A200E8FCF003697BA /* HomePageData.swift in Sources */,
 				00DDCB731FFD402200F00415 /* WebViewBig.swift in Sources */,
+				F12E278820BD53910000E82C /* SectionHeaderCollectionReusableView.swift in Sources */,
 				0044357A20068A4D008C4ECF /* YantraPopUp.swift in Sources */,
 				4668A3F71F9FE63100CB64A7 /* HomePage.swift in Sources */,
 				00176ECB20139496009E92B8 /* RudrakshaGroup.swift in Sources */,
@@ -419,6 +426,7 @@
 				0037B198200E7482003697BA /* SemiPreciousGems.swift in Sources */,
 				00F6AB4D200003B8003907B5 /* Kavach.swift in Sources */,
 				0044357920068A4D008C4ECF /* YantraGroup.swift in Sources */,
+				F1C80B3120BC9FA200AF0F88 /* SignUpViewController.swift in Sources */,
 				00A594AF2006A28F009ACA05 /* handiSideBar.swift in Sources */,
 				00C86E99200BB04E0060E04E /* GemstoneRecommendation.swift in Sources */,
 				00F343F71FFD511300CF03D9 /* ConnectWithUs.swift in Sources */,

@@ -11,6 +11,8 @@ import DropDown
 import MarqueeLabel
 class HomePage: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
+    var itemWidth: CGFloat!
+    var aLabel: MarqueeLabel!
     @IBAction func buyNowBtn(_ sender: Any) {
     ShowWebView(urll: "https://khannagems.com/")
     }
@@ -27,6 +29,10 @@ class HomePage: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     }
 override func viewDidLoad() {
         super.viewDidLoad()
+    
+    
+    
+    
     let width = self.view.frame.width-20 ; let height = self.view.frame.height/3
     _webView.loadHTMLString("<iframe width=\"\(width)\" height=\"\(height)\" src=\"https://www.youtube.com/embed/exSOLLQKZEM\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
         initialiazeDropDownMain()
@@ -45,15 +51,30 @@ override func viewDidLoad() {
         _webView.scrollView.bounces = false
         dropDownSecondary.anchorView = moreBtn
         dropDownMain.anchorView = moreBtn
-
+    
+    let collectionViewWidth = collectionView?.frame.width
+    itemWidth = (collectionViewWidth! - 30)/2.0
+    
+    let aframe = CGRect(x: 10, y: 0, width: collectionViewWidth! - 20, height: 40)
+    aLabel = MarqueeLabel.init(frame: aframe, duration: 15, andFadeLength: 10.0)
+    aLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+    aLabel?.text = "Gem Selections:The only Trusted Brand for Govt. Lab Certified Gemstones, Diamonds and Jewellery since 1987."
+    aLabel?.textColor = UIColor.red
+    aLabel?.marqueeType = .MLContinuous
+    aLabel?.leadingBuffer = 30.0
+    aLabel?.trailingBuffer = 20.0
     }
     
 //DROP DOWN INITIALIZATION :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     let evc = Extra()
 func initialiazeDropDownMain(){
-        dropDownMain.dataSource = ["Govt. Lab Certificates    ▶︎", "Testimonials","About Shipment","Membership                    ▶︎","Astrology","Puja","Frequently Asked Ques.","About                              ▶︎","Exit"]
+        dropDownMain.dataSource = ["Govt. Lab Certificates    ▶︎", "Testimonials","About Shipment","Membership                    ▶︎","Astrology","Puja", "Frequently Asked Ques.","About                              ▶︎","Exit", "Return Policy"]
         dropDownMain.selectionAction = { [unowned self] (index: Int, item: String) in
             self.elementSelectedInMainDropDown = index
+            
+            if self.elementSelectedInMainDropDown == 9{
+                print("return selected")
+            }
             
             if self.elementSelectedInMainDropDown == 8{
                 exit(0);
@@ -136,13 +157,10 @@ let homeData = HomeData()
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.section == 0 {
          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell1", for: indexPath)
-            let aframe = CGRect(x: 10, y: 0, width: cell.frame.width-20, height: 40)
-         let aLabel = MarqueeLabel.init(frame: aframe, duration: 15, andFadeLength: 10.0)
-            aLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-            aLabel?.text = "Gem Selections:The only Trusted Brand for Govt. Lab Certified Gemstones, Diamonds and Jewellery since 1987."
-            aLabel?.textColor = UIColor.red
-            aLabel?.marqueeType = .MLContinuous
             _webView.frame = CGRect(x: 0, y: 40, width: cell.frame.width, height: cell.frame.height)
+            
+            
+            
             cell.addSubview(aLabel!)
             cell.addSubview(_webView)
             return cell
@@ -167,7 +185,7 @@ let homeData = HomeData()
         if indexPath.section == 0{
             return CGSize(width: self.collectionView!.frame.width-20, height: self.view.frame.height/2.7)
         } else {
-              return CGSize(width: 182, height: 208)
+              return CGSize(width: itemWidth, height: itemWidth + 26.0)
         }
     }
 
@@ -179,13 +197,42 @@ let homeData = HomeData()
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        if section == 0{
+            return 0
+        }else{
+            return 10
+        }
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "SectionHeader", for: indexPath) as! SectionHeaderCollectionReusableView
+        
+        //header.addSubview(aLabel!)
+        
+        return header
+        
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if(indexPath.row == 0){
+            aLabel.restart()
+            print("displaying.....")
+        }
+    }
+    
+    /*func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        if(section == 1) return
+    }*/
+    
+    
 
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         if section == 0 {
            return UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 10)
         } else {
-            return UIEdgeInsets(top: 5, left: 0, bottom: 35, right: 0)
+            return UIEdgeInsets(top: 5, left: 10, bottom: 35, right: 10)
             
         }
     }
