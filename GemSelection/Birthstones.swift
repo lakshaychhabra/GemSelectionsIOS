@@ -41,6 +41,7 @@ class Birthstones: UITableViewController {
                 self._detaiView.center = self.view.center
                 self.view.addSubview(self.aView)
             }
+            
             self.tableView.reloadData()
             
         }
@@ -55,6 +56,17 @@ class Birthstones: UITableViewController {
                 (SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        
+        //Background Image
+        let backgroundImage = UIImage.init(named: "Gemselection")
+        let midX = self.view.frame.width / 3
+        let midY = self.view.frame.height / 2
+        let backgroundImageView = UIImageView.init(frame: CGRect(x: midX, y: midY, width: midX, height: midY))
+        backgroundImageView.image = backgroundImage
+        backgroundImageView.contentMode = .scaleAspectFit
+        backgroundImageView.alpha = 0.1
+        
+        self.view.insertSubview(backgroundImageView, at: 0)
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
