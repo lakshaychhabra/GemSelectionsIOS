@@ -1449,11 +1449,11 @@
             </objects>
             <point key="canvasLocation" x="-1617" y="3361"/>
         </scene>
-        <!--JSS-->
+        <!--Jap Mala-->
         <scene sceneID="DMj-Zx-6mN">
             <objects>
                 <tableViewController id="5Zp-5A-BbO" customClass="JSS" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="FSQ-ZR-8pe">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" id="FSQ-ZR-8pe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -1465,27 +1465,25 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="265.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="epe-vw-5Lv">
-                                            <rect key="frame" x="140" y="11" width="95" height="95"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="95" id="BQh-PI-SkD"/>
-                                                <constraint firstAttribute="height" constant="95" id="aTc-3i-cbP"/>
-                                                <constraint firstAttribute="width" secondItem="epe-vw-5Lv" secondAttribute="height" multiplier="1:1" id="fNz-1h-mvf"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXD-uy-Rxl">
-                                            <rect key="frame" x="16" y="122" width="343" height="133"/>
+                                            <rect key="frame" x="16" y="138" width="343" height="117"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="epe-vw-5Lv">
+                                            <rect key="frame" x="126" y="11" width="122" height="119"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="epe-vw-5Lv" secondAttribute="height" multiplier="1:1" constant="3" id="fNz-1h-mvf"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="epe-vw-5Lv" secondAttribute="trailing" constant="124" id="0zH-9K-OcH"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="epe-vw-5Lv" secondAttribute="trailing" constant="111" id="0zH-9K-OcH"/>
                                         <constraint firstItem="aXD-uy-Rxl" firstAttribute="bottom" secondItem="U36-QM-AtW" secondAttribute="bottomMargin" id="3bG-ar-jzf"/>
                                         <constraint firstItem="epe-vw-5Lv" firstAttribute="top" secondItem="U36-QM-AtW" secondAttribute="topMargin" id="4E6-1e-qRe"/>
-                                        <constraint firstItem="epe-vw-5Lv" firstAttribute="leading" secondItem="U36-QM-AtW" secondAttribute="leadingMargin" constant="124" id="4tD-T8-OYk"/>
-                                        <constraint firstItem="aXD-uy-Rxl" firstAttribute="top" secondItem="epe-vw-5Lv" secondAttribute="bottom" constant="16" id="BNQ-PZ-eW3"/>
+                                        <constraint firstItem="epe-vw-5Lv" firstAttribute="leading" secondItem="U36-QM-AtW" secondAttribute="leadingMargin" constant="110" id="4tD-T8-OYk"/>
+                                        <constraint firstItem="aXD-uy-Rxl" firstAttribute="top" secondItem="epe-vw-5Lv" secondAttribute="bottom" constant="8" id="AaP-8v-taj"/>
                                         <constraint firstItem="aXD-uy-Rxl" firstAttribute="leading" secondItem="U36-QM-AtW" secondAttribute="leadingMargin" id="QBo-os-hwd"/>
                                         <constraint firstItem="aXD-uy-Rxl" firstAttribute="trailing" secondItem="U36-QM-AtW" secondAttribute="trailingMargin" id="xyz-sG-CRE"/>
                                     </constraints>
@@ -1501,7 +1499,7 @@
                             <outlet property="delegate" destination="5Zp-5A-BbO" id="5f3-2T-alY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="KGE-xz-VLK">
+                    <navigationItem key="navigationItem" title="Jap Mala" id="KGE-xz-VLK">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu" id="uAi-2R-GO6"/>
                         <barButtonItem key="rightBarButtonItem" title="BUY NOW" id="srs-De-lqS">
                             <connections>
@@ -2431,6 +2429,7 @@ Cg
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="efs-k1-OWX">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -8449,14 +8448,14 @@ Cgo
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="1e4-gD-mhT"/>
-        <segue reference="Rq6-zf-TF3"/>
+        <segue reference="190-fL-RNG"/>
         <segue reference="30A-gL-4es"/>
         <segue reference="OG9-Eb-79K"/>
         <segue reference="edC-m0-78k"/>
         <segue reference="BVk-Lg-ivb"/>
         <segue reference="f61-XW-1RG"/>
         <segue reference="WbO-Hf-BGX"/>
-        <segue reference="j33-6C-FxR"/>
+        <segue reference="OZS-50-oiM"/>
         <segue reference="1Im-7x-4g6"/>
     </inferredMetricsTieBreakers>
 </document>
