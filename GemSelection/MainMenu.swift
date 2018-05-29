@@ -19,6 +19,7 @@ class MainMenu: UITableViewController,MFMailComposeViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
      
     }
     var currentUser	= "GemSelections"
