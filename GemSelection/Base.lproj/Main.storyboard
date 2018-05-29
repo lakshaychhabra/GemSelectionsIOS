@@ -2459,7 +2459,7 @@ Cg
             </objects>
             <point key="canvasLocation" x="5873.6000000000004" y="2656.3718140929536"/>
         </scene>
-        <!--Yantra View-->
+        <!--Yantras-->
         <scene sceneID="hLm-Va-Asp">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="nWj-FR-Xyf" customClass="yantraView" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
@@ -2538,111 +2538,96 @@ Yantra are of three kinds </string>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Framed Yantras:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGt-rY-usf">
-                                <rect key="frame" x="16" y="503" width="144" height="31"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-3c-ARk">
+                                <rect key="frame" x="16" y="503" width="149.5" height="114"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Framed Yantras:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGt-rY-usf">
+                                        <rect key="frame" x="0.0" y="0.0" width="149.5" height="34.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locket Yantras:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huW-2a-ubS">
+                                        <rect key="frame" x="0.0" y="39.5" width="149.5" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Daan Yantras:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mun-pY-8Sp">
+                                        <rect key="frame" x="0.0" y="79.5" width="149.5" height="34.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="ARo-jP-TfD"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="144" id="FDa-hd-qZl"/>
+                                    <constraint firstAttribute="width" secondItem="4Ke-3c-ARk" secondAttribute="height" multiplier="80:61" id="Kd7-oJ-VhS"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQs-nf-TzX">
-                                <rect key="frame" x="200" y="503" width="81" height="31"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1Qy-rx-vwc">
+                                <rect key="frame" x="200" y="503" width="149.5" height="114"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQs-nf-TzX">
+                                        <rect key="frame" x="0.0" y="0.0" width="149.5" height="34.5"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="--SELECT--">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn1:" destination="nWj-FR-Xyf" eventType="touchUpInside" id="p2J-cw-NdX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slR-Ef-AHB">
+                                        <rect key="frame" x="0.0" y="39.5" width="149.5" height="35"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="--SELECT--">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn2:" destination="nWj-FR-Xyf" eventType="touchUpInside" id="3BW-QV-VUe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0T-Nd-GYI">
+                                        <rect key="frame" x="0.0" y="79.5" width="149.5" height="34.5"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="--SELECT--">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn3:" destination="nWj-FR-Xyf" eventType="touchUpInside" id="swF-zy-KWk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="dha-xt-zBD"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="erv-oI-Krg"/>
+                                    <constraint firstAttribute="width" secondItem="1Qy-rx-vwc" secondAttribute="height" multiplier="80:61" id="zhK-y9-2pt"/>
                                 </constraints>
-                                <state key="normal" title="--SELECT--">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btn1:" destination="nWj-FR-Xyf" eventType="touchUpInside" id="p2J-cw-NdX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slR-Ef-AHB">
-                                <rect key="frame" x="200" y="542" width="81" height="31"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="AIc-oB-9PD"/>
-                                    <constraint firstAttribute="height" constant="31" id="yZZ-Yh-Thz"/>
-                                </constraints>
-                                <state key="normal" title="--SELECT--">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btn2:" destination="nWj-FR-Xyf" eventType="touchUpInside" id="3BW-QV-VUe"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Daan Yantras:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mun-pY-8Sp">
-                                <rect key="frame" x="16" y="581" width="114" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="TAz-rs-Fpa"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="114" id="lhG-1b-JYq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0T-Nd-GYI">
-                                <rect key="frame" x="200" y="581" width="81" height="31"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="m4P-Sb-9VY"/>
-                                    <constraint firstAttribute="height" constant="31" id="prl-Kp-GgD"/>
-                                </constraints>
-                                <state key="normal" title="--SELECT--">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btn3:" destination="nWj-FR-Xyf" eventType="touchUpInside" id="swF-zy-KWk"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locket Yantras:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huW-2a-ubS">
-                                <rect key="frame" x="16" y="542" width="126" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="6UC-K2-gZe"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="126" id="jrd-dF-6CM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGS-Et-1Y3">
                                 <rect key="frame" x="16" y="72" width="343" height="161"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SGS-Et-1Y3" secondAttribute="height" multiplier="49:23" id="vZn-v5-33G"/>
+                                </constraints>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mun-pY-8Sp" firstAttribute="top" secondItem="huW-2a-ubS" secondAttribute="bottom" constant="8" id="0Tp-fi-Ycm"/>
-                            <constraint firstItem="0jw-jX-gq3" firstAttribute="top" secondItem="5iZ-Se-TVI" secondAttribute="bottom" constant="177" id="2dE-cT-gbW"/>
-                            <constraint firstItem="KGt-rY-usf" firstAttribute="leading" secondItem="O4r-Cc-o5L" secondAttribute="leadingMargin" id="AT4-Go-YXf"/>
-                            <constraint firstItem="huW-2a-ubS" firstAttribute="top" secondItem="KGt-rY-usf" secondAttribute="bottom" constant="8" id="AaT-cP-E1U"/>
-                            <constraint firstItem="i0T-Nd-GYI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mun-pY-8Sp" secondAttribute="trailing" symbolic="YES" id="CPx-Fu-q8i"/>
-                            <constraint firstItem="huW-2a-ubS" firstAttribute="leading" secondItem="O4r-Cc-o5L" secondAttribute="leadingMargin" id="Iyw-fH-FVQ"/>
-                            <constraint firstAttribute="trailing" secondItem="slR-Ef-AHB" secondAttribute="trailing" constant="94" id="JJI-bt-Cey"/>
-                            <constraint firstItem="slR-Ef-AHB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="huW-2a-ubS" secondAttribute="trailing" symbolic="YES" id="KjR-s8-vaK"/>
+                            <constraint firstItem="caK-Bp-D3b" firstAttribute="top" secondItem="4Ke-3c-ARk" secondAttribute="bottom" constant="50" id="7w8-F7-DSK"/>
+                            <constraint firstItem="4Ke-3c-ARk" firstAttribute="leading" secondItem="OA8-bv-mAW" secondAttribute="leading" constant="16" id="Il4-iD-WOf"/>
                             <constraint firstItem="0jw-jX-gq3" firstAttribute="leading" secondItem="O4r-Cc-o5L" secondAttribute="leadingMargin" id="L2B-ve-Q3V"/>
+                            <constraint firstItem="OA8-bv-mAW" firstAttribute="trailing" secondItem="SGS-Et-1Y3" secondAttribute="trailing" constant="16" id="LWK-hy-WiO"/>
                             <constraint firstItem="SGS-Et-1Y3" firstAttribute="top" secondItem="5iZ-Se-TVI" secondAttribute="bottom" constant="8" symbolic="YES" id="NBL-Le-9SI"/>
-                            <constraint firstItem="SGS-Et-1Y3" firstAttribute="leading" secondItem="0jw-jX-gq3" secondAttribute="leading" id="Q60-x6-dUR"/>
-                            <constraint firstItem="KGt-rY-usf" firstAttribute="top" secondItem="0jw-jX-gq3" secondAttribute="bottom" constant="16" id="ZxZ-vI-IFn"/>
-                            <constraint firstItem="SGS-Et-1Y3" firstAttribute="trailing" secondItem="0jw-jX-gq3" secondAttribute="trailing" id="au2-AZ-zFJ"/>
-                            <constraint firstItem="i0T-Nd-GYI" firstAttribute="top" secondItem="slR-Ef-AHB" secondAttribute="bottom" constant="8" id="cTO-At-sNn"/>
-                            <constraint firstAttribute="trailing" secondItem="GQs-nf-TzX" secondAttribute="trailing" constant="94" id="cxG-s2-cx4"/>
-                            <constraint firstItem="0jw-jX-gq3" firstAttribute="top" secondItem="SGS-Et-1Y3" secondAttribute="bottom" constant="8" symbolic="YES" id="dbG-QP-W4D"/>
-                            <constraint firstItem="mun-pY-8Sp" firstAttribute="leading" secondItem="O4r-Cc-o5L" secondAttribute="leadingMargin" id="fS2-FO-kT4"/>
-                            <constraint firstItem="GQs-nf-TzX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KGt-rY-usf" secondAttribute="trailing" symbolic="YES" id="gsp-Pg-ZfN"/>
+                            <constraint firstItem="1Qy-rx-vwc" firstAttribute="leading" secondItem="4Ke-3c-ARk" secondAttribute="trailing" constant="34" id="bNL-to-ahg"/>
+                            <constraint firstItem="SGS-Et-1Y3" firstAttribute="leading" secondItem="OA8-bv-mAW" secondAttribute="leading" constant="16" id="lzE-4J-wtF"/>
+                            <constraint firstItem="caK-Bp-D3b" firstAttribute="top" secondItem="1Qy-rx-vwc" secondAttribute="bottom" constant="50" id="mik-sv-2ri"/>
+                            <constraint firstItem="4Ke-3c-ARk" firstAttribute="top" secondItem="0jw-jX-gq3" secondAttribute="bottom" constant="16" id="qSJ-Bl-B6T"/>
+                            <constraint firstItem="1Qy-rx-vwc" firstAttribute="top" secondItem="0jw-jX-gq3" secondAttribute="bottom" constant="16" id="qpx-BN-qkk"/>
                             <constraint firstItem="0jw-jX-gq3" firstAttribute="trailing" secondItem="O4r-Cc-o5L" secondAttribute="trailingMargin" id="tcd-bJ-5Iw"/>
-                            <constraint firstItem="slR-Ef-AHB" firstAttribute="top" secondItem="GQs-nf-TzX" secondAttribute="bottom" constant="8" id="v8q-Ri-fgh"/>
-                            <constraint firstItem="GQs-nf-TzX" firstAttribute="top" secondItem="0jw-jX-gq3" secondAttribute="bottom" constant="16" id="yJA-DF-03J"/>
-                            <constraint firstAttribute="trailing" secondItem="i0T-Nd-GYI" secondAttribute="trailing" constant="94" id="yfp-TY-Zeq"/>
+                            <constraint firstItem="0jw-jX-gq3" firstAttribute="top" secondItem="SGS-Et-1Y3" secondAttribute="bottom" constant="8" id="xul-lS-DnE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OA8-bv-mAW"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bYB-zG-1Iv">
+                    <navigationItem key="navigationItem" title="Yantras" id="bYB-zG-1Iv">
                         <barButtonItem key="leftBarButtonItem" image="ic_menu" id="5y0-Ia-o8P"/>
                         <barButtonItem key="rightBarButtonItem" title="BUY NOW" id="p2V-mx-SRy">
                             <connections>
@@ -2661,7 +2646,7 @@ Yantra are of three kinds </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAH-SX-fcv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2948" y="3515"/>
+            <point key="canvasLocation" x="2948" y="3514.9925037481262"/>
         </scene>
         <!--Yantra Pop Up-->
         <scene sceneID="NkZ-NI-3yZ">
@@ -2870,7 +2855,7 @@ Yantra are of three kinds </string>
                                             </userDefinedRuntimeAttributes>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tt8-sO-1F0">
-                                            <rect key="frame" x="155" y="348" width="64" height="30"/>
+                                            <rect key="frame" x="105" y="348" width="164" height="30"/>
                                             <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <state key="normal" title="SUBMIT">
                                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -2882,14 +2867,14 @@ Yantra are of three kinds </string>
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="tt8-sO-1F0" secondAttribute="trailing" constant="140" id="7np-n3-Tt0"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="tt8-sO-1F0" secondAttribute="trailing" constant="90" id="7np-n3-Tt0"/>
                                         <constraint firstItem="pQy-Jh-k5J" firstAttribute="trailing" secondItem="P9Z-KI-9p1" secondAttribute="trailingMargin" id="9e3-3Q-wKA"/>
                                         <constraint firstItem="ial-G0-Rys" firstAttribute="top" secondItem="Pbb-aO-L3V" secondAttribute="bottom" constant="8" id="DZ2-K9-hYU"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="tt8-sO-1F0" secondAttribute="bottom" constant="18" id="HPX-Z0-pHe"/>
                                         <constraint firstItem="ial-G0-Rys" firstAttribute="leading" secondItem="P9Z-KI-9p1" secondAttribute="leadingMargin" id="HmO-fT-V2p"/>
                                         <constraint firstItem="pQy-Jh-k5J" firstAttribute="top" secondItem="ial-G0-Rys" secondAttribute="bottom" constant="8" id="Il9-CX-irK"/>
                                         <constraint firstItem="W5y-JE-SDo" firstAttribute="leading" secondItem="P9Z-KI-9p1" secondAttribute="leading" constant="16" id="N2Y-3d-GjP"/>
-                                        <constraint firstItem="tt8-sO-1F0" firstAttribute="leading" secondItem="P9Z-KI-9p1" secondAttribute="leadingMargin" constant="139" id="NxA-ym-YND"/>
+                                        <constraint firstItem="tt8-sO-1F0" firstAttribute="leading" secondItem="P9Z-KI-9p1" secondAttribute="leadingMargin" constant="89" id="NxA-ym-YND"/>
                                         <constraint firstItem="Pbb-aO-L3V" firstAttribute="top" secondItem="sgX-fv-2jW" secondAttribute="bottom" constant="8" id="QvE-2M-dIX"/>
                                         <constraint firstAttribute="trailing" secondItem="W5y-JE-SDo" secondAttribute="trailing" constant="16" id="UX6-FJ-lgz"/>
                                         <constraint firstItem="Pbb-aO-L3V" firstAttribute="trailing" secondItem="P9Z-KI-9p1" secondAttribute="trailingMargin" id="W5e-w3-LVk"/>
@@ -2931,7 +2916,7 @@ Yantra are of three kinds </string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ASv-dw-aeO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4880.8000000000002" y="4422.6386806596702"/>
+            <point key="canvasLocation" x="5144.8000000000002" y="4254.4227886056979"/>
         </scene>
         <!--Triangle Gemstones-->
         <scene sceneID="21l-T8-vAc">
@@ -3165,6 +3150,7 @@ Yantra are of three kinds </string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wWe-kv-Twj">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
