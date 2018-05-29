@@ -517,7 +517,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jwellery" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zad-rh-nVF">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jewellery" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zad-rh-nVF">
                                             <rect key="frame" x="75" y="8" width="100" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
@@ -1938,7 +1938,7 @@
                     <viewLayoutGuide key="safeArea" id="TeE-bX-ASm"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="9070.5" y="4262.5"/>
+            <point key="canvasLocation" x="9208" y="4237"/>
         </scene>
         <!--Jwellery Main-->
         <scene sceneID="6A2-kh-4vH">
@@ -2306,7 +2306,7 @@ Cg
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xec-1V-2uc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6191" y="616"/>
+            <point key="canvasLocation" x="6628" y="579"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Y2L-kT-APP">
@@ -2372,7 +2372,7 @@ Cg
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="224"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Dr-Lo-5kI">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Dr-Lo-5kI">
                                             <rect key="frame" x="16" y="11" width="343" height="202"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -4482,7 +4482,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8f-R8-Lk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8711.2000000000007" y="4256.2218890554723"/>
+            <point key="canvasLocation" x="8488" y="4225"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="AJS-yZ-0nY">
@@ -4584,7 +4584,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOe-cd-D8R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4538.3999999999996" y="4418.1409295352323"/>
+            <point key="canvasLocation" x="4363" y="4417"/>
         </scene>
         <!--Birthstones-->
         <scene sceneID="s9h-le-6Jy">
@@ -5284,7 +5284,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KdZ-6v-LOt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1329.5999999999999" y="4440.179910044978"/>
+            <point key="canvasLocation" x="-1618" y="4423"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="x2L-Oq-bGd">
@@ -8340,7 +8340,7 @@ Cgo
         <segue reference="30A-gL-4es"/>
         <segue reference="OG9-Eb-79K"/>
         <segue reference="edC-m0-78k"/>
-        <segue reference="6F6-DZ-L24"/>
+        <segue reference="BVk-Lg-ivb"/>
         <segue reference="f61-XW-1RG"/>
         <segue reference="WbO-Hf-BGX"/>
         <segue reference="OZS-50-oiM"/>

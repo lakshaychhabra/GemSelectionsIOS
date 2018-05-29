@@ -159,6 +159,8 @@ let notificationNme = NSNotification.Name("NotificationIdf")
 class CollectionViewForDiamodAndJwellerycell: UICollectionViewCell {
     
     @IBOutlet weak var _imageView: UIImageView!
+  
+    
 }
 
 
