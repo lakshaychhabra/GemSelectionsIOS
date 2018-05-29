@@ -196,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				0037B19F200FA40E003697BA /* HOME */,
-				00176EB92012376F009E92B8 /* Jwellery */,
 				4668A3F41F9FE63100CB64A7 /* AppDelegate.swift */,
 				466859611FAF4AB700340BDB /* MainMenu.swift */,
 				00F343F61FFD511300CF03D9 /* ConnectWithUs.swift */,
@@ -205,6 +204,7 @@
 				0042D7BB200157D100DF8722 /* Diamond.swift */,
 				0044357720068A4D008C4ECF /* YantraGroup.swift */,
 				0044357820068A4D008C4ECF /* YantraPopUp.swift */,
+				00176EB92012376F009E92B8 /* Jwellery */,
 				00D998102007D65500D10D3F /* Perfumes.swift */,
 				00C86E98200BB04D0060E04E /* GemstoneRecommendation.swift */,
 				00C86E9A200BC7810060E04E /* GemstoneAstrology.swift */,

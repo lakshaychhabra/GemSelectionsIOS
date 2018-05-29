@@ -38,7 +38,18 @@ class Cabochons: UITableViewController {
             self.tableView.reloadData()
     }
    
-  
+  //Background Image
+        let backgroundImage = UIImage.init(named: "Gemselection")
+        let midX = self.view.frame.width / 3
+        let midY = self.view.frame.height / 2
+        let backgroundImageView = UIImageView.init(frame: CGRect(x: midX, y: midY, width: midX, height: midY))
+        backgroundImageView.image = backgroundImage
+        backgroundImageView.contentMode = .scaleAspectFit
+        backgroundImageView.alpha = 0.1
+        
+        self.view.insertSubview(backgroundImageView, at: 0)
+        
+        
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -72,6 +83,9 @@ class Cabochons: UITableViewController {
             return cell
         }
     }
+    
+   
+    
    
 }
 

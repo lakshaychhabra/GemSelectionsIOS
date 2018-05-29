@@ -152,11 +152,15 @@ let notificationNme = NSNotification.Name("NotificationIdf")
         cell.layer.borderColor = UIColor.black.cgColor
         return cell
     }
+
 }
+
 
 class CollectionViewForDiamodAndJwellerycell: UICollectionViewCell {
     
     @IBOutlet weak var _imageView: UIImageView!
+  
+    
 }
 
 
