@@ -292,12 +292,6 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QCo-Ld-WEZ">
-                                            <rect key="frame" x="94.5" y="11" width="131" height="116"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="QCo-Ld-WEZ" secondAttribute="height" multiplier="131:116" id="URj-NG-h6O"/>
-                                            </constraints>
-                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="QCo-Ld-WEZ" firstAttribute="centerX" secondItem="YPp-rI-Txa" secondAttribute="centerX" id="3R8-yH-aAo"/>
