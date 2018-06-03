@@ -7,6 +7,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -271,20 +272,20 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="396.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QCo-Ld-WEZ">
-                                            <rect key="frame" x="109" y="8" width="141" height="128"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QCo-Ld-WEZ">
+                                            <rect key="frame" x="109" y="11" width="141" height="285"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="7vh-IA-sk3" secondAttribute="height" multiplier="96:59" constant="-4.8813559322034052" id="jcy-te-zpM"/>
+                                                <constraint firstAttribute="width" secondAttribute="height" multiplier="96:59" constant="-4.8813559322034052" id="jcy-te-zpM"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7vh-IA-sk3">
-                                            <rect key="frame" x="8" y="147" width="42" height="182.5"/>
+                                            <rect key="frame" x="8" y="304" width="304" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rpw-OY-Ddg">
-                                            <rect key="frame" x="8" y="337.5" width="42" height="45"/>
+                                            <rect key="frame" x="8" y="332.5" width="304" height="47.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Rpw-OY-Ddg" secondAttribute="height" multiplier="32:5" id="zKO-cg-Rdk"/>
                                             </constraints>
@@ -1650,7 +1651,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="1000" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2p-Zd-toa">
-                                            <rect key="frame" x="16" y="11" width="343" height="59"/>
+                                            <rect key="frame" x="8" y="11" width="304" height="59"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -1969,7 +1970,7 @@
             </objects>
             <point key="canvasLocation" x="9208" y="4237"/>
         </scene>
-        <!--Jwellery Main-->
+        <!--Jewellery-->
         <scene sceneID="6A2-kh-4vH">
             <objects>
                 <tableViewController id="NSy-Ew-yiA" customClass="JwelleryMain" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
@@ -2061,11 +2062,10 @@ Cg
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p12-qD-oDy">
-                                            <rect key="frame" x="16" y="11" width="343" height="84"/>
+                                            <rect key="frame" x="16" y="11" width="288" height="84"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="84" id="3I4-lP-6R7"/>
-                                                <constraint firstAttribute="width" secondItem="p12-qD-oDy" secondAttribute="height" multiplier="49:12" id="gZP-rL-UV9"/>
+                                                <constraint firstAttribute="height" constant="84" id="Xtd-EH-3p7"/>
                                             </constraints>
                                             <state key="normal" title="Create Your Own Jwellery">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2075,11 +2075,10 @@ Cg
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDz-lw-VqO">
-                                            <rect key="frame" x="16" y="103" width="343" height="84"/>
+                                            <rect key="frame" x="16" y="103" width="288" height="84"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="84" id="W76-s5-jxi"/>
-                                                <constraint firstAttribute="width" secondItem="dDz-lw-VqO" secondAttribute="height" multiplier="49:12" id="hdz-xy-S1G"/>
+                                                <constraint firstAttribute="height" constant="84" id="yoN-CN-gH1"/>
                                             </constraints>
                                             <state key="normal" title="Diamond Jwellery">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2090,11 +2089,10 @@ Cg
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IB-ix-YLG">
-                                            <rect key="frame" x="16" y="195" width="343" height="84"/>
+                                            <rect key="frame" x="16" y="195" width="288" height="84"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="84" id="LQE-gF-yms"/>
-                                                <constraint firstAttribute="width" secondItem="7IB-ix-YLG" secondAttribute="height" multiplier="49:12" id="PXf-YW-FXR"/>
                                             </constraints>
                                             <state key="normal" title="Victorian Jwellery">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2105,10 +2103,9 @@ Cg
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubq-xK-mNR">
-                                            <rect key="frame" x="16" y="287" width="343" height="84"/>
+                                            <rect key="frame" x="16" y="287" width="288" height="84"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="ubq-xK-mNR" secondAttribute="height" multiplier="49:12" id="IJO-Eu-cGM"/>
                                                 <constraint firstAttribute="height" constant="84" id="l9x-RO-XQX"/>
                                             </constraints>
                                             <state key="normal" title="Gem-Studded Jwellery">
@@ -2122,17 +2119,17 @@ Cg
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="7IB-ix-YLG" firstAttribute="leading" secondItem="IET-yU-RaN" secondAttribute="leadingMargin" id="3Lk-ml-QwX"/>
-                                        <constraint firstItem="ubq-xK-mNR" firstAttribute="top" secondItem="7IB-ix-YLG" secondAttribute="bottom" constant="8" id="CSD-hR-ywc"/>
-                                        <constraint firstItem="dDz-lw-VqO" firstAttribute="top" secondItem="p12-qD-oDy" secondAttribute="bottom" constant="8" id="MXm-ZI-Wlu"/>
+                                        <constraint firstItem="ubq-xK-mNR" firstAttribute="top" secondItem="7IB-ix-YLG" secondAttribute="bottom" constant="8" id="47g-Dk-Dgy"/>
+                                        <constraint firstItem="7IB-ix-YLG" firstAttribute="top" secondItem="dDz-lw-VqO" secondAttribute="bottom" constant="8" id="8aU-Fk-G2z"/>
                                         <constraint firstItem="dDz-lw-VqO" firstAttribute="trailing" secondItem="IET-yU-RaN" secondAttribute="trailingMargin" id="SPV-m2-bdV"/>
                                         <constraint firstItem="ubq-xK-mNR" firstAttribute="trailing" secondItem="IET-yU-RaN" secondAttribute="trailingMargin" id="ZH3-JL-T1c"/>
                                         <constraint firstItem="p12-qD-oDy" firstAttribute="trailing" secondItem="IET-yU-RaN" secondAttribute="trailingMargin" id="fGK-Jv-XtA"/>
                                         <constraint firstItem="p12-qD-oDy" firstAttribute="leading" secondItem="IET-yU-RaN" secondAttribute="leadingMargin" id="iMp-zj-vyb"/>
                                         <constraint firstItem="ubq-xK-mNR" firstAttribute="leading" secondItem="IET-yU-RaN" secondAttribute="leadingMargin" id="k9y-Wg-mHG"/>
                                         <constraint firstItem="dDz-lw-VqO" firstAttribute="leading" secondItem="IET-yU-RaN" secondAttribute="leadingMargin" id="nki-Ri-cBa"/>
-                                        <constraint firstItem="7IB-ix-YLG" firstAttribute="top" secondItem="dDz-lw-VqO" secondAttribute="bottom" constant="8" id="q6W-0J-juU"/>
                                         <constraint firstItem="7IB-ix-YLG" firstAttribute="trailing" secondItem="IET-yU-RaN" secondAttribute="trailingMargin" id="qT1-ms-G8A"/>
                                         <constraint firstItem="p12-qD-oDy" firstAttribute="top" secondItem="IET-yU-RaN" secondAttribute="topMargin" id="swE-hn-Hjc"/>
+                                        <constraint firstItem="dDz-lw-VqO" firstAttribute="top" secondItem="p12-qD-oDy" secondAttribute="bottom" constant="8" id="zNA-gt-05w"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -2148,7 +2145,7 @@ Cg
                             <outlet property="delegate" destination="NSy-Ew-yiA" id="ieb-gS-rWQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="0Mg-Ha-Euy">
+                    <navigationItem key="navigationItem" title="Jewellery" id="0Mg-Ha-Euy">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu" id="6iT-4C-Kha"/>
                         <barButtonItem key="rightBarButtonItem" title="BUY NOW" id="TTX-Sx-WBo">
                             <connections>
@@ -2162,7 +2159,7 @@ Cg
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aQT-dJ-8qN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4824.8000000000002" y="290.10494752623691"/>
+            <point key="canvasLocation" x="4824.375" y="289.43661971830988"/>
         </scene>
         <!--Design Your Own Jwellery-->
         <scene sceneID="Xtj-3q-AdF">
@@ -2219,14 +2216,14 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fM0-ot-egB">
-                                <rect key="frame" x="16" y="20" width="343" height="173"/>
+                                <rect key="frame" x="16" y="20" width="288" height="173"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="173" id="1bW-If-WS1"/>
                                 </constraints>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checkout the following diamond Jewels..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWR-xC-BMN">
-                                <rect key="frame" x="16" y="201" width="343" height="37"/>
+                                <rect key="frame" x="16" y="201" width="288" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="hfp-3U-5TS"/>
                                 </constraints>
@@ -2235,10 +2232,10 @@ Cg
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="0Kf-bV-rOd">
-                                <rect key="frame" x="16" y="246" width="343" height="401"/>
+                                <rect key="frame" x="16" y="246" width="288" height="302"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="subcell" textLabel="b1r-8p-7Gp" rowHeight="53" style="IBUITableViewCellStyleDefault" id="cBL-Xa-JxP">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="subcell" textLabel="b1r-8p-7Gp" rowHeight="53" style="IBUITableViewCellStyleDefault" id="cBL-Xa-JxP">
                                         <rect key="frame" x="0.0" y="55.5" width="288" height="53"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cBL-Xa-JxP" id="dE6-Ec-tnS">
@@ -3093,7 +3090,7 @@ Yantra are of three kinds </string>
                                 <rect key="frame" x="16" y="28" width="288" height="454"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="yantrarow" id="Hpc-8h-XIY" customClass="YantraTableCell" customModule="GemSelection" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="yantrarow" id="Hpc-8h-XIY" customClass="YantraTableCell" customModule="GemSelection" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.5" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hpc-8h-XIY" id="nYQ-Ch-reP">
