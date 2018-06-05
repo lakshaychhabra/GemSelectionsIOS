@@ -16,6 +16,8 @@ class ReturnPlicyViewController: UIViewController, WKUIDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "Return Policy"
+        
         let myURL = URL(string: "https:/www.youtube.com/embed/RyxQ1DsK4Kg")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
@@ -24,6 +26,7 @@ class ReturnPlicyViewController: UIViewController, WKUIDelegate{
     }
     
     override func loadView() {
+        
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
         webView.uiDelegate = self
