@@ -204,7 +204,7 @@ let homeData = HomeData()
             return 10
         }
     }
-    
+    /*
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "SectionHeader", for: indexPath) as! SectionHeaderCollectionReusableView
         
@@ -212,7 +212,7 @@ let homeData = HomeData()
         
         return header
         
-    }
+    }*/
     
     override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if(indexPath.row == 0){
