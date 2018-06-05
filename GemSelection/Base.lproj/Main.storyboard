@@ -8690,7 +8690,7 @@ By heating corundum in alumina powder with varying proportions of colouring agen
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bL-es-6ee">
                                 <rect key="frame" x="16" y="150" width="288" height="402"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">The most effective substitute for natural sapphire are Golden Topaz, Iolite, Kyanite, Tourmaline, Blue Spinel and Synthetic Sapphire, and methods for detecting the differences between the natural and the manufactured stone needs to be discussed. 
+                                <string key="text">The most effective substitute for natural sapphire are Golden Topaz, Iolite, Kyanite, Tourmaline, Blue Spinel and Synthetic Sapphire, and methods for detecting the differences between the natural and the manufactured stone needs to be discussed. 
 
 Golden Topaz, Iolite, Kyanite, Tourmaline and Blue Spinel are much light in weight so it is not very difficult to differentiate between these Gemstones and a Sapphire, especially if these are in loose form. The difficulty arises when one is faced with a Synthetic Gemstone. 
 
@@ -8712,7 +8712,7 @@ Kashmir sapphires owe their attractive milkiness to minute liquid or exsolved in
 
 With larger inclusions the host may disintegrate under the strain. Negative inclusions containing fluids crack and any liquid leaks out and may help to partially re-heal the tension fissures which have formed. These and other features can be detected by careful microscopic examination. Melted inclusions surrounded by tension halos are a characteristic feature of many treated rubies and sapphires. 
 
-By heating corundum in alumina powder with varying proportions of colouring agents (iron and titanium for blue sapphires, chromium for ruby, and iron with chromium for orange sapphires) it is possible to diffuse extra colour into a pre-formed or faceted stone. The temperatures and time involved may be in the 1800*C region for 24 hours.</mutableString>
+By heating corundum in alumina powder with varying proportions of colouring agents (iron and titanium for blue sapphires, chromium for ruby, and iron with chromium for orange sapphires) it is possible to diffuse extra colour into a pre-formed or faceted stone. The temperatures and time involved may be in the 1800*C region for 24 hours.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -8744,6 +8744,58 @@ By heating corundum in alumina powder with varying proportions of colouring agen
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hnU-yE-pu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2797.5" y="5230.9859154929582"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4ge-ck-qEj">
+            <objects>
+                <viewController id="LkS-35-3Vs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dts-Iw-edA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchasing Gems Online" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHx-PW-znr">
+                                <rect key="frame" x="16" y="36" width="288" height="58.5"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4o-27-4T3">
+                                <rect key="frame" x="16" y="102" width="288" height="450"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Internet is making the world a small place. You can get best of Goods and Services sitting in the comfort of your house. The rare merchandise that can not be possibly be procured in small towns and other far off areas can be procured on Internet through Online Shopping facility.
+
+Gem or Gemstones as they are known can be purchased through Online medium as they are easily send by Post/ Courier and the system of Insurance helps to keep both the seller and the buyer safe.
+
+But online shopping can be done only when you are sure that the place from where you are going to make your valuable purchase is a very important as you are going to trust a firm. 
+
+So, you should try to find the antecedents of the firm/company and be sure that you are going to deal with trustworthy organization.
+
+The best and the most trust worthy firm in the field of Online Sale of Gemstones, Rudraksha, Diamonds and Jewellery is Gem Selections, A unit of Khanna Gems Private Limited, Shop No.8, A-3 DDA Market, Janakpuri, New Delhi – 110058.
+
+Gem Selections, is in the field of Online Sale of Gemstones since 2002 when online business of started in India. In this long history of Online sales we have earned goodwill of our customers. The people we have served are greatly satisfied by the quality of products we have given and the deliveries have been quick and packing as per the demand of the packet.
+
+So, next time you plan to BUY GEMS ONLINE, trust none other than Gem Selections to give you the best always and evertime.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hhN-wP-chp" firstAttribute="trailing" secondItem="M4o-27-4T3" secondAttribute="trailing" constant="16" id="1CG-ws-S8o"/>
+                            <constraint firstItem="PHx-PW-znr" firstAttribute="leading" secondItem="hhN-wP-chp" secondAttribute="leading" constant="16" id="9ti-b9-eJw"/>
+                            <constraint firstItem="M4o-27-4T3" firstAttribute="leading" secondItem="hhN-wP-chp" secondAttribute="leading" constant="16" id="B2n-No-fcz"/>
+                            <constraint firstItem="M4o-27-4T3" firstAttribute="top" secondItem="PHx-PW-znr" secondAttribute="bottom" constant="8" id="CyN-CI-62e"/>
+                            <constraint firstItem="PHx-PW-znr" firstAttribute="top" secondItem="hhN-wP-chp" secondAttribute="top" constant="16" id="LWZ-yE-WAf"/>
+                            <constraint firstItem="hhN-wP-chp" firstAttribute="bottom" secondItem="M4o-27-4T3" secondAttribute="bottom" constant="16" id="a1P-RU-XvA"/>
+                            <constraint firstItem="hhN-wP-chp" firstAttribute="trailing" secondItem="PHx-PW-znr" secondAttribute="trailing" constant="16" id="hlg-BE-hNv"/>
+                            <constraint firstItem="hhN-wP-chp" firstAttribute="bottom" secondItem="PHx-PW-znr" secondAttribute="bottom" multiplier="6" id="yir-V2-5zF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hhN-wP-chp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U4h-QY-BDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3474" y="5231"/>
         </scene>
     </scenes>
     <resources>
