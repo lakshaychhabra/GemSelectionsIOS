@@ -8797,6 +8797,54 @@ So, next time you plan to BUY GEMS ONLINE, trust none other than Gem Selections
             </objects>
             <point key="canvasLocation" x="3474" y="5231"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="iG6-PO-3Ye">
+            <objects>
+                <viewController id="SlA-tT-ZDL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SOa-1f-fVg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where to buy in Delhi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igc-1Q-L7k">
+                                <rect key="frame" x="16" y="36" width="288" height="58.5"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H10-T4-Hzm">
+                                <rect key="frame" x="16" y="102" width="288" height="450"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Delhi has thousands of Shops selling Gemstones. Mostly we find posters outside Gold Shops informing the passers by that Gemstones like – Panna, Pukhraj, Gomed, Moti, Moonga, Lahsunia, Neelam, Manik are available.
+
+Most of these Shops are just trying to en cash the boom in the demand of Gemstones. The expertise in Gemstones is generally missing. They are just trading points – buying from some supplier and selling it to customers who are buying due to the trust they have on the Gold Shop.
+
+But as a wise customer you must buy Gemstones from an establishment that has a long history of dealing in Gemstones – and is owned by an expert in Gemology, who knows what he is buying and what he is selling.
+
+The reputation of shop keeper to be able to deliver value for money is very important.                                    The best place to buy Gemstones in Delhi is no doubts:
+
+Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Market, Janakpuri, New Delhi - 110058</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PLJ-Yi-MDC" firstAttribute="trailing" secondItem="H10-T4-Hzm" secondAttribute="trailing" constant="16" id="4aG-rH-vtG"/>
+                            <constraint firstItem="H10-T4-Hzm" firstAttribute="top" secondItem="Igc-1Q-L7k" secondAttribute="bottom" constant="8" id="9aJ-Bv-mHf"/>
+                            <constraint firstItem="Igc-1Q-L7k" firstAttribute="top" secondItem="PLJ-Yi-MDC" secondAttribute="top" constant="16" id="Fxw-4F-jlJ"/>
+                            <constraint firstItem="H10-T4-Hzm" firstAttribute="leading" secondItem="PLJ-Yi-MDC" secondAttribute="leading" constant="16" id="MEh-nt-jOH"/>
+                            <constraint firstItem="PLJ-Yi-MDC" firstAttribute="trailing" secondItem="Igc-1Q-L7k" secondAttribute="trailing" constant="16" id="ZPO-pC-cWT"/>
+                            <constraint firstItem="Igc-1Q-L7k" firstAttribute="leading" secondItem="PLJ-Yi-MDC" secondAttribute="leading" constant="16" id="f08-Cv-oOZ"/>
+                            <constraint firstItem="PLJ-Yi-MDC" firstAttribute="bottom" secondItem="H10-T4-Hzm" secondAttribute="bottom" constant="16" id="n0f-lm-zLb"/>
+                            <constraint firstItem="PLJ-Yi-MDC" firstAttribute="bottom" secondItem="Igc-1Q-L7k" secondAttribute="bottom" multiplier="6" id="v4U-2s-3mT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PLJ-Yi-MDC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ooI-2P-Hz1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4172" y="5231"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Gemselection" width="220" height="240"/>
