@@ -8673,6 +8673,78 @@ By heating corundum in alumina powder with varying proportions of colouring agen
             </objects>
             <point key="canvasLocation" x="2132" y="5231"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="LjN-CW-gfi">
+            <objects>
+                <viewController id="2Cx-bi-LZD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fXV-4L-3ap">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Things to keep in mind while" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZa-Ox-cYp">
+                                <rect key="frame" x="16" y="36" width="288" height="45"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bL-es-6ee">
+                                <rect key="frame" x="16" y="150" width="288" height="402"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">The most effective substitute for natural sapphire are Golden Topaz, Iolite, Kyanite, Tourmaline, Blue Spinel and Synthetic Sapphire, and methods for detecting the differences between the natural and the manufactured stone needs to be discussed. 
+
+Golden Topaz, Iolite, Kyanite, Tourmaline and Blue Spinel are much light in weight so it is not very difficult to differentiate between these Gemstones and a Sapphire, especially if these are in loose form. The difficulty arises when one is faced with a Synthetic Gemstone. 
+
+With the market full of Gemstones which look like a Sapphire 
+
+The First step in testing a sapphire like -blue Gemstone is to measure its Refractive Index on a standard Refractometer, using sodium light or a good colour filter. Where readings of 1.76-1.77 are visible the stone must be either a natural or a synthetic sapphire. 
+
+The second step is to check with a 20x magnifying glass and analyze its inclusions if the inclusions have natural character and features then a Gemmologist can be nearly certain that the Gemstone in front of him is a natural Stone. . 
+
+Remember that for distinction of natural from synthetic sapphire, the physical tests like Refractive Index or Specific Gravity do not help the Gemologist. The most reliable test involves an examination of the internal features of the stone. With sapphire, mere inspection with the naked eye is sometimes sufficient if the stone be immersed in a liquid such as 1-bromonaphthalene and viewed against a white background. In fact an egg-cup full of water will often suffice to show the distribution of colour, in the natural stones such banding is straight in zones. 
+
+Natural stones almost invariably carry within them clear signs of their slow crystallization in an environment consisting of chemically complex liquors and mineralizing agents. It is only to be expected that some of the substances surrounding the growing crystals should become impounded and remain preserved within the sapphire as frozen witnesses for our interrogation years later. These positive signs, included in natural sapphires, apart from the straight zones of colour already mentioned, vary somewhat according to the locality where the sapphire was mined. 
+
+Sri Lankan sapphires contain typical ‘feathers’ consisting of layers of minute crystalline or liquid inclusions which reflect light from one plane often slightly curved, like a thumb or fingerprint. However, feathers of similar appearance occur in many of the flux-grown synthetic sapphires. Whereas in natural stones the ‘droplets of the feathers contain liquid, synthetic feathers consist of particles of solid flux with or without gas in the cavities. Examination by reflected light assists in the elucidation of the nature of the droplets and may also reveal the presence of shiny crystals of platinum which are sometimes seen in the flux-grown material. Other typical features of Sri Lankan sapphires are rounded crystals of zircon, showing high relief and surrounded by crack-like tension haloes three-phase inclusions containing liquid, a movable gas bubble, and well-shaped crystals of hematite or other minerals are also not uncommon in Sri Lankan sapphires. A form of long fine silk is also common in Sri Lankan Gemstones, but these and Burma stones may show both coarse and fine and long and short crystals. Sapphire of basaltic origin (Thai, Cambodian, Australian, and some other corundum) may contain crystals of Garnet, and Feldspar are seen in Thai and Cambodian (Pailin) stones. 
+
+Thai Sapphires resemble Thai rubies in frequently containing opaque crystals (some are pyrochlore) surrounded by a disc-shaped lacy leather. Hexagonal growth structures occur in many sapphires, but those from Australia and Montana show them well: it must be remembered, however, that these hexagonal structures have also been seen in the synthetics. 
+
+Kashmir sapphires owe their attractive milkiness to minute liquid or exsolved inclusions often in hazy bands and nebulous clouds. 
+
+With larger inclusions the host may disintegrate under the strain. Negative inclusions containing fluids crack and any liquid leaks out and may help to partially re-heal the tension fissures which have formed. These and other features can be detected by careful microscopic examination. Melted inclusions surrounded by tension halos are a characteristic feature of many treated rubies and sapphires. 
+
+By heating corundum in alumina powder with varying proportions of colouring agents (iron and titanium for blue sapphires, chromium for ruby, and iron with chromium for orange sapphires) it is possible to diffuse extra colour into a pre-formed or faceted stone. The temperatures and time involved may be in the 1800*C region for 24 hours.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="buying a gemstone." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18i-Ij-EOe">
+                                <rect key="frame" x="16" y="89" width="288" height="53"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8bb-w0-7L5" firstAttribute="bottom" secondItem="QZa-Ox-cYp" secondAttribute="bottom" multiplier="7" id="1FC-dl-Ckd"/>
+                            <constraint firstItem="8bb-w0-7L5" firstAttribute="trailing" secondItem="18i-Ij-EOe" secondAttribute="trailing" constant="16" id="8AQ-Ae-e9f"/>
+                            <constraint firstItem="8bb-w0-7L5" firstAttribute="bottom" secondItem="18i-Ij-EOe" secondAttribute="bottom" multiplier="4" id="9TM-Jt-KRN"/>
+                            <constraint firstItem="QZa-Ox-cYp" firstAttribute="top" secondItem="8bb-w0-7L5" secondAttribute="top" constant="16" id="WdQ-xl-leL"/>
+                            <constraint firstItem="8bb-w0-7L5" firstAttribute="trailing" secondItem="QZa-Ox-cYp" secondAttribute="trailing" constant="16" id="c26-Pv-0P6"/>
+                            <constraint firstItem="18i-Ij-EOe" firstAttribute="leading" secondItem="8bb-w0-7L5" secondAttribute="leading" constant="16" id="cec-vM-4nr"/>
+                            <constraint firstItem="0bL-es-6ee" firstAttribute="top" secondItem="18i-Ij-EOe" secondAttribute="bottom" constant="8" id="d7r-a4-wNT"/>
+                            <constraint firstItem="18i-Ij-EOe" firstAttribute="top" secondItem="QZa-Ox-cYp" secondAttribute="bottom" constant="8" id="f0J-aW-djn"/>
+                            <constraint firstItem="8bb-w0-7L5" firstAttribute="trailing" secondItem="0bL-es-6ee" secondAttribute="trailing" constant="16" id="faZ-US-vud"/>
+                            <constraint firstItem="8bb-w0-7L5" firstAttribute="bottom" secondItem="0bL-es-6ee" secondAttribute="bottom" constant="16" id="klg-uh-VQs"/>
+                            <constraint firstItem="QZa-Ox-cYp" firstAttribute="leading" secondItem="8bb-w0-7L5" secondAttribute="leading" constant="16" id="plC-7Q-sHO"/>
+                            <constraint firstItem="0bL-es-6ee" firstAttribute="leading" secondItem="8bb-w0-7L5" secondAttribute="leading" constant="16" id="uCm-D8-3e8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8bb-w0-7L5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hnU-yE-pu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2797.5" y="5230.9859154929582"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Gemselection" width="220" height="240"/>
