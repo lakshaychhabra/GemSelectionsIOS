@@ -16,6 +16,9 @@
         <array key="Arial.ttf">
             <string>ArialMT</string>
         </array>
+        <array key="TimesNewRomanBold.ttf">
+            <string>TimesNewRomanPS-BoldMT</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Precious Gemstones-->
@@ -3825,11 +3828,11 @@ ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA
                                                             </attributes>
                                                         </fragment>
                                                         <fragment>
-                                                            <string key="content">Once you have decided to wear a Gem you should procure it from a vendor and get it set from a person/organization specializing in setting of Gems. 
+                                                            <mutableString key="content">Once you have decided to wear a Gem you should procure it from a vendor and get it set from a person/organization specializing in setting of Gems. 
 
 When the ring/pendent is ready bring it home and dip it in pure desi ghee. On the day prescribed for that Gem take it out from the bowl containing ghee and wash it with warm Ganga Jal mixed with Saffron and wear it after chanting the prescribed mantras before 7.00 AM. 
 
-Then to recharge it take it off one week before Mahashivratri day and follow the same process and wear it on the Mahashivratri day before 7.00 AM</string>
+Then to recharge it take it off one week before Mahashivratri day and follow the same process and wear it on the Mahashivratri day before 7.00 AM</mutableString>
                                                             <attributes>
                                                                 <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
@@ -3903,7 +3906,7 @@ Cgo
                                                             </attributes>
                                                         </fragment>
                                                         <fragment>
-                                                            <string key="content">Our physical body is enveloped by an Energy Body which the Veda’s referred to as AURA. This Aura is found around living as well as non living objects. You can feel this Aura and even measure it certain instruments available in the market. Our conscious and sub conscious mind along with our nervous system and other vital organs are greatly influenced by this AURA.
+                                                            <mutableString key="content">Our physical body is enveloped by an Energy Body which the Veda’s referred to as AURA. This Aura is found around living as well as non living objects. You can feel this Aura and even measure it certain instruments available in the market. Our conscious and sub conscious mind along with our nervous system and other vital organs are greatly influenced by this AURA.
 
 The Gemstones have a strong Aura and are a ready source of Colours that are present in the cosmic rays of the planets and the Aura. 
 
@@ -3911,7 +3914,7 @@ The Aura around Humans is greatly influenced by the Cosmic Rays which are attrac
 
 By wearing Gemstones, we start the process of absorbing additional Cosmic rays of Gemstones so that our Aura starts changing. When our Aura changes – there are changes in our thought process as well as changes in the way people perceive us and our actions.
 
-Wearing the Gemstones that are favourable for you will improve your AURA the people that come in contact with you will start having a different impression about you. This process will always lead to better standing in the Society, Company, Family and so on.             </string>
+Wearing the Gemstones that are favourable for you will improve your AURA the people that come in contact with you will start having a different impression about you. This process will always lead to better standing in the Society, Company, Family and so on.             </mutableString>
                                                             <attributes>
                                                                 <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
@@ -4322,7 +4325,7 @@ By heating corundum in alumina powder with varying proportions of colouring agen
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCw-C1-OLH">
-                                                    <rect key="frame" x="8" y="2962" width="359" height="51"/>
+                                                    <rect key="frame" x="8" y="2962" width="296" height="51"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Q. Things to keep in mind while buying a gemstone.">
@@ -4335,7 +4338,7 @@ By heating corundum in alumina powder with varying proportions of colouring agen
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="80" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8EW-A9-6ad">
-                                                    <rect key="frame" x="8" y="3021" width="359" height="1068"/>
+                                                    <rect key="frame" x="8" y="3021" width="304" height="1068"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <attributedString key="attributedText">
                                                         <fragment>
@@ -4515,7 +4518,51 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9TP-VR-LUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="796" y="3436.7316341829087"/>
+            <point key="canvasLocation" x="1296" y="4440"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qDd-et-zN4">
+            <objects>
+                <viewController id="3AF-mc-UGE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rru-bi-znQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How To Wear Gems" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjC-cx-cKr">
+                                <rect key="frame" x="16" y="36" width="288" height="58.5"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgc-xC-jGZ">
+                                <rect key="frame" x="16" y="102" width="288" height="450"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Once you have decided to wear a Gem you should procure it from a vendor and get it set from a person/organization specializing in setting of Gems. 
+
+When the ring/pendent is ready bring it home and dip it in pure desi ghee. On the day prescribed for that Gem take it out from the bowl containing ghee and wash it with warm Ganga Jal mixed with Saffron and wear it after chanting the prescribed mantras before 7.00 AM. 
+
+Then to recharge it take it off one week before Mahashivratri day and follow the same process and wear it on the Mahashivratri day before 7.00 AM </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rgc-xC-jGZ" firstAttribute="leading" secondItem="fkQ-G6-LyP" secondAttribute="leading" constant="16" id="2j6-Sb-e7l"/>
+                            <constraint firstItem="fkQ-G6-LyP" firstAttribute="bottom" secondItem="Rgc-xC-jGZ" secondAttribute="bottom" constant="16" id="8RD-nD-513"/>
+                            <constraint firstItem="OjC-cx-cKr" firstAttribute="leading" secondItem="fkQ-G6-LyP" secondAttribute="leading" constant="16" id="OzN-Lu-sfg"/>
+                            <constraint firstItem="fkQ-G6-LyP" firstAttribute="bottom" secondItem="OjC-cx-cKr" secondAttribute="bottom" multiplier="6" id="Y2A-eb-Htt"/>
+                            <constraint firstItem="fkQ-G6-LyP" firstAttribute="trailing" secondItem="Rgc-xC-jGZ" secondAttribute="trailing" constant="16" id="afY-n2-h0x"/>
+                            <constraint firstItem="fkQ-G6-LyP" firstAttribute="trailing" secondItem="OjC-cx-cKr" secondAttribute="trailing" constant="16" id="luf-ec-CSR"/>
+                            <constraint firstItem="Rgc-xC-jGZ" firstAttribute="top" secondItem="OjC-cx-cKr" secondAttribute="bottom" constant="8" id="qGc-6L-zXn"/>
+                            <constraint firstItem="OjC-cx-cKr" firstAttribute="top" secondItem="fkQ-G6-LyP" secondAttribute="top" constant="16" id="zKE-Oa-vVu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fkQ-G6-LyP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u31-FK-0do" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195" y="5231"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zWI-4A-zAv">
@@ -4534,7 +4581,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O6Z-aT-VuI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="456" y="3436.2818590704651"/>
+            <point key="canvasLocation" x="606" y="4440"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sYf-3e-fkF">
@@ -4762,7 +4809,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
                     <viewLayoutGuide key="safeArea" id="csS-k8-7zu"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="427.5" y="4421.8309859154933"/>
+            <point key="canvasLocation" x="-122" y="4440"/>
         </scene>
         <!--Cabochon Stones-->
         <scene sceneID="Xmb-3F-9GA">
@@ -4893,7 +4940,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8wU-EP-Xhd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2152.8000000000002" y="4422.6386806596702"/>
+            <point key="canvasLocation" x="2576" y="4454"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9js-pe-AZx">
@@ -5326,7 +5373,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HP0-nb-MfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1298" y="4454"/>
+            <point key="canvasLocation" x="1971" y="4454"/>
         </scene>
         <!--Semi Precious Gems-->
         <scene sceneID="5ps-ZJ-8NY">
@@ -5448,7 +5495,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMI-ac-V6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="4421.739130434783"/>
+            <point key="canvasLocation" x="-954" y="4423"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EIv-Ei-kEQ">
@@ -8467,6 +8514,102 @@ Cgo
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6tI-SU-QgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9417" y="-2557"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="br0-38-PhO">
+            <objects>
+                <viewController id="Rw7-xU-Bzy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2w6-Xg-fn0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Gemstones Work" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4r-2y-U67">
+                                <rect key="frame" x="16" y="36" width="288" height="58.5"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjK-Kw-Lg9">
+                                <rect key="frame" x="16" y="102" width="288" height="450"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Our physical body is enveloped by an Energy Body which the Veda’s referred to as AURA. This Aura is found around living as well as non living objects. You can feel this Aura and even measure it certain instruments available in the market. Our conscious and sub conscious mind along with our nervous system and other vital organs are greatly influenced by this AURA.
+
+The Gemstones have a strong Aura and are a ready source of Colours that are present in the cosmic rays of the planets and the Aura. 
+
+The Aura around Humans is greatly influenced by the Cosmic Rays which are attracted by the Gemstones and then passed on to Human bodies. 
+
+By wearing Gemstones, we start the process of absorbing additional Cosmic rays of Gemstones so that our Aura starts changing. When our Aura changes – there are changes in our thought process as well as changes in the way people perceive us and our actions.
+
+Wearing the Gemstones that are favourable for you will improve your AURA the people that come in contact with you will start having a different impression about you. This process will always lead to better standing in the Society, Company, Family and so on.  </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P4r-2y-U67" firstAttribute="leading" secondItem="g2k-ov-gV6" secondAttribute="leading" constant="16" id="Mct-rr-Ofd"/>
+                            <constraint firstItem="g2k-ov-gV6" firstAttribute="trailing" secondItem="P4r-2y-U67" secondAttribute="trailing" constant="16" id="PJe-Bm-Caq"/>
+                            <constraint firstItem="vjK-Kw-Lg9" firstAttribute="top" secondItem="P4r-2y-U67" secondAttribute="bottom" constant="8" id="Q4B-c6-tgS"/>
+                            <constraint firstItem="P4r-2y-U67" firstAttribute="top" secondItem="g2k-ov-gV6" secondAttribute="top" constant="16" id="Uyd-4v-f1H"/>
+                            <constraint firstItem="g2k-ov-gV6" firstAttribute="bottom" secondItem="vjK-Kw-Lg9" secondAttribute="bottom" constant="16" id="dm7-XI-rhM"/>
+                            <constraint firstItem="g2k-ov-gV6" firstAttribute="trailing" secondItem="vjK-Kw-Lg9" secondAttribute="trailing" constant="16" id="iSh-ft-4WO"/>
+                            <constraint firstItem="g2k-ov-gV6" firstAttribute="bottom" secondItem="P4r-2y-U67" secondAttribute="bottom" multiplier="6" id="l5u-lk-7xc"/>
+                            <constraint firstItem="vjK-Kw-Lg9" firstAttribute="leading" secondItem="g2k-ov-gV6" secondAttribute="leading" constant="16" id="l7e-k8-ZOe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g2k-ov-gV6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJn-GL-4wM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840" y="5232"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cEz-Q3-8lS">
+            <objects>
+                <viewController id="XUz-jn-12D" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rvt-os-mdb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to take care of your Pearls" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcE-eF-Ql4">
+                                <rect key="frame" x="16" y="36" width="288" height="58.5"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmn-OT-nPR">
+                                <rect key="frame" x="16" y="102" width="288" height="450"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">1. Keep away from chemicals:Always keep Pearls away from chemicals which may be in the form of perfumes other makeup products, hair sprays &amp; styling gels. 
+
+2. Wear them last – remove them first:Always wear pearls in the last part of your dress up and remove them first of all. 
+
+3. Wipe then before storing them: Whip your pearls with a moist cotton &amp; cloth and then always store them in pure cotton cloth (normal) away from heat and dust. 
+
+4. Jewellery cleaners &amp; detergents should be avoided: Near use Jewellery cleaners or detergents to wash Pearls they should just be washed with plain water or salt water. 
+
+5. Use dry cotton cloth for polish: You can use dry cotton cloth for bringing shine to sour pearls.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="16c-gb-VVl" firstAttribute="trailing" secondItem="IcE-eF-Ql4" secondAttribute="trailing" constant="16" id="6qE-NA-V9l"/>
+                            <constraint firstItem="nmn-OT-nPR" firstAttribute="leading" secondItem="16c-gb-VVl" secondAttribute="leading" constant="16" id="KM1-Fx-Djr"/>
+                            <constraint firstItem="IcE-eF-Ql4" firstAttribute="leading" secondItem="16c-gb-VVl" secondAttribute="leading" constant="16" id="L1Z-cZ-xII"/>
+                            <constraint firstItem="16c-gb-VVl" firstAttribute="bottom" secondItem="IcE-eF-Ql4" secondAttribute="bottom" multiplier="6" id="S7K-wC-i7k"/>
+                            <constraint firstItem="16c-gb-VVl" firstAttribute="bottom" secondItem="nmn-OT-nPR" secondAttribute="bottom" constant="16" id="WQf-Oc-qfF"/>
+                            <constraint firstItem="IcE-eF-Ql4" firstAttribute="top" secondItem="16c-gb-VVl" secondAttribute="top" constant="16" id="dh6-ux-BET"/>
+                            <constraint firstItem="16c-gb-VVl" firstAttribute="trailing" secondItem="nmn-OT-nPR" secondAttribute="trailing" constant="16" id="f9R-fo-Ibo"/>
+                            <constraint firstItem="nmn-OT-nPR" firstAttribute="top" secondItem="IcE-eF-Ql4" secondAttribute="bottom" constant="8" id="pk6-yr-UAp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="16c-gb-VVl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MQZ-eJ-dz1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485" y="5231"/>
         </scene>
     </scenes>
     <resources>
