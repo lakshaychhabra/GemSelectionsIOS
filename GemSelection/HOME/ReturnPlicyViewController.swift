@@ -11,10 +11,12 @@ import WebKit
 
 class ReturnPlicyViewController: UIViewController, WKUIDelegate{
 
+    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var policyLabel: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myURL = URL(string: "ps://www.apple.com")
+        let myURL = URL(string: "https:/www.youtube.com/embed/RyxQ1DsK4Kg")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
 

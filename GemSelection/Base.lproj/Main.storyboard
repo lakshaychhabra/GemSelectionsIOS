@@ -2984,6 +2984,10 @@ Yantra are of three kinds </string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MXK-5q-Vml"/>
                     </view>
+                    <connections>
+                        <outlet property="policyLabel" destination="qaz-oG-WjN" id="USa-Bo-CuA"/>
+                        <outlet property="webView" destination="ZQv-WR-n6d" id="ulJ-ba-EoY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1jc-VQ-a8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
