@@ -51,6 +51,8 @@
 		4668A3FF1F9FE63100CB64A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4668A3FD1F9FE63100CB64A7 /* LaunchScreen.storyboard */; };
 		9ECE7629DEBBECF14EBCB29C /* Pods_GemSelection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B6B50811E25A6DA7F3BFA3 /* Pods_GemSelection.framework */; };
 		F12E278820BD53910000E82C /* SectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12E278720BD53910000E82C /* SectionHeaderCollectionReusableView.swift */; };
+		F15C797220C84CB3009ACFA3 /* HowToWearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15C797120C84CB3009ACFA3 /* HowToWearViewController.swift */; };
+		F15C797420C84D36009ACFA3 /* HowGemsStonesWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15C797320C84D36009ACFA3 /* HowGemsStonesWorksViewController.swift */; };
 		F1BF857520C6F8C500881604 /* ReturnPlicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BF857420C6F8C500881604 /* ReturnPlicyViewController.swift */; };
 		F1C80B3120BC9FA200AF0F88 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C80B3020BC9FA200AF0F88 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
@@ -106,6 +108,8 @@
 		4668A4001F9FE63100CB64A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		929E9134C2D0791ABF2605B6 /* Pods-GemSelection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemSelection.release.xcconfig"; path = "Pods/Target Support Files/Pods-GemSelection/Pods-GemSelection.release.xcconfig"; sourceTree = "<group>"; };
 		F12E278720BD53910000E82C /* SectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		F15C797120C84CB3009ACFA3 /* HowToWearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToWearViewController.swift; sourceTree = "<group>"; };
+		F15C797320C84D36009ACFA3 /* HowGemsStonesWorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowGemsStonesWorksViewController.swift; sourceTree = "<group>"; };
 		F1BF857420C6F8C500881604 /* ReturnPlicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnPlicyViewController.swift; sourceTree = "<group>"; };
 		F1C80B3020BC9FA200AF0F88 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +202,7 @@
 		4668A3F31F9FE63100CB64A7 /* GemSelection */ = {
 			isa = PBXGroup;
 			children = (
+				F15C797020C84C45009ACFA3 /* FAQScreens */,
 				0037B19F200FA40E003697BA /* HOME */,
 				4668A3F41F9FE63100CB64A7 /* AppDelegate.swift */,
 				466859611FAF4AB700340BDB /* MainMenu.swift */,
@@ -250,6 +255,15 @@
 				42B6B50811E25A6DA7F3BFA3 /* Pods_GemSelection.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F15C797020C84C45009ACFA3 /* FAQScreens */ = {
+			isa = PBXGroup;
+			children = (
+				F15C797120C84CB3009ACFA3 /* HowToWearViewController.swift */,
+				F15C797320C84D36009ACFA3 /* HowGemsStonesWorksViewController.swift */,
+			);
+			path = FAQScreens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +424,7 @@
 				00176ECD201394A2009E92B8 /* RudrakshaPopupView.swift in Sources */,
 				00C86E9D200BE1AE0060E04E /* TriangleGemstones.swift in Sources */,
 				00F85A0D201883C800796A8B /* SemiPreciousGemsData.swift in Sources */,
+				F15C797420C84D36009ACFA3 /* HowGemsStonesWorksViewController.swift in Sources */,
 				0037B19A200E8FCF003697BA /* HomePageData.swift in Sources */,
 				00DDCB731FFD402200F00415 /* WebViewBig.swift in Sources */,
 				F12E278820BD53910000E82C /* SectionHeaderCollectionReusableView.swift in Sources */,
@@ -434,6 +449,7 @@
 				00A594AF2006A28F009ACA05 /* handiSideBar.swift in Sources */,
 				00C86E99200BB04E0060E04E /* GemstoneRecommendation.swift in Sources */,
 				00F343F71FFD511300CF03D9 /* ConnectWithUs.swift in Sources */,
+				F15C797220C84CB3009ACFA3 /* HowToWearViewController.swift in Sources */,
 				0042D7BC200157D100DF8722 /* Diamond.swift in Sources */,
 				00A594AD2006A28F009ACA05 /* HandiMultipleView.swift in Sources */,
 			);
