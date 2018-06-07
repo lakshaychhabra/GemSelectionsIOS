@@ -68,15 +68,18 @@ override func viewDidLoad() {
 //DROP DOWN INITIALIZATION :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     let evc = Extra()
 func initialiazeDropDownMain(){
-        dropDownMain.dataSource = ["Govt. Lab Certificates    ▶︎", "Testimonials","About Shipment","Membership                    ▶︎","Astrology","Puja", "Frequently Asked Ques.","About                              ▶︎","Exit", "Return Policy"]
+        dropDownMain.dataSource = ["Govt. Lab Certificates    ▶︎", "Testimonials","About Shipment","Membership                    ▶︎","Astrology","Puja", "Frequently Asked Ques.","About                              ▶︎", "Return Policy","Exit"]
         dropDownMain.selectionAction = { [unowned self] (index: Int, item: String) in
             self.elementSelectedInMainDropDown = index
             
-            if self.elementSelectedInMainDropDown == 9{
+            if self.elementSelectedInMainDropDown == 8{
                 print("return selected")
+                
+                let vc = ReturnPlicyViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
             }
             
-            if self.elementSelectedInMainDropDown == 8{
+            if self.elementSelectedInMainDropDown == 9{
                 exit(0);
             }
             if self.elementSelectedInMainDropDown == 1{
