@@ -13,6 +13,8 @@ target 'GemSelection' do
   pod 'DropDown'
   pod 'GoogleSignIn'
   pod 'Firebase/Storage'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
 pod 'FirebaseUI/Storage'
 pod 'MarqueeLabel'
 

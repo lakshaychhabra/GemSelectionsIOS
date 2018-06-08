@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
-class LoginViewController: UIViewController, GIDSignInDelegate {
+class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
     
     var appUser : User?
     var ref: DatabaseReference!
@@ -23,13 +23,15 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        GIDSignIn.sharedInstance().uiDelegate = self as! GIDSignInUIDelegate
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().delegate = self
         
         ref = Database.database().reference()
         signupBtn.setTitleColor(UIColor.black, for: .normal)
         signInView.frame = CGRect(x: 16, y: 227, width: self.view.frame.size.width/1.09, height: self.view.frame.size.height/3.92)
         signupBtn.setTitleColor(UIColor.gray, for: .normal)
         self.view.addSubview(signInView)
+        googleButton.addTarget(self, action: #selector(handleGoogleSignin), for: .touchUpInside)
     }
     
     @IBOutlet weak var signinBtn: UIButton!
@@ -44,6 +46,14 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                        accessToken: authentication.accessToken)
         
+        
+        print(user.profile.email)
+        print(user.profile.givenName!)
+        
+        isloggedin = 1
+        self.performSegue(withIdentifier: "signinsuccess", sender: self)
+        
+        /*
         Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
             if let error = error {
                 // ...
@@ -53,8 +63,7 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
             // User is signed in
             // ...
             
-            print(user.profile.email)
-            print(user.profile.givenName!)
+            
             
             print(authResult?.user.displayName)
             print(authResult?.user.email)
@@ -62,14 +71,18 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
                 self.appUser = User(mail: mail, first_name: fname, last_name: lname, id:1 as? Int)
             }
             
-            isloggedin = 1
-            self.performSegue(withIdentifier: "signinsuccess", sender: self)
-        }
+         
+        }*/
     }
+    
+    @objc func handleGoogleSignin(){
+        print("SIGNING IN .........")
+        GIDSignIn.sharedInstance().signIn()
+    }
+    
+    
     @IBAction func signInAction(_ sender: Any) {
         
-        GIDSignIn.sharedInstance().signIn()
-        /*
         guard let email = signInEmail.text else {
             return
         };guard let password = signInPassword.text else {
@@ -82,11 +95,8 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
                 print("\n\nsignin")
                 isloggedin = 1
                 self.performSegue(withIdentifier: "signinsuccess", sender: self)
-                
             }
-        }*/
-        
-        
+        }
     }
     
     @IBAction func dismissViewController(_ sender: UIButton) {
@@ -96,8 +106,6 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
     @IBOutlet weak var signInEmail: UITextField!
     @IBOutlet weak var signInPassword: UITextField!
 
-
-  
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         signInEmail.resignFirstResponder()
@@ -120,8 +128,8 @@ class forgotViewController: UIViewController {
     }
     @IBAction func facebookSignin(_ sender: UIButton) {
     }
-    @IBAction func GoogleSignin(_ sender: UIButton) {
-    }
+    
+    
     @IBAction func sendResetBtn(_ sender: Any) {
             guard let email = forgotEmailTF.text else {
                 return

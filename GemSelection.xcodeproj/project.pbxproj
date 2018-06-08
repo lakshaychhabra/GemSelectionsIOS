@@ -629,11 +629,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V2XCNE93DB;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = GemSelection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atlas.GemSelection2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlas.GemSelection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GemSelectionapp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -650,11 +650,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V2XCNE93DB;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = GemSelection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atlas.GemSelection2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlas.GemSelection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GemSelectionapp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
