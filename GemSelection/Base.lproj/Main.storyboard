@@ -12,6 +12,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arial.ttf">
+            <string>ArialMT</string>
+        </array>
+        <array key="TimesNewRomanBold.ttf">
+            <string>TimesNewRomanPS-BoldMT</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Precious Gemstones-->
         <scene sceneID="wbj-J0-0lP">
@@ -3860,10 +3868,10 @@ Yantra are of three kinds </string>
             </objects>
             <point key="canvasLocation" x="1296" y="4440"/>
         </scene>
-        <!--View Controller-->
+        <!--How To Wear View Controller-->
         <scene sceneID="qDd-et-zN4">
             <objects>
-                <viewController id="3AF-mc-UGE" sceneMemberID="viewController">
+                <viewController id="3AF-mc-UGE" customClass="HowToWearViewController" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rru-bi-znQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -7871,10 +7879,10 @@ Cgo
             </objects>
             <point key="canvasLocation" x="9417" y="-2557"/>
         </scene>
-        <!--View Controller-->
+        <!--How Gems Stones Works View Controller-->
         <scene sceneID="br0-38-PhO">
             <objects>
-                <viewController id="Rw7-xU-Bzy" sceneMemberID="viewController">
+                <viewController id="Rw7-xU-Bzy" customClass="HowGemsStonesWorksViewController" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2w6-Xg-fn0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -7919,10 +7927,10 @@ Wearing the Gemstones that are favourable for you will improve your AURA the peo
             </objects>
             <point key="canvasLocation" x="840" y="5232"/>
         </scene>
-        <!--View Controller-->
+        <!--Pearl View Controller-->
         <scene sceneID="cEz-Q3-8lS">
             <objects>
-                <viewController id="XUz-jn-12D" sceneMemberID="viewController">
+                <viewController id="XUz-jn-12D" customClass="PearlViewController" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rvt-os-mdb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -7967,10 +7975,10 @@ Wearing the Gemstones that are favourable for you will improve your AURA the peo
             </objects>
             <point key="canvasLocation" x="1485" y="5231"/>
         </scene>
-        <!--View Controller-->
+        <!--Sapphire View Controller-->
         <scene sceneID="up7-P4-ULM">
             <objects>
-                <viewController id="uPn-gI-whG" sceneMemberID="viewController">
+                <viewController id="uPn-gI-whG" customClass="SapphireViewController" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m81-so-Psu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -8029,10 +8037,10 @@ By heating corundum in alumina powder with varying proportions of colouring agen
             </objects>
             <point key="canvasLocation" x="2132" y="5231"/>
         </scene>
-        <!--View Controller-->
+        <!--Keep In Mind View Controller-->
         <scene sceneID="LjN-CW-gfi">
             <objects>
-                <viewController id="2Cx-bi-LZD" sceneMemberID="viewController">
+                <viewController id="2Cx-bi-LZD" customClass="KeepInMindViewController" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fXV-4L-3ap">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -8101,10 +8109,10 @@ By heating corundum in alumina powder with varying proportions of colouring agen
             </objects>
             <point key="canvasLocation" x="2797.5" y="5230.9859154929582"/>
         </scene>
-        <!--View Controller-->
+        <!--Purchasing Gems View Controller-->
         <scene sceneID="4ge-ck-qEj">
             <objects>
-                <viewController id="LkS-35-3Vs" sceneMemberID="viewController">
+                <viewController id="LkS-35-3Vs" customClass="PurchasingGemsViewController" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dts-Iw-edA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -8153,10 +8161,10 @@ So, next time you plan to BUY GEMS ONLINE, trust none other than Gem Selections
             </objects>
             <point key="canvasLocation" x="3474" y="5231"/>
         </scene>
-        <!--View Controller-->
+        <!--Where To Buy View Controller-->
         <scene sceneID="iG6-PO-3Ye">
             <objects>
-                <viewController id="SlA-tT-ZDL" sceneMemberID="viewController">
+                <viewController id="SlA-tT-ZDL" customClass="WhereToBuyViewController" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SOa-1f-fVg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
