@@ -56,6 +56,7 @@
 		F1548F4420CA8B550082602D /* KeepInMindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1548F4320CA8B550082602D /* KeepInMindViewController.swift */; };
 		F1548F4620CA8B670082602D /* PurchasingGemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1548F4520CA8B670082602D /* PurchasingGemsViewController.swift */; };
 		F1548F4820CA8B890082602D /* WhereToBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1548F4720CA8B890082602D /* WhereToBuyViewController.swift */; };
+		F1548F4D20CAA0D10082602D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1548F4C20CAA0D10082602D /* User.swift */; };
 		F15C797220C84CB3009ACFA3 /* HowToWearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15C797120C84CB3009ACFA3 /* HowToWearViewController.swift */; };
 		F15C797420C84D36009ACFA3 /* HowGemsStonesWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15C797320C84D36009ACFA3 /* HowGemsStonesWorksViewController.swift */; };
 		F1BF857520C6F8C500881604 /* ReturnPlicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BF857420C6F8C500881604 /* ReturnPlicyViewController.swift */; };
@@ -118,6 +119,7 @@
 		F1548F4320CA8B550082602D /* KeepInMindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepInMindViewController.swift; sourceTree = "<group>"; };
 		F1548F4520CA8B670082602D /* PurchasingGemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasingGemsViewController.swift; sourceTree = "<group>"; };
 		F1548F4720CA8B890082602D /* WhereToBuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereToBuyViewController.swift; sourceTree = "<group>"; };
+		F1548F4C20CAA0D10082602D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F15C797120C84CB3009ACFA3 /* HowToWearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToWearViewController.swift; sourceTree = "<group>"; };
 		F15C797320C84D36009ACFA3 /* HowGemsStonesWorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowGemsStonesWorksViewController.swift; sourceTree = "<group>"; };
 		F1BF857420C6F8C500881604 /* ReturnPlicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnPlicyViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		4668A3E81F9FE63100CB64A7 = {
 			isa = PBXGroup;
 			children = (
+				F1548F4B20CAA0A70082602D /* Model */,
 				4600F4E11FAD0494000954D3 /* SWReveal */,
 				4668A3F31F9FE63100CB64A7 /* GemSelection */,
 				4668A3F21F9FE63100CB64A7 /* Products */,
@@ -265,6 +268,14 @@
 				42B6B50811E25A6DA7F3BFA3 /* Pods_GemSelection.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1548F4B20CAA0A70082602D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1548F4C20CAA0D10082602D /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F15C797020C84C45009ACFA3 /* FAQScreens */ = {
@@ -384,6 +395,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GemSelection/Pods-GemSelection-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
@@ -394,6 +406,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
@@ -412,9 +425,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GemSelection/Pods-GemSelection-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -451,6 +467,7 @@
 				00176ECB20139496009E92B8 /* RudrakshaGroup.swift in Sources */,
 				0037B19D200FA15B003697BA /* HomeStoneSingles.swift in Sources */,
 				00A594AE2006A28F009ACA05 /* HandicraftsPots.swift in Sources */,
+				F1548F4D20CAA0D10082602D /* User.swift in Sources */,
 				00C86E9B200BC7810060E04E /* GemstoneAstrology.swift in Sources */,
 				00944BBF200D156E0025306A /* LoginViewController.swift in Sources */,
 				00176EBE20124BAE009E92B8 /* DesignJwellery.swift in Sources */,

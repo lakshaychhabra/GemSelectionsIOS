@@ -8,16 +8,35 @@
 
 import UIKit
 import Firebase
-class LoginViewController: UIViewController {
+import GoogleSignIn
+
+class LoginViewController: UIViewController, GIDSignInDelegate {
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+            // ...
+            return
+        }
+        
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                       accessToken: authentication.accessToken)
+        
+    }
+    
     var ref: DatabaseReference!
 
     @IBOutlet var signInView: UIView!
     @IBOutlet var facebookButton: UIButton!
-    @IBOutlet var googleButton: UIButton!
+    @IBOutlet var googleButton: GIDSignInButton!
     @IBOutlet weak var closeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        GIDSignIn.sharedInstance().uiDelegate = self as! GIDSignInUIDelegate
+        GIDSignIn.sharedInstance().signIn()
+        
+        
         ref = Database.database().reference()
         signupBtn.setTitleColor(UIColor.black, for: .normal)
         signInView.frame = CGRect(x: 16, y: 227, width: self.view.frame.size.width/1.09, height: self.view.frame.size.height/3.92)
