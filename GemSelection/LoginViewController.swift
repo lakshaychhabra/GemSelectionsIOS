@@ -11,50 +11,65 @@ import Firebase
 import GoogleSignIn
 
 class LoginViewController: UIViewController, GIDSignInDelegate {
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error {
-            // ...
-            return
-        }
-        
-        guard let authentication = user.authentication else { return }
-        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
-                                                       accessToken: authentication.accessToken)
-        
-    }
     
+    var appUser : User?
     var ref: DatabaseReference!
 
     @IBOutlet var signInView: UIView!
     @IBOutlet var facebookButton: UIButton!
-    @IBOutlet var googleButton: GIDSignInButton!
+    @IBOutlet weak var googleButton: UIButton!
     @IBOutlet weak var closeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         GIDSignIn.sharedInstance().uiDelegate = self as! GIDSignInUIDelegate
-        GIDSignIn.sharedInstance().signIn()
-        
         
         ref = Database.database().reference()
         signupBtn.setTitleColor(UIColor.black, for: .normal)
         signInView.frame = CGRect(x: 16, y: 227, width: self.view.frame.size.width/1.09, height: self.view.frame.size.height/3.92)
         signupBtn.setTitleColor(UIColor.gray, for: .normal)
         self.view.addSubview(signInView)
-        
-        
     }
-   
-  
-     
+    
     @IBOutlet weak var signinBtn: UIButton!
     @IBOutlet weak var signupBtn: UIButton!
     @IBAction func signUpButton(_ sender: UIButton) {
         self.performSegue(withIdentifier: "signupSegue", sender: self)
     }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                       accessToken: authentication.accessToken)
+        
+        Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
+            if let error = error {
+                // ...
+                print(error ?? "some error")
+                return
+            }
+            // User is signed in
+            // ...
+            
+            print(user.profile.email)
+            print(user.profile.givenName!)
+            
+            print(authResult?.user.displayName)
+            print(authResult?.user.email)
+            if let fname = user.profile.givenName, let lname = user.profile.familyName, let mail = user.profile.email{
+                self.appUser = User(mail: mail, first_name: fname, last_name: lname, id:1 as? Int)
+            }
+            
+            isloggedin = 1
+            self.performSegue(withIdentifier: "signinsuccess", sender: self)
+        }
+    }
     @IBAction func signInAction(_ sender: Any) {
         
+        GIDSignIn.sharedInstance().signIn()
+        /*
         guard let email = signInEmail.text else {
             return
         };guard let password = signInPassword.text else {
@@ -69,7 +84,9 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
                 self.performSegue(withIdentifier: "signinsuccess", sender: self)
                 
             }
-        }
+        }*/
+        
+        
     }
     
     @IBAction func dismissViewController(_ sender: UIButton) {

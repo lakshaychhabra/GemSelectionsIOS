@@ -4656,7 +4656,7 @@ Then to recharge it take it off one week before Mahashivratri day and follow the
                     <connections>
                         <outlet property="closeButton" destination="ZY1-9K-tLN" id="zcd-8m-SUF"/>
                         <outlet property="facebookButton" destination="ns1-FQ-HPW" id="pAW-mk-llz"/>
-                        <outlet property="googleButton" destination="2ji-71-Ij1" id="oqr-Il-4e1"/>
+                        <outlet property="googleButton" destination="2ji-71-Ij1" id="Yym-0V-1RP"/>
                         <outlet property="signInEmail" destination="XoM-wh-640" id="Ciq-Jh-0zd"/>
                         <outlet property="signInPassword" destination="jMP-TL-VyD" id="KrJ-ke-FfA"/>
                         <outlet property="signInView" destination="KFP-Oc-XEt" id="ptn-mu-l0G"/>
@@ -8263,6 +8263,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
         <image name="yugal" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="GjL-d9-etZ"/>
         <segue reference="Cfs-kv-ksW"/>
         <segue reference="Rq6-zf-TF3"/>
         <segue reference="30A-gL-4es"/>
@@ -8272,6 +8273,6 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
         <segue reference="f61-XW-1RG"/>
         <segue reference="WbO-Hf-BGX"/>
         <segue reference="OZS-50-oiM"/>
-        <segue reference="uzV-Ju-wnf"/>
+        <segue reference="1Im-7x-4g6"/>
     </inferredMetricsTieBreakers>
 </document>
