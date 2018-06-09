@@ -3100,7 +3100,7 @@ Yantra are of three kinds </string>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQ2-lu-bWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7261.6000000000004" y="4996.5517241379312"/>
+            <point key="canvasLocation" x="7260" y="4996.4788732394363"/>
         </scene>
         <!--Triangle Detail-->
         <scene sceneID="VIK-GZ-1KC">

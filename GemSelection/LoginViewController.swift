@@ -122,23 +122,14 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
                             print(authResult?.user.displayName)
                             print(authResult?.user.email)
                             
-                            
-                            // User is signed in
-                            // ...
+                            DispatchQueue.main.async{
+                                isloggedin = 1
+                                self.performSegue(withIdentifier: "signinsuccess", sender: self)
+                                
+                            }
                         }
                         
-                        /*DispatchQueue.main.async {
-                         let viewController = self.storyboard?.instantiateViewController(withIdentifier: "vc") as? DetailViewController
-                         //viewController.user = self.user
-                         
-                         viewController?.setUpUser(mail: self.appUser?.mail, first_name: self.appUser?.first_name, last_name: self.appUser?.last_name, id: self.appUser?.id)
-                         self.present(viewController!, animated: true, completion: nil)
-                         }*/
-                        
                     }
-                    
-                    
-                    
                 })
             }
         }
