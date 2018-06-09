@@ -9,7 +9,10 @@
 import UIKit
 import DropDown
 import Firebase
+import FacebookCore
+import FacebookLogin
 import GoogleSignIn
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
@@ -24,8 +27,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
     }
     
-
     var window: UIWindow?
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any] ) -> Bool{
+        return GIDSignIn.sharedInstance().handle(url as? URL!, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation]) || SDKApplicationDelegate.shared.application(app,open: url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String!, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -36,19 +42,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         DropDown.startListeningToKeyboard()
         FirebaseApp.configure()
         
+        SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         
         
         return true
-    }
-    
-    @available(iOS 9.0, *)
-    func application(_ application: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any])
-        -> Bool {
-            return GIDSignIn.sharedInstance().handle(url,
-                                                     sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
-                                                     annotation: [:])
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

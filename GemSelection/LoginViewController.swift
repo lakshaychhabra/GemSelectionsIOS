@@ -8,9 +8,13 @@
 
 import UIKit
 import Firebase
+import FacebookCore
+import FacebookLogin
 import GoogleSignIn
+import FBSDKLoginKit
 
 class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
+    
     
     var appUser : User?
     var ref: DatabaseReference!
@@ -32,6 +36,7 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
         signupBtn.setTitleColor(UIColor.gray, for: .normal)
         self.view.addSubview(signInView)
         googleButton.addTarget(self, action: #selector(handleGoogleSignin), for: .touchUpInside)
+        facebookButton.addTarget(self, action: #selector(handleFacebook), for: .touchUpInside)
     }
     
     @IBOutlet weak var signinBtn: UIButton!
@@ -50,10 +55,9 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
         print(user.profile.email)
         print(user.profile.givenName!)
         
-        isloggedin = 1
-        self.performSegue(withIdentifier: "signinsuccess", sender: self)
         
-        /*
+        
+        
         Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
             if let error = error {
                 // ...
@@ -71,13 +75,88 @@ class LoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDeleg
                 self.appUser = User(mail: mail, first_name: fname, last_name: lname, id:1 as? Int)
             }
             
+            DispatchQueue.main.async{
+                isloggedin = 1
+                self.performSegue(withIdentifier: "signinsuccess", sender: self)
+                
+            }
+            
          
-        }*/
+        }
     }
     
     @objc func handleGoogleSignin(){
         print("SIGNING IN .........")
         GIDSignIn.sharedInstance().signIn()
+    }
+    
+    @objc func handleFacebook(){
+        let loginManager = LoginManager()
+        loginManager.logIn(readPermissions: [.publicProfile, .email], viewController: self) { (result) in
+            switch result {
+            case .failed(let error):
+                print("ERROR......")
+                print(error.localizedDescription)
+            case .cancelled:
+                print("user cancelled")
+            case .success(_,_,_):
+                self.getUserInfo(completion: { (userInfo, err) in
+                    if let error = err{
+                        print(error.localizedDescription)
+                    }
+                    
+                    print(userInfo!)
+                    
+                    if let userInfo = userInfo, let firstName = userInfo["first_name"], let lastName = userInfo["last_name"], let mailId = userInfo["email"], let id = userInfo["id"]{
+                        self.appUser = User(mail: mailId as? String, first_name: firstName as? String, last_name: lastName as? String, id: id as? Int)
+                        print("reached")
+                        
+                        let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+                        Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
+                            if let error = error {
+                                // ...
+                                print(error)
+                                return
+                            }
+                            
+                            print(authResult?.user.displayName)
+                            print(authResult?.user.email)
+                            
+                            
+                            // User is signed in
+                            // ...
+                        }
+                        
+                        /*DispatchQueue.main.async {
+                         let viewController = self.storyboard?.instantiateViewController(withIdentifier: "vc") as? DetailViewController
+                         //viewController.user = self.user
+                         
+                         viewController?.setUpUser(mail: self.appUser?.mail, first_name: self.appUser?.first_name, last_name: self.appUser?.last_name, id: self.appUser?.id)
+                         self.present(viewController!, animated: true, completion: nil)
+                         }*/
+                        
+                    }
+                    
+                    
+                    
+                })
+            }
+        }
+    }
+    
+    func getUserInfo(completion: @escaping (_ : [String: Any]?, _ : Error?) -> Void){
+        let parameters = ["fields" : "id, email, first_name, last_name"]
+        let result = GraphRequest(graphPath: "me", parameters: parameters)
+        result.start { (response, result) in
+            switch result{
+            case .failed(let error):
+                print(error.localizedDescription)
+                completion(nil, error)
+            case .success(response: let graphResponse):
+                completion(graphResponse.dictionaryValue, nil)
+            }
+            
+        }
     }
     
     
