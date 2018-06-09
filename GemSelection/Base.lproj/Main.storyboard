@@ -4465,7 +4465,7 @@ Then to recharge it take it off one week before Mahashivratri day and follow the
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7z-WR-rlI">
                                         <rect key="frame" x="8" y="241" width="272" height="38"/>
-                                        <color key="backgroundColor" red="0.62745098039215685" green="0.51492601630000001" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="a7z-WR-rlI" secondAttribute="height" multiplier="3:1" constant="158" id="Mnz-La-YW4"/>
                                         </constraints>
