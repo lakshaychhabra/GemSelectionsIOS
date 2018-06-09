@@ -2955,7 +2955,7 @@ Yantra are of three kinds </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQv-WR-n6d">
-                                <rect key="frame" x="16" y="36" width="288" height="191"/>
+                                <rect key="frame" x="16" y="36" width="288" height="182"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -2963,7 +2963,7 @@ Yantra are of three kinds </string>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="To know about return policy of gem selections: Khanna Gems private limited, watch video" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaz-oG-WjN">
-                                <rect key="frame" x="16" y="234.5" width="288" height="171"/>
+                                <rect key="frame" x="16" y="226" width="288" height="179.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2977,7 +2977,7 @@ Yantra are of three kinds </string>
                             <constraint firstItem="qaz-oG-WjN" firstAttribute="leading" secondItem="MXK-5q-Vml" secondAttribute="leading" constant="16" id="iR5-Hv-piW"/>
                             <constraint firstItem="ZQv-WR-n6d" firstAttribute="top" secondItem="MXK-5q-Vml" secondAttribute="top" constant="16" id="mFy-Li-gQz"/>
                             <constraint firstItem="MXK-5q-Vml" firstAttribute="trailing" secondItem="ZQv-WR-n6d" secondAttribute="trailing" constant="16" id="qio-th-kWW"/>
-                            <constraint firstItem="MXK-5q-Vml" firstAttribute="bottom" secondItem="ZQv-WR-n6d" secondAttribute="bottom" multiplier="2.5" id="tWx-jh-KC5"/>
+                            <constraint firstItem="MXK-5q-Vml" firstAttribute="bottom" secondItem="ZQv-WR-n6d" secondAttribute="bottom" constant="350" id="tWx-jh-KC5"/>
                             <constraint firstItem="ZQv-WR-n6d" firstAttribute="leading" secondItem="MXK-5q-Vml" secondAttribute="leading" constant="16" id="xY3-Zd-f2h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MXK-5q-Vml"/>
@@ -8258,7 +8258,6 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
         <image name="yugal" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GjL-d9-etZ"/>
         <segue reference="Cfs-kv-ksW"/>
         <segue reference="Rq6-zf-TF3"/>
         <segue reference="30A-gL-4es"/>
