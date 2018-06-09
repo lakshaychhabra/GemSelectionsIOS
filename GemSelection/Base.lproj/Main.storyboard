@@ -1569,34 +1569,26 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="webcelldiamond" rowHeight="287" id="fVn-yh-d1u" customClass="diamondweb" customModule="GemSelection" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="287"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fVn-yh-d1u" id="UvR-RS-G7q">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fVn-yh-d1u" id="UvR-RS-G7q">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="286.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Heera-stone" translatesAutoresizingMaskIntoConstraints="NO" id="OhO-bi-oIp">
-                                            <rect key="frame" x="140" y="11" width="95" height="95"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heera-stone" translatesAutoresizingMaskIntoConstraints="NO" id="OhO-bi-oIp">
+                                            <rect key="frame" x="112.5" y="11" width="95" height="95"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="95" id="DJ3-kj-sfF"/>
-                                                <constraint firstAttribute="width" secondItem="OhO-bi-oIp" secondAttribute="height" multiplier="1:1" id="b4D-IX-ZUG"/>
-                                                <constraint firstAttribute="width" constant="95" id="xv6-YW-Bfe"/>
+                                                <constraint firstAttribute="height" constant="95" id="Cow-hI-iac"/>
+                                                <constraint firstAttribute="width" constant="95" id="DnG-SJ-OA7"/>
                                             </constraints>
                                         </imageView>
-                                        <webView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dkI-Kk-L2H">
-                                            <rect key="frame" x="16" y="114" width="343" height="162"/>
+                                        <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dkI-Kk-L2H">
+                                            <rect key="frame" x="16" y="114" width="288" height="162"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="162" id="JyS-DB-3Vo"/>
-                                            </constraints>
                                         </webView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="OhO-bi-oIp" firstAttribute="top" secondItem="UvR-RS-G7q" secondAttribute="topMargin" id="CQK-BQ-5et"/>
-                                        <constraint firstItem="dkI-Kk-L2H" firstAttribute="centerX" secondItem="OhO-bi-oIp" secondAttribute="centerX" id="HLU-da-d4S"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="OhO-bi-oIp" secondAttribute="trailing" constant="124" id="UcZ-25-o8d"/>
-                                        <constraint firstItem="OhO-bi-oIp" firstAttribute="leading" secondItem="UvR-RS-G7q" secondAttribute="leadingMargin" constant="124" id="ibV-Hm-yWk"/>
-                                        <constraint firstItem="dkI-Kk-L2H" firstAttribute="leading" secondItem="UvR-RS-G7q" secondAttribute="leadingMargin" id="igh-Xd-UtR"/>
-                                        <constraint firstItem="dkI-Kk-L2H" firstAttribute="bottom" secondItem="UvR-RS-G7q" secondAttribute="bottomMargin" id="o4r-mf-Hab"/>
-                                        <constraint firstItem="dkI-Kk-L2H" firstAttribute="top" secondItem="OhO-bi-oIp" secondAttribute="bottom" constant="8" symbolic="YES" id="wxS-s8-Pfj"/>
+                                        <constraint firstItem="OhO-bi-oIp" firstAttribute="centerX" secondItem="UvR-RS-G7q" secondAttribute="centerX" id="9MB-lw-oUp"/>
+                                        <constraint firstItem="OhO-bi-oIp" firstAttribute="top" secondItem="UvR-RS-G7q" secondAttribute="topMargin" id="M0o-TU-huL"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -1708,7 +1700,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KSL-gE-g3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6213.6000000000004" y="2656.8215892053977"/>
+            <point key="canvasLocation" x="6211.875" y="2656.6901408450703"/>
         </scene>
         <!--Khanna Perfumes-->
         <scene sceneID="mDA-Hz-AmR">
