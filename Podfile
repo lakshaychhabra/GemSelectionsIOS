@@ -6,13 +6,15 @@ target 'GemSelection' do
   use_frameworks!
 
   # Pods for GemSelection
- 
+
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
-  pod 'Firebase/Database'	
+  pod 'Firebase/Database'
   pod 'DropDown'
   pod 'GoogleSignIn'
   pod 'Firebase/Storage'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
 pod 'FirebaseUI/Storage'
 pod 'MarqueeLabel'
 

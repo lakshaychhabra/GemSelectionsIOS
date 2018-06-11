@@ -1569,34 +1569,29 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="webcelldiamond" rowHeight="287" id="fVn-yh-d1u" customClass="diamondweb" customModule="GemSelection" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="287"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fVn-yh-d1u" id="UvR-RS-G7q">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fVn-yh-d1u" id="UvR-RS-G7q">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="286.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Heera-stone" translatesAutoresizingMaskIntoConstraints="NO" id="OhO-bi-oIp">
-                                            <rect key="frame" x="140" y="11" width="95" height="95"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heera-stone" translatesAutoresizingMaskIntoConstraints="NO" id="OhO-bi-oIp">
+                                            <rect key="frame" x="112.5" y="11" width="95" height="95"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="95" id="DJ3-kj-sfF"/>
-                                                <constraint firstAttribute="width" secondItem="OhO-bi-oIp" secondAttribute="height" multiplier="1:1" id="b4D-IX-ZUG"/>
-                                                <constraint firstAttribute="width" constant="95" id="xv6-YW-Bfe"/>
+                                                <constraint firstAttribute="height" constant="95" id="Cow-hI-iac"/>
+                                                <constraint firstAttribute="width" constant="95" id="DnG-SJ-OA7"/>
                                             </constraints>
                                         </imageView>
-                                        <webView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dkI-Kk-L2H">
-                                            <rect key="frame" x="16" y="114" width="343" height="162"/>
+                                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkI-Kk-L2H">
+                                            <rect key="frame" x="16" y="114" width="288" height="162"/>
                                             <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="162" id="JyS-DB-3Vo"/>
-                                            </constraints>
                                         </webView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="OhO-bi-oIp" firstAttribute="top" secondItem="UvR-RS-G7q" secondAttribute="topMargin" id="CQK-BQ-5et"/>
-                                        <constraint firstItem="dkI-Kk-L2H" firstAttribute="centerX" secondItem="OhO-bi-oIp" secondAttribute="centerX" id="HLU-da-d4S"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="OhO-bi-oIp" secondAttribute="trailing" constant="124" id="UcZ-25-o8d"/>
-                                        <constraint firstItem="OhO-bi-oIp" firstAttribute="leading" secondItem="UvR-RS-G7q" secondAttribute="leadingMargin" constant="124" id="ibV-Hm-yWk"/>
-                                        <constraint firstItem="dkI-Kk-L2H" firstAttribute="leading" secondItem="UvR-RS-G7q" secondAttribute="leadingMargin" id="igh-Xd-UtR"/>
-                                        <constraint firstItem="dkI-Kk-L2H" firstAttribute="bottom" secondItem="UvR-RS-G7q" secondAttribute="bottomMargin" id="o4r-mf-Hab"/>
-                                        <constraint firstItem="dkI-Kk-L2H" firstAttribute="top" secondItem="OhO-bi-oIp" secondAttribute="bottom" constant="8" symbolic="YES" id="wxS-s8-Pfj"/>
+                                        <constraint firstItem="dkI-Kk-L2H" firstAttribute="trailing" secondItem="UvR-RS-G7q" secondAttribute="trailingMargin" id="1q6-Hk-Y8P"/>
+                                        <constraint firstItem="OhO-bi-oIp" firstAttribute="centerX" secondItem="UvR-RS-G7q" secondAttribute="centerX" id="9MB-lw-oUp"/>
+                                        <constraint firstItem="OhO-bi-oIp" firstAttribute="top" secondItem="UvR-RS-G7q" secondAttribute="topMargin" id="M0o-TU-huL"/>
+                                        <constraint firstItem="dkI-Kk-L2H" firstAttribute="bottom" secondItem="UvR-RS-G7q" secondAttribute="bottomMargin" id="We3-KY-gpi"/>
+                                        <constraint firstItem="dkI-Kk-L2H" firstAttribute="top" secondItem="OhO-bi-oIp" secondAttribute="bottom" constant="8" id="i8G-Y6-H3w"/>
+                                        <constraint firstItem="dkI-Kk-L2H" firstAttribute="leading" secondItem="UvR-RS-G7q" secondAttribute="leadingMargin" id="jwK-19-a8c"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -1708,7 +1703,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KSL-gE-g3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6213.6000000000004" y="2656.8215892053977"/>
+            <point key="canvasLocation" x="6211.875" y="2656.6901408450703"/>
         </scene>
         <!--Khanna Perfumes-->
         <scene sceneID="mDA-Hz-AmR">
@@ -2960,7 +2955,7 @@ Yantra are of three kinds </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQv-WR-n6d">
-                                <rect key="frame" x="16" y="36" width="288" height="191"/>
+                                <rect key="frame" x="16" y="36" width="288" height="182"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -2968,7 +2963,7 @@ Yantra are of three kinds </string>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="To know about return policy of gem selections: Khanna Gems private limited, watch video" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaz-oG-WjN">
-                                <rect key="frame" x="16" y="234.5" width="288" height="171"/>
+                                <rect key="frame" x="16" y="226" width="288" height="179.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2982,7 +2977,7 @@ Yantra are of three kinds </string>
                             <constraint firstItem="qaz-oG-WjN" firstAttribute="leading" secondItem="MXK-5q-Vml" secondAttribute="leading" constant="16" id="iR5-Hv-piW"/>
                             <constraint firstItem="ZQv-WR-n6d" firstAttribute="top" secondItem="MXK-5q-Vml" secondAttribute="top" constant="16" id="mFy-Li-gQz"/>
                             <constraint firstItem="MXK-5q-Vml" firstAttribute="trailing" secondItem="ZQv-WR-n6d" secondAttribute="trailing" constant="16" id="qio-th-kWW"/>
-                            <constraint firstItem="MXK-5q-Vml" firstAttribute="bottom" secondItem="ZQv-WR-n6d" secondAttribute="bottom" multiplier="2.5" id="tWx-jh-KC5"/>
+                            <constraint firstItem="MXK-5q-Vml" firstAttribute="bottom" secondItem="ZQv-WR-n6d" secondAttribute="bottom" constant="350" id="tWx-jh-KC5"/>
                             <constraint firstItem="ZQv-WR-n6d" firstAttribute="leading" secondItem="MXK-5q-Vml" secondAttribute="leading" constant="16" id="xY3-Zd-f2h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MXK-5q-Vml"/>
@@ -3105,7 +3100,7 @@ Yantra are of three kinds </string>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQ2-lu-bWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7261.6000000000004" y="4996.5517241379312"/>
+            <point key="canvasLocation" x="7260" y="4996.4788732394363"/>
         </scene>
         <!--Triangle Detail-->
         <scene sceneID="VIK-GZ-1KC">
@@ -4465,7 +4460,7 @@ Then to recharge it take it off one week before Mahashivratri day and follow the
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7z-WR-rlI">
                                         <rect key="frame" x="8" y="241" width="272" height="38"/>
-                                        <color key="backgroundColor" red="0.62745098039215685" green="0.51492601630000001" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="a7z-WR-rlI" secondAttribute="height" multiplier="3:1" constant="158" id="Mnz-La-YW4"/>
                                         </constraints>
@@ -4656,7 +4651,7 @@ Then to recharge it take it off one week before Mahashivratri day and follow the
                     <connections>
                         <outlet property="closeButton" destination="ZY1-9K-tLN" id="zcd-8m-SUF"/>
                         <outlet property="facebookButton" destination="ns1-FQ-HPW" id="pAW-mk-llz"/>
-                        <outlet property="googleButton" destination="2ji-71-Ij1" id="oqr-Il-4e1"/>
+                        <outlet property="googleButton" destination="2ji-71-Ij1" id="Yym-0V-1RP"/>
                         <outlet property="signInEmail" destination="XoM-wh-640" id="Ciq-Jh-0zd"/>
                         <outlet property="signInPassword" destination="jMP-TL-VyD" id="KrJ-ke-FfA"/>
                         <outlet property="signInView" destination="KFP-Oc-XEt" id="ptn-mu-l0G"/>
@@ -8272,6 +8267,6 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
         <segue reference="f61-XW-1RG"/>
         <segue reference="WbO-Hf-BGX"/>
         <segue reference="OZS-50-oiM"/>
-        <segue reference="uzV-Ju-wnf"/>
+        <segue reference="1Im-7x-4g6"/>
     </inferredMetricsTieBreakers>
 </document>

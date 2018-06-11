@@ -30,9 +30,6 @@ class HomePage: UICollectionViewController,UICollectionViewDelegateFlowLayout {
 override func viewDidLoad() {
         super.viewDidLoad()
     
-    
-    
-    
     let width = self.view.frame.width-20 ; let height = self.view.frame.height/3
     _webView.loadHTMLString("<iframe width=\"\(width)\" height=\"\(height)\" src=\"https://www.youtube.com/embed/exSOLLQKZEM\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
         initialiazeDropDownMain()
