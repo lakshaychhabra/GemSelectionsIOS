@@ -584,116 +584,186 @@
                     <viewLayoutGuide key="safeArea" id="7Rm-g3-c5N"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="-2436" y="2736"/>
+            <point key="canvasLocation" x="-1697" y="2671"/>
         </scene>
         <!--Gem Selection-->
         <scene sceneID="oTn-UQ-4LA">
             <objects>
-                <viewController id="gMZ-Fi-Y0q" sceneMemberID="viewController">
+                <viewController id="gMZ-Fi-Y0q" customClass="AstrolgyMainViewController" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rhR-bI-MB5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Hw-dE-cGU">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Hw-dE-cGU">
                                 <rect key="frame" x="1" y="246" width="320" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Western Astrology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vN0-ci-dHJ">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="western" translatesAutoresizingMaskIntoConstraints="NO" id="j9D-t6-IZ4">
+                                        <rect key="frame" x="0.0" y="17" width="320" height="100"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Western Astrology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vN0-ci-dHJ">
                                         <rect key="frame" x="87" y="71" width="147" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXL-H2-TJy">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXL-H2-TJy">
+                                        <rect key="frame" x="0.0" y="17" width="320" height="92"/>
                                         <connections>
-                                            <segue destination="M2Y-NC-2Tv" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="QEK-1f-PIa"/>
+                                            <action selector="westernAstrology:" destination="gMZ-Fi-Y0q" eventType="touchUpInside" id="ggv-aw-f9G"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="aXL-H2-TJy" firstAttribute="centerX" secondItem="vN0-ci-dHJ" secondAttribute="centerX" id="1Gi-YQ-bGq"/>
+                                    <constraint firstAttribute="bottom" secondItem="j9D-t6-IZ4" secondAttribute="bottom" constant="-8" id="2oN-HB-9Uz"/>
+                                    <constraint firstItem="j9D-t6-IZ4" firstAttribute="top" secondItem="aXL-H2-TJy" secondAttribute="top" id="3qq-wE-6tG"/>
+                                    <constraint firstItem="vN0-ci-dHJ" firstAttribute="leading" secondItem="1Hw-dE-cGU" secondAttribute="leading" constant="87" id="Jq5-31-bZ1"/>
+                                    <constraint firstItem="aXL-H2-TJy" firstAttribute="leading" secondItem="1Hw-dE-cGU" secondAttribute="leading" id="N4U-e5-XuM"/>
+                                    <constraint firstAttribute="trailing" secondItem="aXL-H2-TJy" secondAttribute="trailing" id="SSi-cB-DNu"/>
+                                    <constraint firstItem="aXL-H2-TJy" firstAttribute="trailing" secondItem="j9D-t6-IZ4" secondAttribute="trailing" id="Yys-jS-pkf"/>
+                                    <constraint firstItem="j9D-t6-IZ4" firstAttribute="leading" secondItem="aXL-H2-TJy" secondAttribute="leading" id="eaz-re-KrL"/>
+                                    <constraint firstAttribute="bottom" secondItem="aXL-H2-TJy" secondAttribute="bottom" id="k7w-d6-Xe2"/>
+                                    <constraint firstItem="vN0-ci-dHJ" firstAttribute="top" secondItem="1Hw-dE-cGU" secondAttribute="top" constant="71" id="vk8-qA-1s5"/>
+                                    <constraint firstItem="aXL-H2-TJy" firstAttribute="top" secondItem="1Hw-dE-cGU" secondAttribute="top" constant="17" id="w7a-Hn-djZ"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eGO-sz-tCH">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGO-sz-tCH">
                                 <rect key="frame" x="0.0" y="352" width="320" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daily Horoscope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9h-xc-cNd">
-                                        <rect key="frame" x="104" y="59" width="138" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="daily-horoscope" translatesAutoresizingMaskIntoConstraints="NO" id="hWw-eK-UC2">
+                                        <rect key="frame" x="14" y="18" width="304" height="73"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Horoscope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9h-xc-cNd">
+                                        <rect key="frame" x="0.0" y="91" width="138" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="138" id="x90-36-B82"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2J5-oK-463">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2J5-oK-463">
+                                        <rect key="frame" x="0.0" y="18" width="320" height="96"/>
                                         <connections>
+                                            <action selector="dailyHoroscope:" destination="gMZ-Fi-Y0q" eventType="touchUpInside" id="NiK-6U-rA2"/>
                                             <segue destination="2Pq-mk-YoU" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="c9Q-bj-gz4"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2J5-oK-463" secondAttribute="trailing" id="3tQ-9K-YGr"/>
+                                    <constraint firstAttribute="bottom" secondItem="f9h-xc-cNd" secondAttribute="bottom" constant="-1" id="4aZ-Gk-zIw"/>
+                                    <constraint firstAttribute="trailing" secondItem="hWw-eK-UC2" secondAttribute="trailing" constant="2" id="7Ew-7O-hMe"/>
+                                    <constraint firstItem="f9h-xc-cNd" firstAttribute="top" secondItem="hWw-eK-UC2" secondAttribute="bottom" id="9hJ-de-hy5"/>
+                                    <constraint firstItem="2J5-oK-463" firstAttribute="top" secondItem="hWw-eK-UC2" secondAttribute="top" id="L8e-QE-kIx"/>
+                                    <constraint firstAttribute="bottom" secondItem="2J5-oK-463" secondAttribute="bottom" constant="-5" id="RV6-KI-a99"/>
+                                    <constraint firstItem="2J5-oK-463" firstAttribute="leading" secondItem="f9h-xc-cNd" secondAttribute="leading" id="TFJ-7c-OdB"/>
+                                    <constraint firstItem="2J5-oK-463" firstAttribute="top" secondItem="eGO-sz-tCH" secondAttribute="top" constant="18" id="YDH-GR-8V6"/>
+                                    <constraint firstItem="hWw-eK-UC2" firstAttribute="leading" secondItem="eGO-sz-tCH" secondAttribute="leading" constant="14" id="eFW-rd-DQF"/>
+                                    <constraint firstItem="f9h-xc-cNd" firstAttribute="leading" secondItem="eGO-sz-tCH" secondAttribute="leading" id="rH8-Ju-SP4"/>
+                                    <constraint firstItem="hWw-eK-UC2" firstAttribute="centerY" secondItem="eGO-sz-tCH" secondAttribute="centerY" id="tRt-Uv-BoS"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="am2-hs-1u0">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="am2-hs-1u0">
                                 <rect key="frame" x="1" y="461" width="320" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Indian Astrology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYU-V3-f81">
-                                        <rect key="frame" x="111" y="59" width="138" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indianAstr" translatesAutoresizingMaskIntoConstraints="NO" id="qkc-KO-DOO">
+                                        <rect key="frame" x="-1" y="8" width="320" height="99"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indian Astrology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYU-V3-f81">
+                                        <rect key="frame" x="0.0" y="80" width="138" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="138" id="OtK-4J-NVr"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2Q-hi-L9I">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2Q-hi-L9I">
+                                        <rect key="frame" x="0.0" y="8" width="320" height="101"/>
                                         <connections>
-                                            <segue destination="Q4n-AJ-CYF" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="RVt-Nm-rO8"/>
+                                            <action selector="indianAstrology:" destination="gMZ-Fi-Y0q" eventType="touchUpInside" id="p77-gC-5dn"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="qkc-KO-DOO" firstAttribute="bottom" secondItem="bYU-V3-f81" secondAttribute="bottom" id="6U5-4T-gAw"/>
+                                    <constraint firstItem="qkc-KO-DOO" firstAttribute="leading" secondItem="am2-hs-1u0" secondAttribute="leading" constant="-1" id="IXT-pE-nSS"/>
+                                    <constraint firstItem="bYU-V3-f81" firstAttribute="leading" secondItem="am2-hs-1u0" secondAttribute="leading" id="QsB-M3-eZn"/>
+                                    <constraint firstAttribute="bottom" secondItem="bYU-V3-f81" secondAttribute="bottom" id="RlJ-de-tP5"/>
+                                    <constraint firstItem="bYU-V3-f81" firstAttribute="top" secondItem="am2-hs-1u0" secondAttribute="top" constant="80" id="YJP-J7-CFi"/>
+                                    <constraint firstItem="d2Q-hi-L9I" firstAttribute="leading" secondItem="bYU-V3-f81" secondAttribute="leading" id="akG-if-248"/>
+                                    <constraint firstAttribute="trailing" secondItem="qkc-KO-DOO" secondAttribute="trailing" constant="1" id="jHa-DH-9Be"/>
+                                    <constraint firstAttribute="trailing" secondItem="d2Q-hi-L9I" secondAttribute="trailing" id="jRt-K0-jGF"/>
+                                    <constraint firstItem="d2Q-hi-L9I" firstAttribute="top" secondItem="am2-hs-1u0" secondAttribute="topMargin" id="lai-Mb-352"/>
+                                    <constraint firstAttribute="bottom" secondItem="d2Q-hi-L9I" secondAttribute="bottom" constant="-2" id="tNx-eY-hLT"/>
+                                    <constraint firstItem="qkc-KO-DOO" firstAttribute="top" secondItem="d2Q-hi-L9I" secondAttribute="top" id="zRq-tL-hxt"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zZP-Cl-jcC">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZP-Cl-jcC">
                                 <rect key="frame" x="0.0" y="140" width="320" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Match Making" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppY-aO-Mhv">
-                                        <rect key="frame" x="95" y="59" width="112" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyv-Gh-EFR">
-                                        <rect key="frame" x="0.0" y="-1" width="320" height="109"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="match" translatesAutoresizingMaskIntoConstraints="NO" id="gYD-1i-4ir">
+                                        <rect key="frame" x="4" y="0.0" width="316" height="118"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyv-Gh-EFR">
+                                        <rect key="frame" x="3" y="5" width="312" height="109"/>
                                         <connections>
-                                            <segue destination="DB3-T0-IuN" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="MqD-Mi-O6J"/>
+                                            <action selector="matchMakin:" destination="gMZ-Fi-Y0q" eventType="touchUpInside" id="Dxo-IM-8Hj"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="gYD-1i-4ir" secondAttribute="trailing" id="1PM-xq-F7b"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wyv-Gh-EFR" secondAttribute="bottom" constant="-5" id="8GN-ki-OhP"/>
+                                    <constraint firstItem="gYD-1i-4ir" firstAttribute="leading" secondItem="zZP-Cl-jcC" secondAttribute="leading" constant="4" id="M9j-lH-u9o"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wyv-Gh-EFR" secondAttribute="trailing" constant="5" id="NCh-0K-NKO"/>
+                                    <constraint firstItem="Wyv-Gh-EFR" firstAttribute="leading" secondItem="zZP-Cl-jcC" secondAttribute="leading" constant="3" id="fQE-83-8Ul"/>
+                                    <constraint firstItem="Wyv-Gh-EFR" firstAttribute="centerY" secondItem="gYD-1i-4ir" secondAttribute="centerY" id="fRd-MV-kyX"/>
+                                    <constraint firstItem="gYD-1i-4ir" firstAttribute="top" secondItem="zZP-Cl-jcC" secondAttribute="top" id="hQM-aK-0Jt"/>
+                                    <constraint firstItem="Wyv-Gh-EFR" firstAttribute="top" secondItem="zZP-Cl-jcC" secondAttribute="top" constant="5" id="yc7-XT-XFS"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Astrology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmj-lJ-LoK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Astrology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmj-lJ-LoK">
                                 <rect key="frame" x="1" y="76" width="120" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hYn-CH-cqq"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Q59-W4-lnE" firstAttribute="trailing" secondItem="jmj-lJ-LoK" secondAttribute="trailing" constant="199" id="0cs-F7-sd0"/>
+                            <constraint firstItem="1Hw-dE-cGU" firstAttribute="leading" secondItem="am2-hs-1u0" secondAttribute="leading" id="3G2-il-Mym"/>
+                            <constraint firstAttribute="bottom" secondItem="1Hw-dE-cGU" secondAttribute="bottom" constant="213" id="A5C-78-jnI"/>
+                            <constraint firstAttribute="bottom" secondItem="zZP-Cl-jcC" secondAttribute="bottom" constant="319" id="Dqp-Ff-LF2"/>
+                            <constraint firstItem="am2-hs-1u0" firstAttribute="top" secondItem="rhR-bI-MB5" secondAttribute="top" constant="461" id="Gga-i8-dfg"/>
+                            <constraint firstAttribute="trailing" secondItem="zZP-Cl-jcC" secondAttribute="trailing" id="Rzt-Vh-dT3"/>
+                            <constraint firstItem="jmj-lJ-LoK" firstAttribute="leading" secondItem="Q59-W4-lnE" secondAttribute="leading" constant="1" id="UJq-qT-ao4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Hw-dE-cGU" secondAttribute="trailing" constant="-17" id="Uj5-iw-QsA"/>
+                            <constraint firstItem="zZP-Cl-jcC" firstAttribute="trailing" secondItem="eGO-sz-tCH" secondAttribute="trailing" id="W1d-Jd-dIn"/>
+                            <constraint firstItem="am2-hs-1u0" firstAttribute="top" secondItem="eGO-sz-tCH" secondAttribute="bottom" id="ZWY-oW-iWJ"/>
+                            <constraint firstItem="eGO-sz-tCH" firstAttribute="top" secondItem="rhR-bI-MB5" secondAttribute="top" constant="352" id="abH-YU-P3s"/>
+                            <constraint firstItem="jmj-lJ-LoK" firstAttribute="top" secondItem="Q59-W4-lnE" secondAttribute="top" constant="12" id="b9z-vi-TbL"/>
+                            <constraint firstItem="am2-hs-1u0" firstAttribute="bottom" secondItem="Q59-W4-lnE" secondAttribute="bottom" id="d3A-4Z-EqJ"/>
+                            <constraint firstItem="jmj-lJ-LoK" firstAttribute="leading" secondItem="1Hw-dE-cGU" secondAttribute="leading" id="iFY-qu-Bbu"/>
+                            <constraint firstItem="zZP-Cl-jcC" firstAttribute="leading" secondItem="rhR-bI-MB5" secondAttribute="leading" id="mIF-K1-ys8"/>
+                            <constraint firstItem="zZP-Cl-jcC" firstAttribute="top" secondItem="jmj-lJ-LoK" secondAttribute="bottom" constant="24" id="o7k-Zh-KqH"/>
+                            <constraint firstItem="zZP-Cl-jcC" firstAttribute="leading" secondItem="eGO-sz-tCH" secondAttribute="leading" id="soQ-HP-Ogm"/>
+                            <constraint firstItem="1Hw-dE-cGU" firstAttribute="trailing" secondItem="am2-hs-1u0" secondAttribute="trailing" id="vX8-Wf-0RA"/>
+                            <constraint firstItem="1Hw-dE-cGU" firstAttribute="top" secondItem="rhR-bI-MB5" secondAttribute="top" constant="246" id="zAu-7L-YlO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Q59-W4-lnE"/>
                     </view>
                     <navigationItem key="navigationItem" title="Gem Selection" id="1Pf-1d-1Hk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BvK-e4-8aC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="264.375" y="2170.7746478873241"/>
+            <point key="canvasLocation" x="1261.875" y="2170.7746478873241"/>
         </scene>
         <!--Main Menu-->
         <scene sceneID="fTK-9H-wa1">
@@ -1379,7 +1449,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ye7-ch-yvk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4386.5625" y="2111.6197183098593"/>
+            <point key="canvasLocation" x="5384.0625" y="2111.6197183098593"/>
         </scene>
         <!--Connect With Us-->
         <scene sceneID="ghq-aK-7Xe">
@@ -2684,7 +2754,7 @@ Cg
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4Y-tR-Hqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8086.875" y="1763.0281690140846"/>
+            <point key="canvasLocation" x="9084.375" y="1763.0281690140846"/>
         </scene>
         <!--Kavach-->
         <scene sceneID="J2W-h3-H8a">
@@ -2771,7 +2841,7 @@ Cg
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xf4-ln-id0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9060" y="1763.0281690140846"/>
+            <point key="canvasLocation" x="10057.5" y="1763.0281690140846"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PA2-Qt-aWX">
@@ -3891,7 +3961,7 @@ Yantra are of three kinds </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gy-fQ-ZMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15033.75" y="1738.7323943661972"/>
+            <point key="canvasLocation" x="16031.25" y="1738.7323943661972"/>
         </scene>
         <!--Pots-->
         <scene sceneID="TnE-v1-FFl">
@@ -3991,7 +4061,7 @@ Yantra are of three kinds </string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLU-0W-1nV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16301.25" y="1735.5633802816901"/>
+            <point key="canvasLocation" x="17298.75" y="1735.5633802816901"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M2O-hZ-QGx">
@@ -4009,7 +4079,7 @@ Yantra are of three kinds </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujc-BM-WGq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15720" y="1737.6760563380283"/>
+            <point key="canvasLocation" x="16717.5" y="1737.6760563380283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r2I-Wd-u1h">
@@ -4713,36 +4783,6 @@ Then to recharge it take it off one week before Mahashivratri day and follow the
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELy-kt-fDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1822.5" y="957.04225352112678"/>
-        </scene>
-        <!--MatchMaking-->
-        <scene sceneID="jbx-WK-wGS">
-            <objects>
-                <viewControllerPlaceholder storyboardName="MatchMaking" id="Cwd-pk-TsL" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Cgy-7H-hIG"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jwz-gX-MnT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-903.75" y="1582.3943661971832"/>
-        </scene>
-        <!--WesternAstrology-->
-        <scene sceneID="xNO-KN-gS2">
-            <objects>
-                <viewControllerPlaceholder storyboardName="WesternAstrology" id="QX7-C8-od5" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="2A3-ap-apq"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Amg-Gr-FEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-458" y="1615"/>
-        </scene>
-        <!--IndianAstrology-->
-        <scene sceneID="KR2-O2-P3s">
-            <objects>
-                <viewControllerPlaceholder storyboardName="IndianAstrology" id="Mj1-T1-eKr" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="GAX-qF-23V"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LZQ-yV-fei" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-471" y="2370"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="wKx-yI-Fhb">
@@ -8569,7 +8609,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thb-aq-KBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="879" y="2866"/>
+            <point key="canvasLocation" x="2640" y="2234.1549295774648"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xQO-gK-jqa">
@@ -8594,64 +8634,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2l7-6F-17d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1631" y="3129"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="MtR-VK-64N">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q4n-AJ-CYF" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ump-mp-7DY">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="0.83137254900000002" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Mj1-T1-eKr" kind="relationship" relationship="rootViewController" id="uez-eC-wTH"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Hr-6I-Eqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1395" y="2384"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="k2f-DV-Msk">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M2Y-NC-2Tv" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NYc-mD-UBR">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="0.83137254900000002" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="QX7-C8-od5" kind="relationship" relationship="rootViewController" id="L3K-HA-4Lu"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mbK-1e-eZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-61.875" y="1709.1549295774648"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Hzg-4F-ivI">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DB3-T0-IuN" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="egY-ce-IYv">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="0.83137254900000002" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Cwd-pk-TsL" kind="relationship" relationship="rootViewController" id="GKc-pa-Pur"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PsE-Rz-Oef" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1575" y="1693"/>
+            <point key="canvasLocation" x="-1005" y="2670"/>
         </scene>
     </scenes>
     <resources>
@@ -8662,6 +8645,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
         <image name="Loose-Solitair" width="1000" height="794"/>
         <image name="Nazar-rurksha-kavach" width="300" height="300"/>
         <image name="Solitaire-Rings" width="300" height="300"/>
+        <image name="daily-horoscope" width="655" height="360"/>
         <image name="email_grey_72x72" width="72" height="72"/>
         <image name="fb" width="512" height="512"/>
         <image name="five-mukhi-rudraksha-mala" width="225" height="50"/>
@@ -8687,9 +8671,11 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
         <image name="ic_semiprecious" width="64" height="64"/>
         <image name="ic_stoneidol" width="64" height="64"/>
         <image name="ic_yantra" width="64" height="64"/>
+        <image name="indianAstr" width="225" height="225"/>
         <image name="info_outline_grey_72x72" width="72" height="72"/>
         <image name="insta" width="860" height="860"/>
         <image name="linkedin" width="512" height="512"/>
+        <image name="match" width="225" height="225"/>
         <image name="menuicon" width="48" height="48"/>
         <image name="perf_logo" width="581" height="521"/>
         <image name="person_add_grey_72x72" width="72" height="72"/>
@@ -8703,6 +8689,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
         <image name="stumbleupon" width="512" height="512"/>
         <image name="tumblr" width="512" height="512"/>
         <image name="twitter" width="512" height="512"/>
+        <image name="western" width="280" height="280"/>
         <image name="youtube" width="512" height="512"/>
         <image name="yugal" width="300" height="300"/>
     </resources>

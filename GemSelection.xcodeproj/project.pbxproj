@@ -42,7 +42,6 @@
 		00F6AB4D200003B8003907B5 /* Kavach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6AB4C200003B8003907B5 /* Kavach.swift */; };
 		00F85A0D201883C800796A8B /* SemiPreciousGemsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F85A0C201883C800796A8B /* SemiPreciousGemsData.swift */; };
 		3A660A0720F1165D008EDF6C /* GetHoroscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A660A0620F1165D008EDF6C /* GetHoroscope.swift */; };
-		3ADC544420F0A0C8006F1268 /* HoroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADC544320F0A0C8006F1268 /* HoroscopeViewController.swift */; };
 		3AF62FFF20F338FC005BBC2D /* IndianAstrology.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF62FFE20F338FC005BBC2D /* IndianAstrology.storyboard */; };
 		3AF6300120F33911005BBC2D /* WesternAstrology.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF6300020F33911005BBC2D /* WesternAstrology.storyboard */; };
 		3AF6300320F3393D005BBC2D /* MatchMaking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF6300220F3393D005BBC2D /* MatchMaking.storyboard */; };
@@ -52,6 +51,9 @@
 		3AF6300C20F344AC005BBC2D /* IndianAstrologyOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF6300B20F344AC005BBC2D /* IndianAstrologyOutput.swift */; };
 		3AF6300F20F349EF005BBC2D /* DatePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF6300E20F349EF005BBC2D /* DatePopUpViewController.swift */; };
 		3AF6301120F34B8B005BBC2D /* DatePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF6301020F34B8B005BBC2D /* DatePopUp.storyboard */; };
+		3AFC2C7A20F39026004D6FD3 /* AstrolgyMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC2C7920F39026004D6FD3 /* AstrolgyMainViewController.swift */; };
+		3AFC2C7C20F3983F004D6FD3 /* WesternAstrologyOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC2C7B20F3983F004D6FD3 /* WesternAstrologyOutput.swift */; };
+		3AFC2C8020F39899004D6FD3 /* MatchMakingOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC2C7F20F39899004D6FD3 /* MatchMakingOutput.swift */; };
 		4600F4DC1FAD0380000954D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4600F4DB1FAD037F000954D3 /* GoogleService-Info.plist */; };
 		4600F4E01FAD0456000954D3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4600F4DF1FAD0455000954D3 /* SWRevealViewController.m */; };
 		466859621FAF4AB700340BDB /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466859611FAF4AB700340BDB /* MainMenu.swift */; };
@@ -112,7 +114,6 @@
 		00F85A0C201883C800796A8B /* SemiPreciousGemsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiPreciousGemsData.swift; sourceTree = "<group>"; };
 		3A660A0620F1165D008EDF6C /* GetHoroscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHoroscope.swift; sourceTree = "<group>"; };
 		3ACC03413D291C75AAB1EDC2 /* Pods-GemSelection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemSelection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GemSelection/Pods-GemSelection.debug.xcconfig"; sourceTree = "<group>"; };
-		3ADC544320F0A0C8006F1268 /* HoroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeViewController.swift; sourceTree = "<group>"; };
 		3AF62FFE20F338FC005BBC2D /* IndianAstrology.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IndianAstrology.storyboard; sourceTree = "<group>"; };
 		3AF6300020F33911005BBC2D /* WesternAstrology.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WesternAstrology.storyboard; sourceTree = "<group>"; };
 		3AF6300220F3393D005BBC2D /* MatchMaking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MatchMaking.storyboard; sourceTree = "<group>"; };
@@ -122,6 +123,9 @@
 		3AF6300B20F344AC005BBC2D /* IndianAstrologyOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndianAstrologyOutput.swift; sourceTree = "<group>"; };
 		3AF6300E20F349EF005BBC2D /* DatePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePopUpViewController.swift; sourceTree = "<group>"; };
 		3AF6301020F34B8B005BBC2D /* DatePopUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DatePopUp.storyboard; sourceTree = "<group>"; };
+		3AFC2C7920F39026004D6FD3 /* AstrolgyMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrolgyMainViewController.swift; sourceTree = "<group>"; };
+		3AFC2C7B20F3983F004D6FD3 /* WesternAstrologyOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WesternAstrologyOutput.swift; sourceTree = "<group>"; };
+		3AFC2C7F20F39899004D6FD3 /* MatchMakingOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchMakingOutput.swift; sourceTree = "<group>"; };
 		42B6B50811E25A6DA7F3BFA3 /* Pods_GemSelection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GemSelection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4600F4DB1FAD037F000954D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4600F4DE1FAD0455000954D3 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -211,12 +215,12 @@
 		3A660A0820F11666008EDF6C /* Horoscope */ = {
 			isa = PBXGroup;
 			children = (
-				3ADC544320F0A0C8006F1268 /* HoroscopeViewController.swift */,
-				3A660A0620F1165D008EDF6C /* GetHoroscope.swift */,
+				3AFC2C7920F39026004D6FD3 /* AstrolgyMainViewController.swift */,
+				3AFC2C7E20F39875004D6FD3 /* Get Horoscope */,
 				3AF6300D20F344B2005BBC2D /* Indian Astrology */,
-				3AF6300720F33CA5005BBC2D /* WesternAstrology.swift */,
+				3AFC2C7D20F39856004D6FD3 /* Western Astrology */,
+				3AFC2C8120F398A2004D6FD3 /* MatchMakin */,
 				3AF6300E20F349EF005BBC2D /* DatePopUpViewController.swift */,
-				3AF6300920F33CB7005BBC2D /* MatchMaking.swift */,
 			);
 			path = Horoscope;
 			sourceTree = "<group>";
@@ -239,6 +243,32 @@
 				3AF6300B20F344AC005BBC2D /* IndianAstrologyOutput.swift */,
 			);
 			path = "Indian Astrology";
+			sourceTree = "<group>";
+		};
+		3AFC2C7D20F39856004D6FD3 /* Western Astrology */ = {
+			isa = PBXGroup;
+			children = (
+				3AF6300720F33CA5005BBC2D /* WesternAstrology.swift */,
+				3AFC2C7B20F3983F004D6FD3 /* WesternAstrologyOutput.swift */,
+			);
+			path = "Western Astrology";
+			sourceTree = "<group>";
+		};
+		3AFC2C7E20F39875004D6FD3 /* Get Horoscope */ = {
+			isa = PBXGroup;
+			children = (
+				3A660A0620F1165D008EDF6C /* GetHoroscope.swift */,
+			);
+			path = "Get Horoscope";
+			sourceTree = "<group>";
+		};
+		3AFC2C8120F398A2004D6FD3 /* MatchMakin */ = {
+			isa = PBXGroup;
+			children = (
+				3AF6300920F33CB7005BBC2D /* MatchMaking.swift */,
+				3AFC2C7F20F39899004D6FD3 /* MatchMakingOutput.swift */,
+			);
+			path = MatchMakin;
 			sourceTree = "<group>";
 		};
 		4600F4E11FAD0494000954D3 /* SWReveal */ = {
@@ -286,6 +316,7 @@
 				0044357720068A4D008C4ECF /* YantraGroup.swift */,
 				0044357820068A4D008C4ECF /* YantraPopUp.swift */,
 				00176EB92012376F009E92B8 /* Jwellery */,
+				3AF6300420F33945005BBC2D /* AstrologyStoryBoard */,
 				3A660A0820F11666008EDF6C /* Horoscope */,
 				00D998102007D65500D10D3F /* Perfumes.swift */,
 				00C86E98200BB04D0060E04E /* GemstoneRecommendation.swift */,
@@ -303,7 +334,6 @@
 				00F6AB451FFFD362003907B5 /* Extra.xib */,
 				4668A3FD1F9FE63100CB64A7 /* LaunchScreen.storyboard */,
 				4668A3F81F9FE63100CB64A7 /* Main.storyboard */,
-				3AF6300420F33945005BBC2D /* AstrologyStoryBoard */,
 				00A594AB2006A28E009ACA05 /* HandicraftsPots.swift */,
 				00A594AA2006A28D009ACA05 /* HandiMultipleView.swift */,
 				00A594AC2006A28E009ACA05 /* handiSideBar.swift */,
@@ -537,7 +567,6 @@
 				3AF6300820F33CA5005BBC2D /* WesternAstrology.swift in Sources */,
 				002A93C5200D359600688259 /* Cabochons.swift in Sources */,
 				F1BF857520C6F8C500881604 /* ReturnPlicyViewController.swift in Sources */,
-				3ADC544420F0A0C8006F1268 /* HoroscopeViewController.swift in Sources */,
 				0042D7BA20012FBE00DF8722 /* Japamala,saphticitems,stoneidols.swift in Sources */,
 				F1548F4020CA8ABF0082602D /* PearlViewController.swift in Sources */,
 				00176EBB20123785009E92B8 /* JwelleryMain.swift in Sources */,
@@ -553,11 +582,14 @@
 				0044357A20068A4D008C4ECF /* YantraPopUp.swift in Sources */,
 				4668A3F71F9FE63100CB64A7 /* HomePage.swift in Sources */,
 				F1548F4620CA8B670082602D /* PurchasingGemsViewController.swift in Sources */,
+				3AFC2C8020F39899004D6FD3 /* MatchMakingOutput.swift in Sources */,
 				00176ECB20139496009E92B8 /* RudrakshaGroup.swift in Sources */,
 				0037B19D200FA15B003697BA /* HomeStoneSingles.swift in Sources */,
+				3AFC2C7C20F3983F004D6FD3 /* WesternAstrologyOutput.swift in Sources */,
 				00A594AE2006A28F009ACA05 /* HandicraftsPots.swift in Sources */,
 				F1548F4D20CAA0D10082602D /* User.swift in Sources */,
 				00C86E9B200BC7810060E04E /* GemstoneAstrology.swift in Sources */,
+				3AFC2C7A20F39026004D6FD3 /* AstrolgyMainViewController.swift in Sources */,
 				00944BBF200D156E0025306A /* LoginViewController.swift in Sources */,
 				3AF6300C20F344AC005BBC2D /* IndianAstrologyOutput.swift in Sources */,
 				00176EBE20124BAE009E92B8 /* DesignJwellery.swift in Sources */,

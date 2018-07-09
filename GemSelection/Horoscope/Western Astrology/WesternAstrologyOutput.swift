@@ -1,5 +1,6 @@
+
 //
-//  IndianAstrologyOutput.swift
+//  WesternAstrologyOutputViewController.swift
 //  GemSelection
 //
 //  Created by Lakshay Chhabra on 09/07/18.
@@ -10,15 +11,11 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class IndianAstrologyOutput: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class WesternAstrologyOutput: UIViewController {
     
     
     
-    
-    
-
-//    var selectedIndex : Int = 0
-    @IBOutlet var PopUpView: UIView!
+   
     @IBOutlet var textView: UITextView!
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var goButtojn: UIButton!
@@ -27,14 +24,6 @@ class IndianAstrologyOutput: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet var setTimeButton: UIButton!
     @IBOutlet var setDatebutton: UIButton!
     
-    let planetName = ["sun", "moon", "mars", "mercury", "jupiter", "venus", "saturn"]
-    var selectedIndex : Int = 0
-    var url : String = " "
-    let headers = [
-        "Content-Type": "application/x-www-form-urlencoded",
-        "Accept-Language": "en",
-        "Authorization": "Basic NjAxNjk2Ojg1MTBlNTM3YmNjNDI0ZTE1NGEzODYwZTcwZTkyMjA5=="
-    ]
     var day : Int = 1
     var month: Int = 1
     var year : Int = 1
@@ -43,8 +32,20 @@ class IndianAstrologyOutput: UIViewController, UITableViewDelegate, UITableViewD
     var lon : Float = 77.1025
     var lat : Float =  28.7041
     var tzone : Float = 5.5
+    let headers = [
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Accept-Language": "en",
+        "Authorization": "Basic NjAxNjk2Ojg1MTBlNTM3YmNjNDI0ZTE1NGEzODYwZTcwZTkyMjA5=="
+    ]
+  
+    var selectedIndex : Int = 0
+    var url : String = " "
+    //    let headers = [
+    //        "Content-Type": "application/x-www-form-urlencoded",
+    //        "Accept-Language": "en",
+    //        "Authorization": "Basic NjAxNjk2Ojg1MTBlNTM3YmNjNDI0ZTE1NGEzODYwZTcwZTkyMjA5=="
+    //    ]
     
-    var planetSelected : String = "aaa"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,10 +56,7 @@ class IndianAstrologyOutput: UIViewController, UITableViewDelegate, UITableViewD
         nameTextField.isHidden = false
         setDatebutton.isHidden = false
         setTimeButton.isHidden = false
-        if selectedIndex == 0 || selectedIndex == 4 || selectedIndex == 6 {
-            PopUpView.center = self.view.center
-            view.addSubview(PopUpView)
-        }
+     
         let now = Date()
         let dateformat = DateFormatter()
         let timeFormat = DateFormatter()
@@ -71,6 +69,7 @@ class IndianAstrologyOutput: UIViewController, UITableViewDelegate, UITableViewD
         timeLabel.text = timeresult
         
         print(selectedIndex)
+       
         
         
     }
@@ -80,17 +79,17 @@ class IndianAstrologyOutput: UIViewController, UITableViewDelegate, UITableViewD
         NotificationCenter.default.addObserver(self, selector: #selector(handlePopUpTime), name: NSNotification.Name(rawValue: "saveTime"), object: nil)
         
     }
-
+    
     @objc func handlePopUpDate(notification : Notification){
         let dateVC = notification.object as! DatePopUpViewController
         dateLabel.text = dateVC.date
     }
-  
+    
     @objc func handlePopUpTime(notification : Notification){
         let timeVC = notification.object as! DatePopUpViewController
         timeLabel.text = timeVC.formattedTime
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDate" {
             let popup = segue.destination as! DatePopUpViewController
@@ -103,64 +102,48 @@ class IndianAstrologyOutput: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return planetName.count
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        cell?.textLabel?.text = planetName[indexPath.row]
-        return cell!
-    }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        planetSelected = planetName[indexPath.row]
-        print(planetSelected)
-        print(planetName[indexPath.row])
-        PopUpView.removeFromSuperview()
-        
-    }
     
     func gettingUrl(){
         
         switch selectedIndex {
-        case 0:  url = "https://json.astrologyapi.com/v1/general_house_report/\(planetSelected)"
-                break
-        case 1:  url = "https://json.astrologyapi.com/v1/general_ascendant_report"
+        case 0:  url = "https://json.astrologyapi.com/v1/"
             break
-        case 2:  url = "https://json.astrologyapi.com/v1/moon_biorhythm"
+        case 1:  url = " "
             break
-        case 3:  url = "https://json.astrologyapi.com/v1/planets"
+        case 2:  url = " "
             break
-        case 5:  url = "https://json.astrologyapi.com/v1/kalsarpa_details"
+        case 3:  url = " "
             break
-        case 4:  url = "https://json.astrologyapi.com/v1/general_rashi_report/\(planetSelected)"
+        case 4:  url = " "
             break
-        case 6:  url = "https://json.astrologyapi.com/v1/general_rashi_report/\(planetSelected)"
+        case 5:  url = " "
             break
-        case 7:  url = "https://json.astrologyapi.com/v1/astro_details"
+        case 6:  url = " "
             break
-        case 8:  url = "https://json.astrologyapi.com/v1/planets/extended"
+        case 7:  url = " "
             break
-        case 9:  url = "https://json.astrologyapi.com/v1/bhav_madhya"
+        case 8:  url = " "
             break
-        case 10:  url = "https://json.astrologyapi.com/v1/ayanamsha"
+        case 9:  url = " "
             break
-        case 11:  url = "https://json.astrologyapi.com/v1/sub_chardasha"
+        case 10:  url = " "
             break
-        case 12:  url = "https://json.astrologyapi.com/v1/sub_sub_chardasha"
+        case 11:  url = " "
             break
-        case 13:  url = "https://json.astrologyapi.com/v1/basic_gem_suggestion"
+        case 12:  url = " "
+            break
+        case 13:  url = " "
             break
             
         default:
-            url = "https://json.astrologyapi.com/v1/planets"
+            url = " "
         }
         
     }
-
-
+    
+    
     @IBAction func goButtonPressed(_ sender: UIButton) {
         
         
@@ -171,8 +154,8 @@ class IndianAstrologyOutput: UIViewController, UITableViewDelegate, UITableViewD
         min = Int((timeLabel.text?.components(separatedBy: ":")[1])!)!
         
         print(day, month, year, hour, min)
-       
-       
+        
+        
         textView.isHidden = false
         timeLabel.isHidden = true
         goButtojn.isHidden = true
@@ -181,8 +164,8 @@ class IndianAstrologyOutput: UIViewController, UITableViewDelegate, UITableViewD
         setDatebutton.isHidden = true
         setTimeButton.isHidden = true
         
-       
-          gettingUrl()
+        
+        gettingUrl()
         
         
         let activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
@@ -195,15 +178,15 @@ class IndianAstrologyOutput: UIViewController, UITableViewDelegate, UITableViewD
         UIApplication.shared.beginIgnoringInteractionEvents()
         
         let params : [String : AnyObject] = ["day":day as AnyObject,
-            "month":month as AnyObject,
-            "year":year as AnyObject,
-            "hour":hour as AnyObject,
-            "min":min as AnyObject,
-            "lat":lat as AnyObject,
-            "lon":lon as AnyObject,
-            "tzone":tzone as AnyObject]
+                                             "month":month as AnyObject,
+                                             "year":year as AnyObject,
+                                             "hour":hour as AnyObject,
+                                             "min":min as AnyObject,
+                                             "lat":lat as AnyObject,
+                                             "lon":lon as AnyObject,
+                                             "tzone":tzone as AnyObject]
         
-     
+        
         Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding.httpBody , headers: headers).responseJSON { (response) in
             
             print(self.url)
@@ -211,12 +194,14 @@ class IndianAstrologyOutput: UIViewController, UITableViewDelegate, UITableViewD
                 let data : JSON = JSON(response)
                 print("aaaaaaaaa\(data)")
                 self.textView.text = data.rawString()
+            }
+            UIApplication.shared.endIgnoringInteractionEvents()
+            activityIndicator.stopAnimating()
+            
+            
         }
-        UIApplication.shared.endIgnoringInteractionEvents()
-        activityIndicator.stopAnimating()
         
-        
-        }
-    
     }
+
+
 }

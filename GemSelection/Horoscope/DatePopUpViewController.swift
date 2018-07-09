@@ -27,6 +27,8 @@ class DatePopUpViewController: UIViewController {
     var formattedTime : String {
         let formatter = DateFormatter()
         formatter.timeStyle = .short
+        formatter.dateFormat = "HH:mm"
+    
         return formatter.string(from: datePicker.date)
         
     }
