@@ -394,136 +394,6 @@
             </objects>
             <point key="canvasLocation" x="-121" y="-47"/>
         </scene>
-        <!--Horoscope View Controller-->
-        <scene sceneID="hvq-Ns-lag">
-            <objects>
-                <viewController id="5NC-AO-cIe" customClass="HoroscopeViewController" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ggo-19-snJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Day" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dTT-uZ-GLa">
-                                <rect key="frame" x="7" y="62" width="51" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="51" id="pqS-P1-kqY"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hour" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2r-zB-4JZ">
-                                <rect key="frame" x="7" y="134" width="51" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="min" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d1R-Oc-Fda">
-                                <rect key="frame" x="86" y="134" width="51" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Month" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6q0-sn-Uez">
-                                <rect key="frame" x="86" y="62" width="69" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="69" id="xHX-dX-A5j"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5l3-iQ-CSG">
-                                <rect key="frame" x="191" y="72" width="77" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Birth Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPN-XE-Sge">
-                                <rect key="frame" x="7" y="37" width="122" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lN-jl-oXR">
-                                <rect key="frame" x="7" y="179" width="83" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Time (24 hour format)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahZ-pq-717">
-                                <rect key="frame" x="7" y="102" width="221" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Place" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eyf-u3-O0P">
-                                <rect key="frame" x="7" y="208" width="261" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="address-level2"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMG-u7-aOQ">
-                                <rect key="frame" x="136" y="255" width="49" height="30"/>
-                                <state key="normal" title="Submit"/>
-                                <connections>
-                                    <action selector="submitButtonPressed:" destination="5NC-AO-cIe" eventType="touchUpInside" id="Uyq-JR-r7Q"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rQK-8X-XRX">
-                                <rect key="frame" x="0.0" y="293" width="320" height="275"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="GPN-XE-Sge" firstAttribute="leading" secondItem="dTT-uZ-GLa" secondAttribute="leading" id="2f6-8A-jkv"/>
-                            <constraint firstItem="6q0-sn-Uez" firstAttribute="leading" secondItem="dTT-uZ-GLa" secondAttribute="trailing" constant="28" id="37D-AO-ibw"/>
-                            <constraint firstItem="f2r-zB-4JZ" firstAttribute="baseline" secondItem="d1R-Oc-Fda" secondAttribute="baseline" id="7jn-eP-8IW"/>
-                            <constraint firstItem="6q0-sn-Uez" firstAttribute="leading" secondItem="d1R-Oc-Fda" secondAttribute="leading" id="8TW-oe-TbP"/>
-                            <constraint firstItem="5l3-iQ-CSG" firstAttribute="trailing" secondItem="Eyf-u3-O0P" secondAttribute="trailing" id="8Tq-iD-f7R"/>
-                            <constraint firstItem="rQK-8X-XRX" firstAttribute="leading" secondItem="0YU-kF-Kl9" secondAttribute="leading" id="BET-Ft-feW"/>
-                            <constraint firstItem="GPN-XE-Sge" firstAttribute="leading" secondItem="0YU-kF-Kl9" secondAttribute="leading" constant="7" id="CWT-za-A3R"/>
-                            <constraint firstItem="0YU-kF-Kl9" firstAttribute="trailing" secondItem="d1R-Oc-Fda" secondAttribute="trailing" constant="183" id="CjX-F6-OcG"/>
-                            <constraint firstItem="dTT-uZ-GLa" firstAttribute="baseline" secondItem="6q0-sn-Uez" secondAttribute="baseline" id="Ey1-Kb-SuK"/>
-                            <constraint firstItem="2lN-jl-oXR" firstAttribute="top" secondItem="f2r-zB-4JZ" secondAttribute="bottom" constant="15" id="GTD-DM-2Cc"/>
-                            <constraint firstItem="0YU-kF-Kl9" firstAttribute="trailing" secondItem="5l3-iQ-CSG" secondAttribute="trailing" constant="52" id="MOp-7k-jRM"/>
-                            <constraint firstItem="dTT-uZ-GLa" firstAttribute="trailing" secondItem="f2r-zB-4JZ" secondAttribute="trailing" id="OMT-NX-1tj"/>
-                            <constraint firstItem="rQK-8X-XRX" firstAttribute="bottom" secondItem="0YU-kF-Kl9" secondAttribute="bottom" id="OUC-DS-0a0"/>
-                            <constraint firstItem="2lN-jl-oXR" firstAttribute="leading" secondItem="Eyf-u3-O0P" secondAttribute="leading" id="QIa-1G-BQ6"/>
-                            <constraint firstItem="rQK-8X-XRX" firstAttribute="top" secondItem="HMG-u7-aOQ" secondAttribute="bottom" constant="8" symbolic="YES" id="R6z-C7-LdR"/>
-                            <constraint firstItem="ahZ-pq-717" firstAttribute="leading" secondItem="f2r-zB-4JZ" secondAttribute="leading" id="XoN-6n-NDW"/>
-                            <constraint firstItem="HMG-u7-aOQ" firstAttribute="centerX" secondItem="rQK-8X-XRX" secondAttribute="centerX" id="Zrf-Oz-H5h"/>
-                            <constraint firstItem="Eyf-u3-O0P" firstAttribute="top" secondItem="2lN-jl-oXR" secondAttribute="bottom" constant="8" symbolic="YES" id="dBT-Nx-GWq"/>
-                            <constraint firstItem="dTT-uZ-GLa" firstAttribute="top" secondItem="GPN-XE-Sge" secondAttribute="bottom" constant="4" id="lFo-us-asy"/>
-                            <constraint firstItem="5l3-iQ-CSG" firstAttribute="leading" secondItem="6q0-sn-Uez" secondAttribute="trailing" constant="36" id="oM2-86-M9b"/>
-                            <constraint firstItem="rQK-8X-XRX" firstAttribute="trailing" secondItem="0YU-kF-Kl9" secondAttribute="trailing" id="pIU-GA-6B8"/>
-                            <constraint firstItem="5l3-iQ-CSG" firstAttribute="top" secondItem="0YU-kF-Kl9" secondAttribute="top" constant="52" id="pfw-9A-QbZ"/>
-                            <constraint firstItem="HMG-u7-aOQ" firstAttribute="top" secondItem="Eyf-u3-O0P" secondAttribute="bottom" constant="17" id="rcM-4I-MMh"/>
-                            <constraint firstItem="dTT-uZ-GLa" firstAttribute="leading" secondItem="ahZ-pq-717" secondAttribute="leading" id="s0T-MN-Qp5"/>
-                            <constraint firstItem="f2r-zB-4JZ" firstAttribute="top" secondItem="ahZ-pq-717" secondAttribute="bottom" constant="11" id="sQ0-0x-8Sy"/>
-                            <constraint firstItem="GPN-XE-Sge" firstAttribute="top" secondItem="0YU-kF-Kl9" secondAttribute="top" constant="17" id="vkT-RF-7e4"/>
-                            <constraint firstItem="f2r-zB-4JZ" firstAttribute="leading" secondItem="2lN-jl-oXR" secondAttribute="leading" id="vwR-Nh-dh6"/>
-                            <constraint firstItem="0YU-kF-Kl9" firstAttribute="trailing" secondItem="ahZ-pq-717" secondAttribute="trailing" constant="92" id="w4U-Eh-AFm"/>
-                            <constraint firstItem="ahZ-pq-717" firstAttribute="top" secondItem="dTT-uZ-GLa" secondAttribute="bottom" constant="10" id="ysd-sI-8wB"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="0YU-kF-Kl9"/>
-                    </view>
-                    <connections>
-                        <outlet property="city" destination="Eyf-u3-O0P" id="MnR-IS-iIp"/>
-                        <outlet property="day" destination="dTT-uZ-GLa" id="VDn-i9-vcK"/>
-                        <outlet property="hour" destination="f2r-zB-4JZ" id="hx7-k1-yjR"/>
-                        <outlet property="min" destination="d1R-Oc-Fda" id="WL2-ry-OdK"/>
-                        <outlet property="month" destination="6q0-sn-Uez" id="yjX-vk-bqn"/>
-                        <outlet property="receivedData" destination="rQK-8X-XRX" id="bxq-we-Mxn"/>
-                        <outlet property="year" destination="5l3-iQ-CSG" id="P8D-Bk-Iaq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HdW-U0-lpP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3819" y="1955"/>
-        </scene>
         <!--Gem Selection-->
         <scene sceneID="YAP-Si-zhA">
             <objects>
@@ -716,7 +586,7 @@
             </objects>
             <point key="canvasLocation" x="-2436" y="2736"/>
         </scene>
-        <!--View Controller-->
+        <!--Gem Selection-->
         <scene sceneID="oTn-UQ-4LA">
             <objects>
                 <viewController id="gMZ-Fi-Y0q" sceneMemberID="viewController">
@@ -725,7 +595,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Hw-dE-cGU">
-                                <rect key="frame" x="1" y="155" width="320" height="138"/>
+                                <rect key="frame" x="1" y="246" width="320" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Western Astrology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vN0-ci-dHJ">
@@ -736,17 +606,17 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXL-H2-TJy">
-                                        <rect key="frame" x="0.0" y="-9" width="320" height="153"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="5NC-AO-cIe" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="eaO-Y8-eYI"/>
+                                            <segue destination="M2Y-NC-2Tv" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="QEK-1f-PIa"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eGO-sz-tCH">
-                                <rect key="frame" x="0.0" y="293" width="320" height="138"/>
+                                <rect key="frame" x="0.0" y="352" width="320" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daily Horoscope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9h-xc-cNd">
@@ -757,7 +627,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2J5-oK-463">
-                                        <rect key="frame" x="0.0" y="-9" width="320" height="153"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <segue destination="2Pq-mk-YoU" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="c9Q-bj-gz4"/>
@@ -767,7 +637,7 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="am2-hs-1u0">
-                                <rect key="frame" x="1" y="430" width="320" height="138"/>
+                                <rect key="frame" x="1" y="461" width="320" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Indian Astrology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYU-V3-f81">
@@ -778,14 +648,17 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2Q-hi-L9I">
-                                        <rect key="frame" x="0.0" y="-11" width="320" height="153"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="Q4n-AJ-CYF" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="RVt-Nm-rO8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zZP-Cl-jcC">
-                                <rect key="frame" x="1" y="64" width="320" height="94"/>
+                                <rect key="frame" x="0.0" y="140" width="320" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Match Making" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppY-aO-Mhv">
@@ -796,21 +669,31 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyv-Gh-EFR">
-                                        <rect key="frame" x="0.0" y="52" width="320" height="95"/>
+                                        <rect key="frame" x="0.0" y="-1" width="320" height="109"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="DB3-T0-IuN" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="MqD-Mi-O6J"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Astrology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmj-lJ-LoK">
+                                <rect key="frame" x="1" y="76" width="120" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Q59-W4-lnE"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1Pf-1d-1Hk"/>
+                    <navigationItem key="navigationItem" title="Gem Selection" id="1Pf-1d-1Hk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BvK-e4-8aC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-733.125" y="2170.7746478873241"/>
+            <point key="canvasLocation" x="264.375" y="2170.7746478873241"/>
         </scene>
         <!--Main Menu-->
         <scene sceneID="fTK-9H-wa1">
@@ -1496,7 +1379,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ye7-ch-yvk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1394.0625" y="2111.6197183098593"/>
+            <point key="canvasLocation" x="4386.5625" y="2111.6197183098593"/>
         </scene>
         <!--Connect With Us-->
         <scene sceneID="ghq-aK-7Xe">
@@ -2801,7 +2684,7 @@ Cg
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4Y-tR-Hqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5094.375" y="1763.0281690140846"/>
+            <point key="canvasLocation" x="8086.875" y="1763.0281690140846"/>
         </scene>
         <!--Kavach-->
         <scene sceneID="J2W-h3-H8a">
@@ -2888,7 +2771,7 @@ Cg
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xf4-ln-id0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6067.5" y="1763.0281690140846"/>
+            <point key="canvasLocation" x="9060" y="1763.0281690140846"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PA2-Qt-aWX">
@@ -4008,7 +3891,7 @@ Yantra are of three kinds </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gy-fQ-ZMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12041.25" y="1738.7323943661972"/>
+            <point key="canvasLocation" x="15033.75" y="1738.7323943661972"/>
         </scene>
         <!--Pots-->
         <scene sceneID="TnE-v1-FFl">
@@ -4108,7 +3991,7 @@ Yantra are of three kinds </string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLU-0W-1nV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13308.75" y="1735.5633802816901"/>
+            <point key="canvasLocation" x="16301.25" y="1735.5633802816901"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M2O-hZ-QGx">
@@ -4126,7 +4009,7 @@ Yantra are of three kinds </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujc-BM-WGq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12727.5" y="1737.6760563380283"/>
+            <point key="canvasLocation" x="15720" y="1737.6760563380283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r2I-Wd-u1h">
@@ -4830,6 +4713,36 @@ Then to recharge it take it off one week before Mahashivratri day and follow the
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELy-kt-fDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1822.5" y="957.04225352112678"/>
+        </scene>
+        <!--MatchMaking-->
+        <scene sceneID="jbx-WK-wGS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MatchMaking" id="Cwd-pk-TsL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Cgy-7H-hIG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jwz-gX-MnT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-903.75" y="1582.3943661971832"/>
+        </scene>
+        <!--WesternAstrology-->
+        <scene sceneID="xNO-KN-gS2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WesternAstrology" id="QX7-C8-od5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2A3-ap-apq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Amg-Gr-FEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-458" y="1615"/>
+        </scene>
+        <!--IndianAstrology-->
+        <scene sceneID="KR2-O2-P3s">
+            <objects>
+                <viewControllerPlaceholder storyboardName="IndianAstrology" id="Mj1-T1-eKr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GAX-qF-23V"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZQ-yV-fei" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-471" y="2370"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="wKx-yI-Fhb">
@@ -8647,6 +8560,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kbn-Ps-d8f">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.83137254900000002" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -8655,7 +8569,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thb-aq-KBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="315" y="2281.6901408450703"/>
+            <point key="canvasLocation" x="879" y="2866"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xQO-gK-jqa">
@@ -8680,7 +8594,64 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2l7-6F-17d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1644" y="2696"/>
+            <point key="canvasLocation" x="-1631" y="3129"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MtR-VK-64N">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q4n-AJ-CYF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ump-mp-7DY">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.83137254900000002" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Mj1-T1-eKr" kind="relationship" relationship="rootViewController" id="uez-eC-wTH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Hr-6I-Eqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1395" y="2384"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="k2f-DV-Msk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M2Y-NC-2Tv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NYc-mD-UBR">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.83137254900000002" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QX7-C8-od5" kind="relationship" relationship="rootViewController" id="L3K-HA-4Lu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbK-1e-eZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-61.875" y="1709.1549295774648"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hzg-4F-ivI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DB3-T0-IuN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="egY-ce-IYv">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.83137254900000002" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Cwd-pk-TsL" kind="relationship" relationship="rootViewController" id="GKc-pa-Pur"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PsE-Rz-Oef" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1575" y="1693"/>
         </scene>
     </scenes>
     <resources>
@@ -8744,7 +8715,7 @@ Gem Selections, ( Unit of Khanna Gems Private Limited ), Shop No.8, A-3 DDA Mark
         <segue reference="BVk-Lg-ivb"/>
         <segue reference="f61-XW-1RG"/>
         <segue reference="WbO-Hf-BGX"/>
-        <segue reference="OZS-50-oiM"/>
+        <segue reference="j33-6C-FxR"/>
         <segue reference="1Im-7x-4g6"/>
     </inferredMetricsTieBreakers>
 </document>
