@@ -140,6 +140,14 @@ class MainMenu: UITableViewController,MFMailComposeViewControllerDelegate {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
+            if indexPath.row == 4{
+                print("Astrology")
+                
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let output = storyboard.instantiateViewController(withIdentifier: "astrology") as! AstrolgyMainViewController
+                self.navigationController?.pushViewController(output, animated: true)
+                
+            }
             if indexPath.row == 13{
                 print("13")
             };if indexPath.row == 15{

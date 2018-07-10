@@ -10,9 +10,18 @@ import UIKit
 
 class AstrolgyMainViewController: UIViewController {
 
+    @IBOutlet var menuBtn: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if self.revealViewController() != nil {
+            menuBtn.target = self.revealViewController()
+            menuBtn.target = self.revealViewController()
+            menuBtn.action = #selector
+                (SWRevealViewController.rightRevealToggle(_:))
+            menuBtn.action = #selector
+                (SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -32,7 +41,9 @@ class AstrolgyMainViewController: UIViewController {
         self.navigationController?.pushViewController(output, animated: true)
     }
     @IBAction func dailyHoroscope(_ sender: Any) {
-   
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let output = storyboard.instantiateViewController(withIdentifier: "GetHoroscope") as! GetHoroscope
+        self.navigationController?.pushViewController(output, animated: true)
     }
     
     @IBAction func indianAstrology(_ sender: Any) {

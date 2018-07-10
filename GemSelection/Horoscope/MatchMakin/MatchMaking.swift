@@ -11,7 +11,7 @@ import UIKit
 class MatchMaking: UITableViewController {
 
     
-    let array = ["General House Report","General Ascendant Report", "General Moon Biorym Report", "General Planet Report", "Moon Horoscope Report", "Kal Sarpa Report", "Basic Astrology Report", "Basic Astrology Details", "Basic Astrology Planets", "Madhya Bhav", "Ayanmsha", "Major Char Dasha", "Sub Char Dasha", "Gemstone Suggestion"]
+    let array = ["Match Birth Details", "Match Ashtakoot Details", "Match Vedha (Obstructions)", "MAtch Astro Details", "Match Planet Details", "Match Manglik Report", "Match Making report", "Match Simple Report", "Match Making Detailed Report", "Match Dashakoot Points", "Match Percentage", "Parter Report"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +44,7 @@ class MatchMaking: UITableViewController {
         let storyboard = UIStoryboard(name: "MatchMaking", bundle: nil)
         let output = storyboard.instantiateViewController(withIdentifier: "Output") as! MatchMakingOutput
         
-       // output.selectedIndex = indexPath.row
+          output.selectedIndex = indexPath.row
         self.navigationController?.pushViewController(output, animated: true)
         
         

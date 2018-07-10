@@ -11,7 +11,7 @@ import UIKit
 class WesternAstrology: UITableViewController {
 
     
-    let array = ["General House Report","General Ascendant Report", "General Moon Biorym Report", "General Planet Report", "Moon Horoscope Report", "Kal Sarpa Report", "Basic Astrology Report", "Basic Astrology Details", "Basic Astrology Planets", "Madhya Bhav", "Ayanmsha", "Major Char Dasha", "Sub Char Dasha", "Gemstone Suggestion"]
+    let array = ["Western Horoscope","Western Chart", "Daily Tropical Transit", "Weekly Tropical Transit", "Monthly Tropical Transit","Solar Return", "Solar Return Planet", "Solar Return House","Solar Return Planet Aspects", "Lunar Metrics", "Romantic Personality Report", "Life Forcast Report", ]
     
     override func viewDidLoad() {
         super.viewDidLoad()

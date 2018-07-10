@@ -40,11 +40,7 @@ class WesternAstrologyOutput: UIViewController {
   
     var selectedIndex : Int = 0
     var url : String = " "
-    //    let headers = [
-    //        "Content-Type": "application/x-www-form-urlencoded",
-    //        "Accept-Language": "en",
-    //        "Authorization": "Basic NjAxNjk2Ojg1MTBlNTM3YmNjNDI0ZTE1NGEzODYwZTcwZTkyMjA5=="
-    //    ]
+ 
     
     
     override func viewDidLoad() {
@@ -108,29 +104,29 @@ class WesternAstrologyOutput: UIViewController {
     func gettingUrl(){
         
         switch selectedIndex {
-        case 0:  url = "https://json.astrologyapi.com/v1/"
+        case 0:  url = "https://json.astrologyapi.com/v1/western_horoscope"
             break
-        case 1:  url = " "
+        case 1:  url = "https://json.astrologyapi.com/v1/western_chart_data"
             break
-        case 2:  url = " "
+        case 2:  url = "https://json.astrologyapi.com/v1/tropical_transits/daily"
             break
-        case 3:  url = " "
+        case 3:  url = "https://json.astrologyapi.com/v1/tropical_transits/weekly"
             break
-        case 4:  url = " "
+        case 4:  url = "https://json.astrologyapi.com/v1/tropical_transits/monthly"
             break
-        case 5:  url = " "
+        case 5:  url = "https://json.astrologyapi.com/v1/solar_return_details"
             break
-        case 6:  url = " "
+        case 6:  url = "https://json.astrologyapi.com/v1/solar_return_planets"
             break
-        case 7:  url = " "
+        case 7:  url = "https://json.astrologyapi.com/v1/solar_return_house_cusps"
             break
-        case 8:  url = " "
+        case 8:  url = "https://json.astrologyapi.com/v1/solar_return_planet_aspects"
             break
-        case 9:  url = " "
+        case 9:  url = "https://json.astrologyapi.com/v1/lunar_metrics"
             break
-        case 10:  url = " "
+        case 10:  url = "https://json.astrologyapi.com/v1/romantic_forecast_report/tropical"
             break
-        case 11:  url = " "
+        case 11:  url = "https://json.astrologyapi.com/v1/life_forecast_report/tropical"
             break
         case 12:  url = " "
             break
