@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rkt-9E-CKN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Precious Gemstones-->
+        <scene sceneID="wbj-J0-0lP">
+            <objects>
+                <collectionViewController title="Precious Gemstones" id="rkt-9E-CKN" customClass="HomePage" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="nTt-93-LIo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gkU-DC-LZG">
+                            <size key="itemSize" width="175" height="170"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="5v1-f6-al8" customClass="HomeCell" customModule="GemSelection" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="182" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="182" height="208"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jOE-Cd-lG9">
+                                            <rect key="frame" x="12" y="177" width="158" height="31"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gemselection" translatesAutoresizingMaskIntoConstraints="NO" id="i3T-bF-Tb8">
+                                            <rect key="frame" x="12" y="41" width="158" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="i3T-bF-Tb8" secondAttribute="height" multiplier="79:64" id="fs2-VA-Dmx"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HzL-Kb-YYt">
+                                            <rect key="frame" x="12" y="0.0" width="158" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="HzL-Kb-YYt" secondAttribute="height" multiplier="79:18" id="TnN-ds-m67"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="i3T-bF-Tb8" secondAttribute="trailing" constant="4" id="85Y-69-puK"/>
+                                    <constraint firstItem="HzL-Kb-YYt" firstAttribute="leading" secondItem="5v1-f6-al8" secondAttribute="leading" constant="12" id="DLp-pv-Wmi"/>
+                                    <constraint firstItem="HzL-Kb-YYt" firstAttribute="top" secondItem="5v1-f6-al8" secondAttribute="top" id="Oeh-M1-qjp"/>
+                                    <constraint firstAttribute="trailing" secondItem="HzL-Kb-YYt" secondAttribute="trailing" constant="12" id="SwJ-n7-aI3"/>
+                                    <constraint firstAttribute="bottom" secondItem="jOE-Cd-lG9" secondAttribute="bottom" id="WhL-wF-dyy"/>
+                                    <constraint firstItem="i3T-bF-Tb8" firstAttribute="top" secondItem="HzL-Kb-YYt" secondAttribute="bottom" constant="5" id="f7t-X5-G7q"/>
+                                    <constraint firstItem="jOE-Cd-lG9" firstAttribute="leading" secondItem="5v1-f6-al8" secondAttribute="leading" constant="12" id="jyq-rd-Dds"/>
+                                    <constraint firstAttribute="trailing" secondItem="jOE-Cd-lG9" secondAttribute="trailing" constant="12" id="lpf-kp-Vfs"/>
+                                    <constraint firstItem="jOE-Cd-lG9" firstAttribute="top" secondItem="i3T-bF-Tb8" secondAttribute="bottom" constant="8" id="tsf-LN-mAO"/>
+                                    <constraint firstItem="i3T-bF-Tb8" firstAttribute="leading" secondItem="5v1-f6-al8" secondAttribute="leadingMargin" constant="4" id="zn7-DV-YbA"/>
+                                </constraints>
+                                <size key="customSize" width="182" height="208"/>
+                                <connections>
+                                    <outlet property="_lowerLabel" destination="jOE-Cd-lG9" id="9cx-JU-vlN"/>
+                                    <outlet property="_stoneImage" destination="i3T-bF-Tb8" id="j3g-Bk-ukD"/>
+                                    <outlet property="_upperLabel" destination="HzL-Kb-YYt" id="GxS-2X-CxT"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell1" id="WKM-dZ-FZB">
+                                <rect key="frame" x="193" y="0.0" width="182" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="182" height="208"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="customSize" width="182" height="208"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="rkt-9E-CKN" id="nD9-z7-Ms5"/>
+                            <outlet property="delegate" destination="rkt-9E-CKN" id="8xb-sP-JmD"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Precious Gemstones" id="QCg-1k-doz">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu" id="KdZ-1u-lGy"/>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="ic_more_vert" id="CNL-cn-dj1">
+                                <connections>
+                                    <action selector="menuBtnAction:" destination="rkt-9E-CKN" id="V3T-4M-FEc"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="BUY NOW" id="2dl-5l-VX6">
+                                <connections>
+                                    <action selector="buyNowBtn:" destination="rkt-9E-CKN" id="u7b-AF-uGT"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuBtn" destination="KdZ-1u-lGy" id="mlh-Kh-cfs"/>
+                        <outlet property="moreBtn" destination="CNL-cn-dj1" id="IgY-kw-yNA"/>
+                        <segue destination="RzC-6s-cBt" kind="show" identifier="hometodiamond" id="WbO-Hf-BGX"/>
+                        <segue destination="c38-gK-RsG" kind="show" identifier="detailedstonesegue" id="9BY-cY-rK4"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GF4-Gb-2E5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="-367"/>
+        </scene>
+        <!--diamondView-->
+        <scene sceneID="b4u-e5-RtY">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="diamondView" storyboardName="Main" referencedIdentifier="diamondView" id="RzC-6s-cBt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S4L-Yv-ZOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1179" y="-383"/>
+        </scene>
+        <!--UITableViewController-sSf-dK-6xR-->
+        <scene sceneID="emh-7L-Ydj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UITableViewController-sSf-dK-6xR" id="c38-gK-RsG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Kv-ID-uw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="-495"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gemselection" width="220" height="240"/>
+        <image name="ic_menu" width="24" height="24"/>
+        <image name="ic_more_vert" width="24" height="24"/>
+    </resources>
+</document>

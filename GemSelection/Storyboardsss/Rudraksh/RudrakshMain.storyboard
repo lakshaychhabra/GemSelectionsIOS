@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A3w-YT-hpI">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HOME-->
+        <scene sceneID="uXQ-EG-Pyi">
+            <objects>
+                <tableViewController id="A3w-YT-hpI" customClass="RudrakshaHome" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="1903" sectionHeaderHeight="18" sectionFooterHeight="18" id="Vrm-eP-pBP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="singlecell" rowHeight="1500" id="Y5c-2G-Na3" customClass="rudrakshahomecell" customModule="GemSelection" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="320" height="1500"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y5c-2G-Na3" id="Dzd-vq-Uq5">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="1500"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rudraksha-banner" translatesAutoresizingMaskIntoConstraints="NO" id="Hb9-VN-f1h">
+                                            <rect key="frame" x="19" y="8" width="282" height="85"/>
+                                        </imageView>
+                                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wD7-6T-Du0">
+                                            <rect key="frame" x="0.0" y="199" width="320" height="182"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </webView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9j-he-In3">
+                                            <rect key="frame" x="19" y="101" width="282" height="81"/>
+                                            <attributedString key="attributedText">
+                                                <fragment>
+                                                    <string key="content">"The Message " 
+Rudraksha – 
+From Lord Shiva with Love</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="22" name="HelveticaNeue-Medium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqQ-5Q-PlX">
+                                            <rect key="frame" x="8" y="389" width="304" height="1103"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Why Rudraksha - At the First Stage ?">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="12" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content">The human life is full of pain both on the physical as well as emotional level . Our ancient Rishis tried to search for cures for all ailments that effect us . These cures were in the form of Auyerveda , religion etc . But even with a healthy body and complete devotion to God man does not feel happy and to large extent all his efforts after fulfillment of basic bread and butter needs are aimed at searching for that happiness. He wanders in search of this happiness in Disco Thiks and nightclubs or else in Rishikesh or temples ………….. he tries to earn extraordinary money, be a leader but all this leaves a strange emptiness in him. 
+
+Amid this position of turmoil Lord Shiva tells Goddess Parvati in Shiv Mahapuran that “ Now for the ‘ kalyan’ ( emancipation) of mankind I tell you about Rudraksha “ . Rudraksha , is said , to keep our blood pressure in a state of perfect equilibrium thus giving us tranquility and internal peace that helps us in achieving a level of emotional stability . Wearing of Rudraksha also helps us in meditation that is why ancient Rishis used to wear a number of Rudrakshas on their body in order to achieve the state of Samadhi easily and stay in it for a long duration.</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content" base64-UTF8="YES">
+IAoKA
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="Rudrakshas help us in achieving a balance and improves our mental faculties . ">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                                        <font key="NSOriginalFont" size="13" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content">What is the Unique Advantage of Rudraksha ? 
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                                        <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                        <font key="NSOriginalFont" size="14" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="How Pankaj Khanna‘s Rudraksha's different ?">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                                        <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="12" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content">Pankaj Khanna has been in the trade of Rudrakshas since 1987. The Rudraksha sold by him are collected from deep jungles through the length and breadth of Himalayas . Once collected they are thoroughly checked for originality, quality and efficacy. After this they are stored in accordance with the dicta’s of the scriptures . Before sending it to the customer Pankaj Khanna himself empowers it with mantras and then in the most pious way it is packed and then dispatched to the coustomer in a ready to wear form. </string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                                        <font key="NSOriginalFont" size="13" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="Who can wear Rudrakshas ?">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
+                                                        <font key="NSOriginalFont" size="14" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="12" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content">All human beings can wear a Rudraksha without any restriction of race or gender. 
+
+After buying the product - What is the process to wear it ? 
+The scared Rudhraksha that you have got is abhimantrit and empowered by Pankaj Khanna, so that it gives maximum results. This is ready to wear or can be kept in your place of worship and should be worn on a Monday morning before 7.30 a.m. 
+
+To recharge it, you should take it off one week before Mahashivratri. Take a clean bowl and put the Rudraksha in it. Add Pure Desi Ghee in that bowl so that the Rudhraksha is properly immersed in it. Add some sandal wood powder, a bit of turmeric powder (Haldi) in that bowl. Leave it for a week’s time or more. 
+
+Then on Mahashivratri day before 7.30 a.m. wash it with Ganga Jal mixed with saffron (kesar) and wear it after chanting the required mantra 108 times. Fasting on Mondays and Mahashivratri day will also be great help and improves the results from a Rudraksha. </string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                                        <font key="NSOriginalFont" size="13" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="JqQ-5Q-PlX" secondAttribute="bottom" constant="8" id="D8c-Ns-mok"/>
+                                        <constraint firstItem="wD7-6T-Du0" firstAttribute="leading" secondItem="Dzd-vq-Uq5" secondAttribute="leading" id="Myd-GF-D80"/>
+                                        <constraint firstItem="JqQ-5Q-PlX" firstAttribute="top" secondItem="wD7-6T-Du0" secondAttribute="bottom" constant="8" id="Tdg-t7-ycc"/>
+                                        <constraint firstItem="Hb9-VN-f1h" firstAttribute="top" secondItem="Dzd-vq-Uq5" secondAttribute="top" constant="8" id="VF9-Uq-fgQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="wD7-6T-Du0" secondAttribute="bottom" constant="1119" id="VNB-Q4-ZQR"/>
+                                        <constraint firstItem="wD7-6T-Du0" firstAttribute="top" secondItem="Hb9-VN-f1h" secondAttribute="bottom" constant="106" id="WCm-wo-HIE"/>
+                                        <constraint firstItem="wD7-6T-Du0" firstAttribute="top" secondItem="s9j-he-In3" secondAttribute="bottom" constant="17" id="XCs-Tz-zpp"/>
+                                        <constraint firstAttribute="trailing" secondItem="wD7-6T-Du0" secondAttribute="trailing" id="c8T-SS-8eJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="s9j-he-In3" secondAttribute="trailing" constant="19" id="dNe-g0-kCH"/>
+                                        <constraint firstItem="JqQ-5Q-PlX" firstAttribute="leading" secondItem="Dzd-vq-Uq5" secondAttribute="leading" constant="8" id="jRG-tK-ASJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="JqQ-5Q-PlX" secondAttribute="trailing" constant="8" id="jRg-6i-Liy"/>
+                                        <constraint firstItem="s9j-he-In3" firstAttribute="leading" secondItem="Dzd-vq-Uq5" secondAttribute="leading" constant="19" id="nUP-gx-UTs"/>
+                                        <constraint firstItem="Hb9-VN-f1h" firstAttribute="trailing" secondItem="s9j-he-In3" secondAttribute="trailing" id="pRH-Xw-9v4"/>
+                                        <constraint firstItem="Hb9-VN-f1h" firstAttribute="leading" secondItem="s9j-he-In3" secondAttribute="leading" id="u7Q-qb-AnD"/>
+                                        <constraint firstItem="wD7-6T-Du0" firstAttribute="top" secondItem="Dzd-vq-Uq5" secondAttribute="top" constant="199" id="xqt-GC-j0v"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="webView" destination="wD7-6T-Du0" id="JBW-0C-YsL"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="A3w-YT-hpI" id="PlF-VL-e9x"/>
+                            <outlet property="delegate" destination="A3w-YT-hpI" id="6a5-Sn-bwB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="HOME" id="z3R-bj-an7">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Item" image="ic_home" id="wrM-gD-jVG">
+                                <connections>
+                                    <segue destination="5aB-8C-IVp" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="NoS-FJ-0t9"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="ic_menu" id="OuR-zr-qVX">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="BUY NOW" id="9l5-JU-AfX">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="buyBtn:" destination="A3w-YT-hpI" id="NNh-5m-1NN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuBtn" destination="OuR-zr-qVX" id="jFK-UE-ii7"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RS7-c1-cva" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8792" y="-4994"/>
+        </scene>
+        <!--UIViewController-loR-Cw-93I-->
+        <scene sceneID="McA-Sk-0ew">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UIViewController-loR-Cw-93I" storyboardName="Main" referencedIdentifier="UIViewController-loR-Cw-93I" id="5aB-8C-IVp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0I-5A-AGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2381" y="-1951"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_home" width="24" height="24"/>
+        <image name="ic_menu" width="24" height="24"/>
+        <image name="rudraksha-banner" width="950" height="200"/>
+    </resources>
+</document>

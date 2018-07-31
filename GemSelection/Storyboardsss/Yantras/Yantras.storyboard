@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Yantras-->
+        <scene sceneID="hLm-Va-Asp">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="nWj-FR-Xyf" customClass="yantraView" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5iZ-Se-TVI"/>
+                        <viewControllerLayoutGuide type="bottom" id="caK-Bp-D3b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O4r-Cc-o5L">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0jw-jX-gq3">
+                                <rect key="frame" x="16" y="215" width="288" height="191"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0jw-jX-gq3" secondAttribute="height" multiplier="343:344" constant="97.715116279069775" id="3F3-Yi-tzM"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Yantras can be defined as visual mantras which have been used since the days of Yajur Veda and Brahminical Text to remove the malefic effects of certain evil forces (Rakshisi Shakti) and to Strengthen the positive forces (Davik Shakti) 
+
+These Yantras have been empowered with special Vedic mantras and Yogic Pran Pratishta by Sh. Pankaj Khanna himself. 
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Yantra is the Sanskrit word which means an instrument or a machine.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> In Tantric texts and Bhramanical Texts it means Visual Mantras or in easy words mantras made in geometrical figures and colours to influence the environment, cosmic forces, spirits around us, the evil eye of our enemies and our own aura and mental makeup. In Hindu and Buddhist mysticism this kind of geometric forms known as Yantra in Hindus and Thangka Paintings or simply Thangka in Buddhist areas is widely seen in Temples, monasteries, Homes and Viharas. 
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Types of Yantras ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+There are various Yantra’s in use some are for improving Bhagya others to improve wealth and still others to ward off enemies. 
+
+Yantra are of three kinds </string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-3c-ARk">
+                                <rect key="frame" x="16" y="422" width="126" height="96"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Framed Yantras:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGt-rY-usf">
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="28.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locket Yantras:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huW-2a-ubS">
+                                        <rect key="frame" x="0.0" y="33.5" width="126" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Daan Yantras:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mun-pY-8Sp">
+                                        <rect key="frame" x="0.0" y="67.5" width="126" height="28.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Ke-3c-ARk" secondAttribute="height" multiplier="80:61" id="Kd7-oJ-VhS"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1Qy-rx-vwc">
+                                <rect key="frame" x="176" y="422" width="125.5" height="96"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQs-nf-TzX">
+                                        <rect key="frame" x="0.0" y="0.0" width="125.5" height="28.5"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="--SELECT--">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn1:" destination="nWj-FR-Xyf" eventType="touchUpInside" id="p2J-cw-NdX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slR-Ef-AHB">
+                                        <rect key="frame" x="0.0" y="33.5" width="125.5" height="29"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="--SELECT--">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn2:" destination="nWj-FR-Xyf" eventType="touchUpInside" id="3BW-QV-VUe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0T-Nd-GYI">
+                                        <rect key="frame" x="0.0" y="67.5" width="125.5" height="28.5"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="--SELECT--">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn3:" destination="nWj-FR-Xyf" eventType="touchUpInside" id="swF-zy-KWk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1Qy-rx-vwc" secondAttribute="height" multiplier="80:61" id="zhK-y9-2pt"/>
+                                </constraints>
+                            </stackView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGS-Et-1Y3">
+                                <rect key="frame" x="16" y="72" width="288" height="135"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SGS-Et-1Y3" secondAttribute="height" multiplier="49:23" id="vZn-v5-33G"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="caK-Bp-D3b" firstAttribute="top" secondItem="4Ke-3c-ARk" secondAttribute="bottom" constant="50" id="7w8-F7-DSK"/>
+                            <constraint firstItem="4Ke-3c-ARk" firstAttribute="leading" secondItem="OA8-bv-mAW" secondAttribute="leading" constant="16" id="Il4-iD-WOf"/>
+                            <constraint firstItem="0jw-jX-gq3" firstAttribute="leading" secondItem="O4r-Cc-o5L" secondAttribute="leadingMargin" id="L2B-ve-Q3V"/>
+                            <constraint firstItem="OA8-bv-mAW" firstAttribute="trailing" secondItem="SGS-Et-1Y3" secondAttribute="trailing" constant="16" id="LWK-hy-WiO"/>
+                            <constraint firstItem="SGS-Et-1Y3" firstAttribute="top" secondItem="5iZ-Se-TVI" secondAttribute="bottom" constant="8" symbolic="YES" id="NBL-Le-9SI"/>
+                            <constraint firstItem="1Qy-rx-vwc" firstAttribute="leading" secondItem="4Ke-3c-ARk" secondAttribute="trailing" constant="34" id="bNL-to-ahg"/>
+                            <constraint firstItem="SGS-Et-1Y3" firstAttribute="leading" secondItem="OA8-bv-mAW" secondAttribute="leading" constant="16" id="lzE-4J-wtF"/>
+                            <constraint firstItem="caK-Bp-D3b" firstAttribute="top" secondItem="1Qy-rx-vwc" secondAttribute="bottom" constant="50" id="mik-sv-2ri"/>
+                            <constraint firstItem="4Ke-3c-ARk" firstAttribute="top" secondItem="0jw-jX-gq3" secondAttribute="bottom" constant="16" id="qSJ-Bl-B6T"/>
+                            <constraint firstItem="1Qy-rx-vwc" firstAttribute="top" secondItem="0jw-jX-gq3" secondAttribute="bottom" constant="16" id="qpx-BN-qkk"/>
+                            <constraint firstItem="0jw-jX-gq3" firstAttribute="trailing" secondItem="O4r-Cc-o5L" secondAttribute="trailingMargin" id="tcd-bJ-5Iw"/>
+                            <constraint firstItem="0jw-jX-gq3" firstAttribute="top" secondItem="SGS-Et-1Y3" secondAttribute="bottom" constant="8" id="xul-lS-DnE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OA8-bv-mAW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Yantras" id="bYB-zG-1Iv">
+                        <barButtonItem key="leftBarButtonItem" image="ic_menu" id="5y0-Ia-o8P"/>
+                        <barButtonItem key="rightBarButtonItem" title="BUY NOW" id="p2V-mx-SRy">
+                            <connections>
+                                <action selector="BuyBtn:" destination="nWj-FR-Xyf" id="AnY-Tm-sOj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="_textView" destination="0jw-jX-gq3" id="2Aj-sc-rv9"/>
+                        <outlet property="_webView" destination="SGS-Et-1Y3" id="jt1-rM-xdB"/>
+                        <outlet property="butn1" destination="GQs-nf-TzX" id="gVJ-U5-Ehi"/>
+                        <outlet property="butn2" destination="slR-Ef-AHB" id="4cy-ai-h4A"/>
+                        <outlet property="butn3" destination="i0T-Nd-GYI" id="uSX-Br-T9x"/>
+                        <outlet property="menuBtn" destination="5y0-Ia-o8P" id="elk-M7-1cJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UAH-SX-fcv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3420" y="3515"/>
+        </scene>
+        <!--Yantra Pop Up-->
+        <scene sceneID="NkZ-NI-3yZ">
+            <objects>
+                <viewController storyboardIdentifier="yantrapopup" id="Df1-Yc-IjW" customClass="YantraPopUp" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sK8-JZ-d9O"/>
+                        <viewControllerLayoutGuide type="bottom" id="jlz-Jn-0cA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eKl-EV-nPi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" bounces="NO" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezh-I6-Aqp">
+                                <rect key="frame" x="16" y="182" width="288" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="prb-Dr-YGG">
+                                <rect key="frame" x="16" y="20" width="288" height="153.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="prb-Dr-YGG" secondAttribute="height" multiplier="15:8" id="tmX-5g-7Su"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MB5-5o-Q5C">
+                                <rect key="frame" x="110" y="490" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4CJ-wd-WKb"/>
+                                    <constraint firstAttribute="width" constant="100" id="bOj-n5-qep"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="0.7958419323" green="0.65014070270000002" blue="0.3407031298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.7958419323" green="0.65014070270000002" blue="0.3407031298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeBtn:" destination="Df1-Yc-IjW" eventType="touchUpInside" id="Tzt-kw-WcK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="prb-Dr-YGG" secondAttribute="trailing" id="0eT-vG-H3w"/>
+                            <constraint firstItem="Ezh-I6-Aqp" firstAttribute="top" secondItem="prb-Dr-YGG" secondAttribute="bottom" constant="8" id="3Sr-OJ-TZs"/>
+                            <constraint firstItem="prb-Dr-YGG" firstAttribute="leading" secondItem="eKl-EV-nPi" secondAttribute="leadingMargin" id="4I8-TX-YLQ"/>
+                            <constraint firstItem="Ezh-I6-Aqp" firstAttribute="leading" secondItem="eKl-EV-nPi" secondAttribute="leadingMargin" id="DgW-dw-MK3"/>
+                            <constraint firstItem="Ezh-I6-Aqp" firstAttribute="trailing" secondItem="eKl-EV-nPi" secondAttribute="trailingMargin" id="PkP-b1-Zbn"/>
+                            <constraint firstItem="MB5-5o-Q5C" firstAttribute="centerX" secondItem="eKl-EV-nPi" secondAttribute="centerX" id="hVN-uQ-Uwe"/>
+                            <constraint firstItem="jlz-Jn-0cA" firstAttribute="top" secondItem="MB5-5o-Q5C" secondAttribute="bottom" constant="38" id="inR-sL-luK"/>
+                            <constraint firstItem="MB5-5o-Q5C" firstAttribute="top" secondItem="Ezh-I6-Aqp" secondAttribute="bottom" constant="8" id="jKb-09-TOd"/>
+                            <constraint firstItem="prb-Dr-YGG" firstAttribute="top" secondItem="sK8-JZ-d9O" secondAttribute="bottom" id="rG9-ln-Tii"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4p5-94-Cc5"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="prb-Dr-YGG" id="M5V-p2-mab"/>
+                        <outlet property="labelYantra" destination="Ezh-I6-Aqp" id="ZO4-ce-6Gb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfx-NU-jHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4236" y="3592"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1eZ-aT-EVZ">
+            <objects>
+                <navigationController storyboardIdentifier="UINavigationController-h4S-Ay-YLG" automaticallyAdjustsScrollViewInsets="NO" id="h4S-Ay-YLG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wWe-kv-Twj">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nWj-FR-Xyf" kind="relationship" relationship="rootViewController" id="EFS-e5-m3M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bao-5S-1Or" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3656" y="3605"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_menu" width="24" height="24"/>
+    </resources>
+</document>

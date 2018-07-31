@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jrG-ha-Hh0">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Semi Precious Gems-->
+        <scene sceneID="5ps-ZJ-8NY">
+            <objects>
+                <tableViewController id="jrG-ha-Hh0" customClass="SemiPreciousGems" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="BuA-hc-hoc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="semigem" rowHeight="540" id="rBK-ak-0DW" customClass="detailOfSemiGem" customModule="GemSelection" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="320" height="540"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rBK-ak-0DW" id="HH4-td-u5O">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="540"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have the best collection of precious and semi precious gemstones. Select one from the options below to find more about it." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqZ-Qb-gwX">
+                                            <rect key="frame" x="16" y="11" width="380" height="81"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="BqZ-Qb-gwX" secondAttribute="height" multiplier="343:73" id="U3I-qz-URn"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jNR-Oc-DrS">
+                                            <rect key="frame" x="19" y="251" width="337" height="47"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="jNR-Oc-DrS" secondAttribute="height" multiplier="337:47" id="cLO-oD-fpA"/>
+                                                <constraint firstAttribute="height" constant="47" id="jtb-Xs-DKK"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVi-yh-pFS">
+                                            <rect key="frame" x="15" y="306" width="376" height="159.5"/>
+                                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="CVi-yh-pFS" secondAttribute="height" multiplier="113:48" id="lhz-Bv-TG6"/>
+                                            </constraints>
+                                        </webView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="64E-X7-C7s">
+                                            <rect key="frame" x="16" y="473.5" width="380" height="55.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xnf-rT-IYK">
+                                            <rect key="frame" x="141" y="100" width="130" height="123"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Xnf-rT-IYK" secondAttribute="height" multiplier="93:88" id="LPR-HB-e0q"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="64E-X7-C7s" firstAttribute="bottom" secondItem="HH4-td-u5O" secondAttribute="bottomMargin" id="0mk-pl-Xei"/>
+                                        <constraint firstItem="CVi-yh-pFS" firstAttribute="top" secondItem="jNR-Oc-DrS" secondAttribute="bottom" constant="8" id="18g-Xv-srm"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="jNR-Oc-DrS" secondAttribute="trailing" constant="3" id="3jf-jc-oqa"/>
+                                        <constraint firstAttribute="trailing" secondItem="CVi-yh-pFS" secondAttribute="trailing" constant="21" id="5cp-Bf-2XE"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Xnf-rT-IYK" secondAttribute="trailing" constant="125" id="8or-3u-CZJ"/>
+                                        <constraint firstItem="jNR-Oc-DrS" firstAttribute="top" secondItem="Xnf-rT-IYK" secondAttribute="bottom" constant="28" id="Er1-3f-ojJ"/>
+                                        <constraint firstItem="jNR-Oc-DrS" firstAttribute="leading" secondItem="HH4-td-u5O" secondAttribute="leadingMargin" constant="3" id="Ide-GS-PyY"/>
+                                        <constraint firstItem="64E-X7-C7s" firstAttribute="top" secondItem="CVi-yh-pFS" secondAttribute="bottom" constant="8" id="IwI-SP-Wxj"/>
+                                        <constraint firstItem="64E-X7-C7s" firstAttribute="trailing" secondItem="HH4-td-u5O" secondAttribute="trailingMargin" id="bJj-MY-4MM"/>
+                                        <constraint firstItem="Xnf-rT-IYK" firstAttribute="top" secondItem="BqZ-Qb-gwX" secondAttribute="bottom" constant="8" id="cMJ-yE-jHY"/>
+                                        <constraint firstItem="BqZ-Qb-gwX" firstAttribute="leading" secondItem="HH4-td-u5O" secondAttribute="leadingMargin" id="fam-fh-EJH"/>
+                                        <constraint firstItem="64E-X7-C7s" firstAttribute="leading" secondItem="HH4-td-u5O" secondAttribute="leadingMargin" id="g9V-fj-HKg"/>
+                                        <constraint firstItem="BqZ-Qb-gwX" firstAttribute="trailing" secondItem="HH4-td-u5O" secondAttribute="trailingMargin" id="mL0-cD-Mc3"/>
+                                        <constraint firstItem="BqZ-Qb-gwX" firstAttribute="top" secondItem="HH4-td-u5O" secondAttribute="topMargin" id="n3z-xW-dhw"/>
+                                        <constraint firstItem="Xnf-rT-IYK" firstAttribute="leading" secondItem="HH4-td-u5O" secondAttribute="leadingMargin" constant="125" id="pR3-Qp-Moz"/>
+                                        <constraint firstItem="CVi-yh-pFS" firstAttribute="leading" secondItem="HH4-td-u5O" secondAttribute="leading" constant="15" id="zdG-Zc-enh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="_imageView" destination="Xnf-rT-IYK" id="fr6-7n-XtC"/>
+                                    <outlet property="_labelDetail" destination="64E-X7-C7s" id="WeY-Cr-FdR"/>
+                                    <outlet property="_textField" destination="jNR-Oc-DrS" id="ReY-Tm-Di6"/>
+                                    <outlet property="_webView" destination="CVi-yh-pFS" id="Lo4-pE-Yi2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jrG-ha-Hh0" id="TDK-Dc-1Qt"/>
+                            <outlet property="delegate" destination="jrG-ha-Hh0" id="gQr-v9-Iif"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Semi Precious Gems" id="OY2-8g-0h2">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu" id="jMD-3h-kuz"/>
+                        <barButtonItem key="rightBarButtonItem" title="BUY NOW" id="Bzz-Lg-odQ">
+                            <connections>
+                                <action selector="buyNow:" destination="jrG-ha-Hh0" id="uoN-hx-Ect"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuBtn" destination="jMD-3h-kuz" id="pAb-xu-5OM"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D8a-1M-lRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-954" y="5231"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_menu" width="24" height="24"/>
+    </resources>
+</document>

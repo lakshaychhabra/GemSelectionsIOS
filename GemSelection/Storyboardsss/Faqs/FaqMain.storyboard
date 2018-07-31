@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FAQ-->
+        <scene sceneID="9TJ-3Y-IFG">
+            <objects>
+                <viewController storyboardIdentifier="faqview" automaticallyAdjustsScrollViewInsets="NO" id="gd5-pA-MUZ" customClass="FaqPopUp" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w6g-9b-zda"/>
+                        <viewControllerLayoutGuide type="bottom" id="VF2-0R-je4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nCk-nS-xKN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="5301" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="fB5-6L-F8w">
+                                <rect key="frame" x="0.0" y="64" width="320" height="520"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="webrow" rowHeight="150" id="Q0p-Ab-ts1" customClass="webrowinfaq" customModule="GemSelection" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="320" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q0p-Ab-ts1" id="dh4-wc-X5z">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qzr-6I-3eZ">
+                                                    <rect key="frame" x="8" y="11" width="304" height="139"/>
+                                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </webView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qzr-6I-3eZ" firstAttribute="top" secondItem="dh4-wc-X5z" secondAttribute="top" constant="11" id="7pe-C8-Nl4"/>
+                                                <constraint firstItem="qzr-6I-3eZ" firstAttribute="leading" secondItem="dh4-wc-X5z" secondAttribute="leading" constant="8" id="MEg-Tf-72b"/>
+                                                <constraint firstAttribute="trailing" secondItem="qzr-6I-3eZ" secondAttribute="trailing" constant="8" id="YQH-tu-0UM"/>
+                                                <constraint firstAttribute="bottom" secondItem="qzr-6I-3eZ" secondAttribute="bottom" id="g7e-Md-SOX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="_webView" destination="qzr-6I-3eZ" id="NAu-In-G6T"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="faqrow" rowHeight="400" id="lPa-1D-C3K">
+                                        <rect key="frame" x="0.0" y="205.5" width="320" height="400"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lPa-1D-C3K" id="8FS-nN-m4q">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QUm-kM-UgB">
+                                                    <rect key="frame" x="31" y="43" width="258" height="314"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IT1-W3-wkA">
+                                                            <rect key="frame" x="0.0" y="0.0" width="258" height="45"/>
+                                                            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                            <state key="normal" title="How To Wear Gems?">
+                                                                <color key="titleColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="wearGems:" destination="gd5-pA-MUZ" eventType="touchUpInside" id="AAJ-q7-ybz"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1h-r2-UA7">
+                                                            <rect key="frame" x="0.0" y="45" width="258" height="44.5"/>
+                                                            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                            <state key="normal" title="How Gemstones Work?">
+                                                                <color key="titleColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="gemWork:" destination="gd5-pA-MUZ" eventType="touchUpInside" id="S9Z-ms-xaM"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uB-lF-cRe">
+                                                            <rect key="frame" x="0.0" y="89.5" width="258" height="45"/>
+                                                            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                            <state key="normal" title="How To Take Care Of Pearls?">
+                                                                <color key="titleColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="pearlsCare:" destination="gd5-pA-MUZ" eventType="touchUpInside" id="ngT-P2-EPC"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhp-sr-8hJ">
+                                                            <rect key="frame" x="0.0" y="134.5" width="258" height="45"/>
+                                                            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                            <state key="normal" title="How To Identify Sapphire">
+                                                                <color key="titleColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="identifySapphire:" destination="gd5-pA-MUZ" eventType="touchUpInside" id="1dg-cS-K70"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJh-9V-6eW">
+                                                            <rect key="frame" x="0.0" y="179.5" width="258" height="45"/>
+                                                            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <state key="normal" title="Things To Take Care While Buying">
+                                                                <color key="titleColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="whileBuying:" destination="gd5-pA-MUZ" eventType="touchUpInside" id="pOP-nn-0lu"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HF8-V1-wxA">
+                                                            <rect key="frame" x="0.0" y="224.5" width="258" height="44.5"/>
+                                                            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                            <state key="normal" title="Purchasing Gems Online">
+                                                                <color key="titleColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="purchasingGems:" destination="gd5-pA-MUZ" eventType="touchUpInside" id="bjZ-jw-m2o"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5d-fn-sU6">
+                                                            <rect key="frame" x="0.0" y="269" width="258" height="45"/>
+                                                            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                            <state key="normal" title="Where To Buy In Delhi?">
+                                                                <color key="titleColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="buyinDelhi:" destination="gd5-pA-MUZ" eventType="touchUpInside" id="lXT-q8-2YE"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QUm-kM-UgB" firstAttribute="leading" secondItem="8FS-nN-m4q" secondAttribute="leadingMargin" constant="16" id="CRK-nn-ta2"/>
+                                                <constraint firstItem="QUm-kM-UgB" firstAttribute="top" secondItem="8FS-nN-m4q" secondAttribute="topMargin" constant="32" id="PXG-sM-OXa"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="QUm-kM-UgB" secondAttribute="bottom" constant="32" id="oon-V6-Kas"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="QUm-kM-UgB" secondAttribute="trailing" constant="16" id="wO0-2t-8Se"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="gd5-pA-MUZ" id="zSh-8z-aHX"/>
+                                    <outlet property="delegate" destination="gd5-pA-MUZ" id="AMb-xu-MuY"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5V-ke-65g">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="FAQs" id="aaL-am-0DX">
+                                        <barButtonItem key="leftBarButtonItem" image="menuicon" id="IM5-HN-hUJ"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="fB5-6L-F8w" secondAttribute="bottom" constant="-16" id="6qe-SW-UvJ"/>
+                            <constraint firstItem="L5V-ke-65g" firstAttribute="trailing" secondItem="fB5-6L-F8w" secondAttribute="trailing" id="AWk-wr-Ovl"/>
+                            <constraint firstItem="L5V-ke-65g" firstAttribute="leading" secondItem="fB5-6L-F8w" secondAttribute="leading" id="Kpb-vC-fVU"/>
+                            <constraint firstItem="fB5-6L-F8w" firstAttribute="top" secondItem="ZB8-8q-rZS" secondAttribute="top" id="Pjp-yd-F3a"/>
+                            <constraint firstAttribute="trailing" secondItem="L5V-ke-65g" secondAttribute="trailing" id="YJF-Yt-n9B"/>
+                            <constraint firstItem="fB5-6L-F8w" firstAttribute="top" secondItem="L5V-ke-65g" secondAttribute="bottom" id="gVC-aD-CEO"/>
+                            <constraint firstItem="L5V-ke-65g" firstAttribute="leading" secondItem="nCk-nS-xKN" secondAttribute="leading" id="yLT-9D-yp4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZB8-8q-rZS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="FAQ" id="SWE-kB-nUB">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu" id="eGi-Bf-QAH"/>
+                        <barButtonItem key="rightBarButtonItem" title="BUY NOW" id="rPL-96-niS">
+                            <connections>
+                                <action selector="buyNow:" destination="gd5-pA-MUZ" id="rBa-vH-YSl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuBtn" destination="eGi-Bf-QAH" id="XtI-T9-svT"/>
+                        <outlet property="tableView" destination="fB5-6L-F8w" id="8QP-uM-cyp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9TP-VR-LUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1296" y="4440"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_menu" width="24" height="24"/>
+        <image name="menuicon" width="48" height="48"/>
+    </resources>
+</document>

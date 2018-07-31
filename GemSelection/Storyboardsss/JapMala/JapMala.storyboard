@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Zp-5A-BbO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Jap Mala-->
+        <scene sceneID="DMj-Zx-6mN">
+            <objects>
+                <tableViewController id="5Zp-5A-BbO" customClass="JSS" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" id="FSQ-ZR-8pe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="jssrow" rowHeight="266" id="fWP-EO-EHc" customClass="JssRow" customModule="GemSelection" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="320" height="266"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fWP-EO-EHc" id="U36-QM-AtW">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="265.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXD-uy-Rxl">
+                                            <rect key="frame" x="16" y="83" width="288" height="172"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="epe-vw-5Lv">
+                                            <rect key="frame" x="126" y="11" width="67" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="epe-vw-5Lv" secondAttribute="height" multiplier="1:1" constant="3" id="fNz-1h-mvf"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="epe-vw-5Lv" secondAttribute="trailing" constant="111" id="0zH-9K-OcH"/>
+                                        <constraint firstItem="aXD-uy-Rxl" firstAttribute="bottom" secondItem="U36-QM-AtW" secondAttribute="bottomMargin" id="3bG-ar-jzf"/>
+                                        <constraint firstItem="epe-vw-5Lv" firstAttribute="top" secondItem="U36-QM-AtW" secondAttribute="topMargin" id="4E6-1e-qRe"/>
+                                        <constraint firstItem="epe-vw-5Lv" firstAttribute="leading" secondItem="U36-QM-AtW" secondAttribute="leadingMargin" constant="110" id="4tD-T8-OYk"/>
+                                        <constraint firstItem="aXD-uy-Rxl" firstAttribute="top" secondItem="epe-vw-5Lv" secondAttribute="bottom" constant="8" id="AaP-8v-taj"/>
+                                        <constraint firstItem="aXD-uy-Rxl" firstAttribute="leading" secondItem="U36-QM-AtW" secondAttribute="leadingMargin" id="QBo-os-hwd"/>
+                                        <constraint firstItem="aXD-uy-Rxl" firstAttribute="trailing" secondItem="U36-QM-AtW" secondAttribute="trailingMargin" id="xyz-sG-CRE"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="_imageView" destination="epe-vw-5Lv" id="CtE-6k-R48"/>
+                                    <outlet property="_label" destination="aXD-uy-Rxl" id="LDF-R1-J3U"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5Zp-5A-BbO" id="vYG-B0-kSq"/>
+                            <outlet property="delegate" destination="5Zp-5A-BbO" id="5f3-2T-alY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Jap Mala" id="KGE-xz-VLK">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu" id="uAi-2R-GO6"/>
+                        <barButtonItem key="rightBarButtonItem" title="BUY NOW" id="srs-De-lqS">
+                            <connections>
+                                <action selector="buynowAction:" destination="5Zp-5A-BbO" id="7me-Ls-jts"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuBtn" destination="uAi-2R-GO6" id="7vN-7j-t9Z"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MfX-OL-O3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5393" y="3283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_menu" width="24" height="24"/>
+    </resources>
+</document>

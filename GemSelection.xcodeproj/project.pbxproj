@@ -44,6 +44,64 @@
 		3A2CFF09210F36EA001C7555 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2CFF08210F36EA001C7555 /* MyAccountViewController.swift */; };
 		3A660A0720F1165D008EDF6C /* GetHoroscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A660A0620F1165D008EDF6C /* GetHoroscope.swift */; };
 		3AB905EB20F8ACDA00EAEDB3 /* AstrologyMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB905EA20F8ACDA00EAEDB3 /* AstrologyMain.storyboard */; };
+		3ACE495A2110BDD5000347A1 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49592110BDD5000347A1 /* Account.storyboard */; };
+		3ACE495E2110BFCD000347A1 /* ForgetPAssword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE495D2110BFCD000347A1 /* ForgetPAssword.storyboard */; };
+		3ACE49602110C008000347A1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE495F2110C008000347A1 /* Login.storyboard */; };
+		3ACE49622110C0A1000347A1 /* RudrakshSideBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49612110C0A1000347A1 /* RudrakshSideBar.storyboard */; };
+		3ACE49652110C158000347A1 /* SignUP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49642110C158000347A1 /* SignUP.storyboard */; };
+		3ACE49672110C1C8000347A1 /* PreciousGemstone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49662110C1C8000347A1 /* PreciousGemstone.storyboard */; };
+		3ACE496A2110C298000347A1 /* DiamondTuddedJewelery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49692110C298000347A1 /* DiamondTuddedJewelery.storyboard */; };
+		3ACE496E2110C31B000347A1 /* DesignYourOwnJwell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE496D2110C31B000347A1 /* DesignYourOwnJwell.storyboard */; };
+		3ACE49712110C35D000347A1 /* CollectionViewForDiamonds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49702110C35D000347A1 /* CollectionViewForDiamonds.storyboard */; };
+		3ACE49732110C37E000347A1 /* JwelleryMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49722110C37E000347A1 /* JwelleryMain.storyboard */; };
+		3ACE49752110C3EB000347A1 /* RudrakshMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49742110C3EB000347A1 /* RudrakshMain.storyboard */; };
+		3ACE49772110C41D000347A1 /* Mala.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49762110C41D000347A1 /* Mala.storyboard */; };
+		3ACE49792110C43D000347A1 /* Bracelets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49782110C43D000347A1 /* Bracelets.storyboard */; };
+		3ACE497B2110C451000347A1 /* BeadsPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE497A2110C451000347A1 /* BeadsPopUp.storyboard */; };
+		3ACE497D2110C4BF000347A1 /* Yugal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE497C2110C4BF000347A1 /* Yugal.storyboard */; };
+		3ACE497F2110C4E2000347A1 /* Popups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE497E2110C4E2000347A1 /* Popups.storyboard */; };
+		3ACE49812110C536000347A1 /* Faqs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49802110C536000347A1 /* Faqs.storyboard */; };
+		3ACE49832110C56D000347A1 /* JapMala.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49822110C56D000347A1 /* JapMala.storyboard */; };
+		3ACE49852110C59F000347A1 /* Diamonds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49842110C59F000347A1 /* Diamonds.storyboard */; };
+		3ACE49872110C5D6000347A1 /* HandiSideBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49862110C5D6000347A1 /* HandiSideBar.storyboard */; };
+		3ACE498B2110C617000347A1 /* Kavach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE498A2110C617000347A1 /* Kavach.storyboard */; };
+		3ACE498D2110C63F000347A1 /* Pots.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE498C2110C63F000347A1 /* Pots.storyboard */; };
+		3ACE498F2110C65E000347A1 /* HandiMultipleViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE498E2110C65E000347A1 /* HandiMultipleViews.storyboard */; };
+		3ACE49912110C6DE000347A1 /* GemStoneRecomendation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49902110C6DE000347A1 /* GemStoneRecomendation.storyboard */; };
+		3ACE49932110C70D000347A1 /* Cabochons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49922110C70D000347A1 /* Cabochons.storyboard */; };
+		3ACE49952110C723000347A1 /* FaqMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49942110C723000347A1 /* FaqMain.storyboard */; };
+		3ACE49972110C736000347A1 /* BirthStones.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49962110C736000347A1 /* BirthStones.storyboard */; };
+		3ACE49992110C74C000347A1 /* SemiPreciousStones.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49982110C74C000347A1 /* SemiPreciousStones.storyboard */; };
+		3ACE499B2110C766000347A1 /* ConnectWithUS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE499A2110C766000347A1 /* ConnectWithUS.storyboard */; };
+		3ACE499E2110C781000347A1 /* VisitUS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE499D2110C781000347A1 /* VisitUS.storyboard */; };
+		3ACE49A02110C7AA000347A1 /* Perfumes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE499F2110C7AA000347A1 /* Perfumes.storyboard */; };
+		3ACE49A32110C7CE000347A1 /* TriangularGemstones.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49A22110C7CE000347A1 /* TriangularGemstones.storyboard */; };
+		3ACE49A52110C7EA000347A1 /* ReturnPolicy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49A42110C7EA000347A1 /* ReturnPolicy.storyboard */; };
+		3ACE49A72110C807000347A1 /* GemStoneToWear.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49A62110C807000347A1 /* GemStoneToWear.storyboard */; };
+		3ACE49A92110C82B000347A1 /* Beads.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49A82110C82B000347A1 /* Beads.storyboard */; };
+		3ACE49AB2110C85F000347A1 /* RudrakshParentController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49AA2110C85F000347A1 /* RudrakshParentController.storyboard */; };
+		3ACE49AD2110C8D0000347A1 /* Yantras.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49AC2110C8D0000347A1 /* Yantras.storyboard */; };
+		3ACE49AF2110C904000347A1 /* DiamondParent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49AE2110C904000347A1 /* DiamondParent.storyboard */; };
+		3ACE49B12110C95E000347A1 /* HandiCraftParent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49B02110C95E000347A1 /* HandiCraftParent.storyboard */; };
+		3ACE49B32110C98F000347A1 /* PerfumesParent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49B22110C98F000347A1 /* PerfumesParent.storyboard */; };
+		3ACE49B52110C9E1000347A1 /* TriangularGemstonesParent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49B42110C9E1000347A1 /* TriangularGemstonesParent.storyboard */; };
+		3ACE49B82110CA3B000347A1 /* HandiParents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49B72110CA3B000347A1 /* HandiParents.storyboard */; };
+		3ACE49BA2110CA5E000347A1 /* KavachParent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49B92110CA5E000347A1 /* KavachParent.storyboard */; };
+		3ACE49BD2110CA90000347A1 /* AccountParent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49BC2110CA90000347A1 /* AccountParent.storyboard */; };
+		3ACE49C02110CAFE000347A1 /* JewelleryMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49BF2110CAFE000347A1 /* JewelleryMain.storyboard */; };
+		3ACE49C22110CB35000347A1 /* PreciousGemstoneParent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49C12110CB35000347A1 /* PreciousGemstoneParent.storyboard */; };
+		3ACE49C52110CB76000347A1 /* JapMalaParent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49C42110CB76000347A1 /* JapMalaParent.storyboard */; };
+		3ACE49C82110CBB8000347A1 /* YugalParent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49C72110CBB8000347A1 /* YugalParent.storyboard */; };
+		3ACE49CA2110CC5A000347A1 /* GemTowearParent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49C92110CC5A000347A1 /* GemTowearParent.storyboard */; };
+		3ACE49CC2110CC74000347A1 /* CabochonsParent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49CB2110CC74000347A1 /* CabochonsParent.storyboard */; };
+		3ACE49CF2110CCA6000347A1 /* GemRecommendationParent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49CE2110CCA6000347A1 /* GemRecommendationParent.storyboard */; };
+		3ACE49D22110CCE5000347A1 /* YantraPopUP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49D12110CCE5000347A1 /* YantraPopUP.storyboard */; };
+		3ACE49D52110CD19000347A1 /* FaqMainParent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49D42110CD19000347A1 /* FaqMainParent.storyboard */; };
+		3ACE49D72110CD3E000347A1 /* BirthStonesMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49D62110CD3E000347A1 /* BirthStonesMain.storyboard */; };
+		3ACE49DA2110CD69000347A1 /* SemiPreciousStonesParent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49D92110CD69000347A1 /* SemiPreciousStonesParent.storyboard */; };
+		3ACE49DD2110CDD4000347A1 /* AstrologyMainParents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49DC2110CDD4000347A1 /* AstrologyMainParents.storyboard */; };
+		3ACE49DF2110CE0F000347A1 /* ConnectWithUsMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49DE2110CE0F000347A1 /* ConnectWithUsMain.storyboard */; };
+		3ACE49E12110CE57000347A1 /* HomeStones.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE49E02110CE57000347A1 /* HomeStones.storyboard */; };
 		3AF62FFF20F338FC005BBC2D /* IndianAstrology.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF62FFE20F338FC005BBC2D /* IndianAstrology.storyboard */; };
 		3AF6300120F33911005BBC2D /* WesternAstrology.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF6300020F33911005BBC2D /* WesternAstrology.storyboard */; };
 		3AF6300320F3393D005BBC2D /* MatchMaking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF6300220F3393D005BBC2D /* MatchMaking.storyboard */; };
@@ -118,6 +176,64 @@
 		3A660A0620F1165D008EDF6C /* GetHoroscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHoroscope.swift; sourceTree = "<group>"; };
 		3AB905EA20F8ACDA00EAEDB3 /* AstrologyMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AstrologyMain.storyboard; sourceTree = "<group>"; };
 		3ACC03413D291C75AAB1EDC2 /* Pods-GemSelection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemSelection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GemSelection/Pods-GemSelection.debug.xcconfig"; sourceTree = "<group>"; };
+		3ACE49592110BDD5000347A1 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		3ACE495D2110BFCD000347A1 /* ForgetPAssword.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ForgetPAssword.storyboard; sourceTree = "<group>"; };
+		3ACE495F2110C008000347A1 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		3ACE49612110C0A1000347A1 /* RudrakshSideBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RudrakshSideBar.storyboard; sourceTree = "<group>"; };
+		3ACE49642110C158000347A1 /* SignUP.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUP.storyboard; sourceTree = "<group>"; };
+		3ACE49662110C1C8000347A1 /* PreciousGemstone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PreciousGemstone.storyboard; sourceTree = "<group>"; };
+		3ACE49692110C298000347A1 /* DiamondTuddedJewelery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DiamondTuddedJewelery.storyboard; sourceTree = "<group>"; };
+		3ACE496D2110C31B000347A1 /* DesignYourOwnJwell.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DesignYourOwnJwell.storyboard; sourceTree = "<group>"; };
+		3ACE49702110C35D000347A1 /* CollectionViewForDiamonds.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionViewForDiamonds.storyboard; sourceTree = "<group>"; };
+		3ACE49722110C37E000347A1 /* JwelleryMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JwelleryMain.storyboard; sourceTree = "<group>"; };
+		3ACE49742110C3EB000347A1 /* RudrakshMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RudrakshMain.storyboard; sourceTree = "<group>"; };
+		3ACE49762110C41D000347A1 /* Mala.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mala.storyboard; sourceTree = "<group>"; };
+		3ACE49782110C43D000347A1 /* Bracelets.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Bracelets.storyboard; sourceTree = "<group>"; };
+		3ACE497A2110C451000347A1 /* BeadsPopUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BeadsPopUp.storyboard; sourceTree = "<group>"; };
+		3ACE497C2110C4BF000347A1 /* Yugal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Yugal.storyboard; sourceTree = "<group>"; };
+		3ACE497E2110C4E2000347A1 /* Popups.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Popups.storyboard; sourceTree = "<group>"; };
+		3ACE49802110C536000347A1 /* Faqs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Faqs.storyboard; sourceTree = "<group>"; };
+		3ACE49822110C56D000347A1 /* JapMala.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JapMala.storyboard; sourceTree = "<group>"; };
+		3ACE49842110C59F000347A1 /* Diamonds.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diamonds.storyboard; sourceTree = "<group>"; };
+		3ACE49862110C5D6000347A1 /* HandiSideBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HandiSideBar.storyboard; sourceTree = "<group>"; };
+		3ACE498A2110C617000347A1 /* Kavach.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Kavach.storyboard; sourceTree = "<group>"; };
+		3ACE498C2110C63F000347A1 /* Pots.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pots.storyboard; sourceTree = "<group>"; };
+		3ACE498E2110C65E000347A1 /* HandiMultipleViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HandiMultipleViews.storyboard; sourceTree = "<group>"; };
+		3ACE49902110C6DE000347A1 /* GemStoneRecomendation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GemStoneRecomendation.storyboard; sourceTree = "<group>"; };
+		3ACE49922110C70D000347A1 /* Cabochons.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cabochons.storyboard; sourceTree = "<group>"; };
+		3ACE49942110C723000347A1 /* FaqMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FaqMain.storyboard; sourceTree = "<group>"; };
+		3ACE49962110C736000347A1 /* BirthStones.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BirthStones.storyboard; sourceTree = "<group>"; };
+		3ACE49982110C74C000347A1 /* SemiPreciousStones.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SemiPreciousStones.storyboard; sourceTree = "<group>"; };
+		3ACE499A2110C766000347A1 /* ConnectWithUS.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConnectWithUS.storyboard; sourceTree = "<group>"; };
+		3ACE499D2110C781000347A1 /* VisitUS.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VisitUS.storyboard; sourceTree = "<group>"; };
+		3ACE499F2110C7AA000347A1 /* Perfumes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Perfumes.storyboard; sourceTree = "<group>"; };
+		3ACE49A22110C7CE000347A1 /* TriangularGemstones.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TriangularGemstones.storyboard; sourceTree = "<group>"; };
+		3ACE49A42110C7EA000347A1 /* ReturnPolicy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReturnPolicy.storyboard; sourceTree = "<group>"; };
+		3ACE49A62110C807000347A1 /* GemStoneToWear.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GemStoneToWear.storyboard; sourceTree = "<group>"; };
+		3ACE49A82110C82B000347A1 /* Beads.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Beads.storyboard; sourceTree = "<group>"; };
+		3ACE49AA2110C85F000347A1 /* RudrakshParentController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RudrakshParentController.storyboard; sourceTree = "<group>"; };
+		3ACE49AC2110C8D0000347A1 /* Yantras.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Yantras.storyboard; sourceTree = "<group>"; };
+		3ACE49AE2110C904000347A1 /* DiamondParent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DiamondParent.storyboard; sourceTree = "<group>"; };
+		3ACE49B02110C95E000347A1 /* HandiCraftParent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HandiCraftParent.storyboard; sourceTree = "<group>"; };
+		3ACE49B22110C98F000347A1 /* PerfumesParent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PerfumesParent.storyboard; sourceTree = "<group>"; };
+		3ACE49B42110C9E1000347A1 /* TriangularGemstonesParent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TriangularGemstonesParent.storyboard; sourceTree = "<group>"; };
+		3ACE49B72110CA3B000347A1 /* HandiParents.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HandiParents.storyboard; sourceTree = "<group>"; };
+		3ACE49B92110CA5E000347A1 /* KavachParent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KavachParent.storyboard; sourceTree = "<group>"; };
+		3ACE49BC2110CA90000347A1 /* AccountParent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AccountParent.storyboard; sourceTree = "<group>"; };
+		3ACE49BF2110CAFE000347A1 /* JewelleryMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JewelleryMain.storyboard; sourceTree = "<group>"; };
+		3ACE49C12110CB35000347A1 /* PreciousGemstoneParent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PreciousGemstoneParent.storyboard; sourceTree = "<group>"; };
+		3ACE49C42110CB76000347A1 /* JapMalaParent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JapMalaParent.storyboard; sourceTree = "<group>"; };
+		3ACE49C72110CBB8000347A1 /* YugalParent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YugalParent.storyboard; sourceTree = "<group>"; };
+		3ACE49C92110CC5A000347A1 /* GemTowearParent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GemTowearParent.storyboard; sourceTree = "<group>"; };
+		3ACE49CB2110CC74000347A1 /* CabochonsParent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CabochonsParent.storyboard; sourceTree = "<group>"; };
+		3ACE49CE2110CCA6000347A1 /* GemRecommendationParent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GemRecommendationParent.storyboard; sourceTree = "<group>"; };
+		3ACE49D12110CCE5000347A1 /* YantraPopUP.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YantraPopUP.storyboard; sourceTree = "<group>"; };
+		3ACE49D42110CD19000347A1 /* FaqMainParent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FaqMainParent.storyboard; sourceTree = "<group>"; };
+		3ACE49D62110CD3E000347A1 /* BirthStonesMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BirthStonesMain.storyboard; sourceTree = "<group>"; };
+		3ACE49D92110CD69000347A1 /* SemiPreciousStonesParent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SemiPreciousStonesParent.storyboard; sourceTree = "<group>"; };
+		3ACE49DC2110CDD4000347A1 /* AstrologyMainParents.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AstrologyMainParents.storyboard; sourceTree = "<group>"; };
+		3ACE49DE2110CE0F000347A1 /* ConnectWithUsMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConnectWithUsMain.storyboard; sourceTree = "<group>"; };
+		3ACE49E02110CE57000347A1 /* HomeStones.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeStones.storyboard; sourceTree = "<group>"; };
 		3AF62FFE20F338FC005BBC2D /* IndianAstrology.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IndianAstrology.storyboard; sourceTree = "<group>"; };
 		3AF6300020F33911005BBC2D /* WesternAstrology.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WesternAstrology.storyboard; sourceTree = "<group>"; };
 		3AF6300220F3393D005BBC2D /* MatchMaking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MatchMaking.storyboard; sourceTree = "<group>"; };
@@ -185,6 +301,7 @@
 		00176ECE201394A6009E92B8 /* Rudraksha */ = {
 			isa = PBXGroup;
 			children = (
+				3ACE49AA2110C85F000347A1 /* RudrakshParentController.storyboard */,
 				00176EC820139483009E92B8 /* SideBarRudraksh.swift */,
 				00176ECA20139495009E92B8 /* RudrakshaGroup.swift */,
 				00176ECC201394A1009E92B8 /* RudrakshaPopupView.swift */,
@@ -229,9 +346,211 @@
 			path = Horoscope;
 			sourceTree = "<group>";
 		};
+		3ACE49522110B873000347A1 /* Storyboardsss */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE49E02110CE57000347A1 /* HomeStones.storyboard */,
+				3AF6300420F33945005BBC2D /* AstrologyStoryBoard */,
+				3ACE49DB2110CD73000347A1 /* SemiPreciousStones */,
+				3ACE49D82110CD46000347A1 /* BirthStones */,
+				3ACE49D32110CCEE000347A1 /* Yantras */,
+				3ACE49D02110CCAB000347A1 /* GemRecommend */,
+				3ACE49CD2110CC7F000347A1 /* Cabochons */,
+				3ACE49C62110CB7B000347A1 /* JapMala */,
+				3ACE49C32110CB3D000347A1 /* PreciousGemstones */,
+				3ACE49BE2110CAA0000347A1 /* MyAccount */,
+				3ACE49BB2110CA68000347A1 /* Kavach */,
+				3ACE49902110C6DE000347A1 /* GemStoneRecomendation.storyboard */,
+				3ACE49A82110C82B000347A1 /* Beads.storyboard */,
+				3ACE49B62110C9EE000347A1 /* TriangularGemstones */,
+				3ACE49A12110C7B4000347A1 /* Perfumes */,
+				3ACE499C2110C76E000347A1 /* Contact */,
+				3ACE49882110C5DF000347A1 /* HandiCrafts */,
+				3ACE49892110C5E9000347A1 /* Faqs */,
+				3ACE496F2110C328000347A1 /* Jwelleryss and Diamond */,
+				3ACE49632110C0F2000347A1 /* Rudraksh */,
+				3ACE49682110C20E000347A1 /* SignupSignin */,
+			);
+			path = Storyboardsss;
+			sourceTree = "<group>";
+		};
+		3ACE49632110C0F2000347A1 /* Rudraksh */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE497E2110C4E2000347A1 /* Popups.storyboard */,
+				3ACE49C72110CBB8000347A1 /* YugalParent.storyboard */,
+				3ACE497C2110C4BF000347A1 /* Yugal.storyboard */,
+				3ACE497A2110C451000347A1 /* BeadsPopUp.storyboard */,
+				3ACE49782110C43D000347A1 /* Bracelets.storyboard */,
+				3ACE49762110C41D000347A1 /* Mala.storyboard */,
+				3ACE49742110C3EB000347A1 /* RudrakshMain.storyboard */,
+				3ACE49612110C0A1000347A1 /* RudrakshSideBar.storyboard */,
+			);
+			path = Rudraksh;
+			sourceTree = "<group>";
+		};
+		3ACE49682110C20E000347A1 /* SignupSignin */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE495F2110C008000347A1 /* Login.storyboard */,
+				3ACE49642110C158000347A1 /* SignUP.storyboard */,
+				3ACE495D2110BFCD000347A1 /* ForgetPAssword.storyboard */,
+			);
+			path = SignupSignin;
+			sourceTree = "<group>";
+		};
+		3ACE496F2110C328000347A1 /* Jwelleryss and Diamond */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE49BF2110CAFE000347A1 /* JewelleryMain.storyboard */,
+				3ACE49AE2110C904000347A1 /* DiamondParent.storyboard */,
+				3ACE49842110C59F000347A1 /* Diamonds.storyboard */,
+				3ACE49722110C37E000347A1 /* JwelleryMain.storyboard */,
+				3ACE49702110C35D000347A1 /* CollectionViewForDiamonds.storyboard */,
+				3ACE496D2110C31B000347A1 /* DesignYourOwnJwell.storyboard */,
+				3ACE49692110C298000347A1 /* DiamondTuddedJewelery.storyboard */,
+			);
+			name = "Jwelleryss and Diamond";
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		3ACE49882110C5DF000347A1 /* HandiCrafts */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE49B72110CA3B000347A1 /* HandiParents.storyboard */,
+				3ACE49B02110C95E000347A1 /* HandiCraftParent.storyboard */,
+				3ACE498E2110C65E000347A1 /* HandiMultipleViews.storyboard */,
+				3ACE498C2110C63F000347A1 /* Pots.storyboard */,
+				3ACE49862110C5D6000347A1 /* HandiSideBar.storyboard */,
+			);
+			path = HandiCrafts;
+			sourceTree = "<group>";
+		};
+		3ACE49892110C5E9000347A1 /* Faqs */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE49D42110CD19000347A1 /* FaqMainParent.storyboard */,
+				3ACE49C92110CC5A000347A1 /* GemTowearParent.storyboard */,
+				3ACE49A62110C807000347A1 /* GemStoneToWear.storyboard */,
+				3ACE49A42110C7EA000347A1 /* ReturnPolicy.storyboard */,
+				3ACE49942110C723000347A1 /* FaqMain.storyboard */,
+				3ACE49802110C536000347A1 /* Faqs.storyboard */,
+			);
+			path = Faqs;
+			sourceTree = "<group>";
+		};
+		3ACE499C2110C76E000347A1 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE49DE2110CE0F000347A1 /* ConnectWithUsMain.storyboard */,
+				3ACE499D2110C781000347A1 /* VisitUS.storyboard */,
+				3ACE499A2110C766000347A1 /* ConnectWithUS.storyboard */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		3ACE49A12110C7B4000347A1 /* Perfumes */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE49B22110C98F000347A1 /* PerfumesParent.storyboard */,
+				3ACE499F2110C7AA000347A1 /* Perfumes.storyboard */,
+			);
+			path = Perfumes;
+			sourceTree = "<group>";
+		};
+		3ACE49B62110C9EE000347A1 /* TriangularGemstones */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE49B42110C9E1000347A1 /* TriangularGemstonesParent.storyboard */,
+				3ACE49A22110C7CE000347A1 /* TriangularGemstones.storyboard */,
+			);
+			path = TriangularGemstones;
+			sourceTree = "<group>";
+		};
+		3ACE49BB2110CA68000347A1 /* Kavach */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE49B92110CA5E000347A1 /* KavachParent.storyboard */,
+				3ACE498A2110C617000347A1 /* Kavach.storyboard */,
+			);
+			path = Kavach;
+			sourceTree = "<group>";
+		};
+		3ACE49BE2110CAA0000347A1 /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE49BC2110CA90000347A1 /* AccountParent.storyboard */,
+				3ACE49592110BDD5000347A1 /* Account.storyboard */,
+			);
+			path = MyAccount;
+			sourceTree = "<group>";
+		};
+		3ACE49C32110CB3D000347A1 /* PreciousGemstones */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE49662110C1C8000347A1 /* PreciousGemstone.storyboard */,
+				3ACE49C12110CB35000347A1 /* PreciousGemstoneParent.storyboard */,
+			);
+			path = PreciousGemstones;
+			sourceTree = "<group>";
+		};
+		3ACE49C62110CB7B000347A1 /* JapMala */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE49822110C56D000347A1 /* JapMala.storyboard */,
+				3ACE49C42110CB76000347A1 /* JapMalaParent.storyboard */,
+			);
+			path = JapMala;
+			sourceTree = "<group>";
+		};
+		3ACE49CD2110CC7F000347A1 /* Cabochons */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE49CB2110CC74000347A1 /* CabochonsParent.storyboard */,
+				3ACE49922110C70D000347A1 /* Cabochons.storyboard */,
+			);
+			path = Cabochons;
+			sourceTree = "<group>";
+		};
+		3ACE49D02110CCAB000347A1 /* GemRecommend */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE49CE2110CCA6000347A1 /* GemRecommendationParent.storyboard */,
+			);
+			path = GemRecommend;
+			sourceTree = "<group>";
+		};
+		3ACE49D32110CCEE000347A1 /* Yantras */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE49D12110CCE5000347A1 /* YantraPopUP.storyboard */,
+				3ACE49AC2110C8D0000347A1 /* Yantras.storyboard */,
+			);
+			path = Yantras;
+			sourceTree = "<group>";
+		};
+		3ACE49D82110CD46000347A1 /* BirthStones */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE49D62110CD3E000347A1 /* BirthStonesMain.storyboard */,
+				3ACE49962110C736000347A1 /* BirthStones.storyboard */,
+			);
+			path = BirthStones;
+			sourceTree = "<group>";
+		};
+		3ACE49DB2110CD73000347A1 /* SemiPreciousStones */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE49D92110CD69000347A1 /* SemiPreciousStonesParent.storyboard */,
+				3ACE49982110C74C000347A1 /* SemiPreciousStones.storyboard */,
+			);
+			path = SemiPreciousStones;
+			sourceTree = "<group>";
+		};
 		3AF6300420F33945005BBC2D /* AstrologyStoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				3ACE49DC2110CDD4000347A1 /* AstrologyMainParents.storyboard */,
 				3AB905EA20F8ACDA00EAEDB3 /* AstrologyMain.storyboard */,
 				3AF62FFE20F338FC005BBC2D /* IndianAstrology.storyboard */,
 				3AF6300020F33911005BBC2D /* WesternAstrology.storyboard */,
@@ -322,7 +641,6 @@
 				0044357720068A4D008C4ECF /* YantraGroup.swift */,
 				0044357820068A4D008C4ECF /* YantraPopUp.swift */,
 				00176EB92012376F009E92B8 /* Jwellery */,
-				3AF6300420F33945005BBC2D /* AstrologyStoryBoard */,
 				3A660A0820F11666008EDF6C /* Horoscope */,
 				00D998102007D65500D10D3F /* Perfumes.swift */,
 				00C86E98200BB04D0060E04E /* GemstoneRecommendation.swift */,
@@ -338,6 +656,7 @@
 				00884BB72003FEB400ECF7FD /* WebViewBig.xib */,
 				00F6AB441FFFD362003907B5 /* Extra.swift */,
 				00F6AB451FFFD362003907B5 /* Extra.xib */,
+				3ACE49522110B873000347A1 /* Storyboardsss */,
 				4668A3FD1F9FE63100CB64A7 /* LaunchScreen.storyboard */,
 				4668A3F81F9FE63100CB64A7 /* Main.storyboard */,
 				00A594AB2006A28E009ACA05 /* HandicraftsPots.swift */,
@@ -458,17 +777,75 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ACE49D52110CD19000347A1 /* FaqMainParent.storyboard in Resources */,
+				3ACE49602110C008000347A1 /* Login.storyboard in Resources */,
+				3ACE49C02110CAFE000347A1 /* JewelleryMain.storyboard in Resources */,
+				3ACE49CA2110CC5A000347A1 /* GemTowearParent.storyboard in Resources */,
+				3ACE49A72110C807000347A1 /* GemStoneToWear.storyboard in Resources */,
+				3ACE49872110C5D6000347A1 /* HandiSideBar.storyboard in Resources */,
+				3ACE498B2110C617000347A1 /* Kavach.storyboard in Resources */,
 				00884BB82003FEB400ECF7FD /* WebViewBig.xib in Resources */,
+				3ACE49DA2110CD69000347A1 /* SemiPreciousStonesParent.storyboard in Resources */,
+				3ACE49CC2110CC74000347A1 /* CabochonsParent.storyboard in Resources */,
+				3ACE49BD2110CA90000347A1 /* AccountParent.storyboard in Resources */,
+				3ACE49AD2110C8D0000347A1 /* Yantras.storyboard in Resources */,
 				3AF6301120F34B8B005BBC2D /* DatePopUp.storyboard in Resources */,
+				3ACE49B52110C9E1000347A1 /* TriangularGemstonesParent.storyboard in Resources */,
+				3ACE49622110C0A1000347A1 /* RudrakshSideBar.storyboard in Resources */,
+				3ACE49C52110CB76000347A1 /* JapMalaParent.storyboard in Resources */,
+				3ACE49792110C43D000347A1 /* Bracelets.storyboard in Resources */,
+				3ACE496E2110C31B000347A1 /* DesignYourOwnJwell.storyboard in Resources */,
+				3ACE49DF2110CE0F000347A1 /* ConnectWithUsMain.storyboard in Resources */,
 				3AF62FFF20F338FC005BBC2D /* IndianAstrology.storyboard in Resources */,
+				3ACE498D2110C63F000347A1 /* Pots.storyboard in Resources */,
+				3ACE499E2110C781000347A1 /* VisitUS.storyboard in Resources */,
+				3ACE49B82110CA3B000347A1 /* HandiParents.storyboard in Resources */,
+				3ACE498F2110C65E000347A1 /* HandiMultipleViews.storyboard in Resources */,
+				3ACE49CF2110CCA6000347A1 /* GemRecommendationParent.storyboard in Resources */,
+				3ACE499B2110C766000347A1 /* ConnectWithUS.storyboard in Resources */,
+				3ACE49B32110C98F000347A1 /* PerfumesParent.storyboard in Resources */,
+				3ACE49712110C35D000347A1 /* CollectionViewForDiamonds.storyboard in Resources */,
+				3ACE49952110C723000347A1 /* FaqMain.storyboard in Resources */,
+				3ACE49A32110C7CE000347A1 /* TriangularGemstones.storyboard in Resources */,
+				3ACE49752110C3EB000347A1 /* RudrakshMain.storyboard in Resources */,
+				3ACE497B2110C451000347A1 /* BeadsPopUp.storyboard in Resources */,
+				3ACE49C22110CB35000347A1 /* PreciousGemstoneParent.storyboard in Resources */,
 				0037B19E200FA15B003697BA /* HomeStoneSingles.xib in Resources */,
+				3ACE49932110C70D000347A1 /* Cabochons.storyboard in Resources */,
+				3ACE497F2110C4E2000347A1 /* Popups.storyboard in Resources */,
+				3ACE49972110C736000347A1 /* BirthStones.storyboard in Resources */,
+				3ACE49B12110C95E000347A1 /* HandiCraftParent.storyboard in Resources */,
+				3ACE49D72110CD3E000347A1 /* BirthStonesMain.storyboard in Resources */,
+				3ACE49AB2110C85F000347A1 /* RudrakshParentController.storyboard in Resources */,
 				4668A3FF1F9FE63100CB64A7 /* LaunchScreen.storyboard in Resources */,
 				00176EBF20124BAE009E92B8 /* DesignJwellery.xib in Resources */,
+				3ACE49AF2110C904000347A1 /* DiamondParent.storyboard in Resources */,
+				3ACE49652110C158000347A1 /* SignUP.storyboard in Resources */,
+				3ACE49912110C6DE000347A1 /* GemStoneRecomendation.storyboard in Resources */,
+				3ACE49672110C1C8000347A1 /* PreciousGemstone.storyboard in Resources */,
+				3ACE495A2110BDD5000347A1 /* Account.storyboard in Resources */,
+				3ACE49812110C536000347A1 /* Faqs.storyboard in Resources */,
+				3ACE49832110C56D000347A1 /* JapMala.storyboard in Resources */,
+				3ACE49BA2110CA5E000347A1 /* KavachParent.storyboard in Resources */,
 				4600F4DC1FAD0380000954D3 /* GoogleService-Info.plist in Resources */,
+				3ACE496A2110C298000347A1 /* DiamondTuddedJewelery.storyboard in Resources */,
+				3ACE49A52110C7EA000347A1 /* ReturnPolicy.storyboard in Resources */,
+				3ACE49DD2110CDD4000347A1 /* AstrologyMainParents.storyboard in Resources */,
 				00F6AB471FFFD362003907B5 /* Extra.xib in Resources */,
+				3ACE49C82110CBB8000347A1 /* YugalParent.storyboard in Resources */,
+				3ACE49E12110CE57000347A1 /* HomeStones.storyboard in Resources */,
+				3ACE495E2110BFCD000347A1 /* ForgetPAssword.storyboard in Resources */,
+				3ACE49A02110C7AA000347A1 /* Perfumes.storyboard in Resources */,
 				4668A3FC1F9FE63100CB64A7 /* Assets.xcassets in Resources */,
+				3ACE49A92110C82B000347A1 /* Beads.storyboard in Resources */,
 				3AF6300320F3393D005BBC2D /* MatchMaking.storyboard in Resources */,
+				3ACE49992110C74C000347A1 /* SemiPreciousStones.storyboard in Resources */,
+				3ACE49852110C59F000347A1 /* Diamonds.storyboard in Resources */,
+				3ACE49D22110CCE5000347A1 /* YantraPopUP.storyboard in Resources */,
 				3AB905EB20F8ACDA00EAEDB3 /* AstrologyMain.storyboard in Resources */,
+				3ACE49732110C37E000347A1 /* JwelleryMain.storyboard in Resources */,
+				3ACE49772110C41D000347A1 /* Mala.storyboard in Resources */,
+				3ACE497D2110C4BF000347A1 /* Yugal.storyboard in Resources */,
 				3AF6300120F33911005BBC2D /* WesternAstrology.storyboard in Resources */,
 				4668A3FA1F9FE63100CB64A7 /* Main.storyboard in Resources */,
 			);

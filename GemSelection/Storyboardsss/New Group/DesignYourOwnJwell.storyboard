@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p62-D0-sqY">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Design Your Own Jwellery-->
+        <scene sceneID="Xtj-3q-AdF">
+            <objects>
+                <viewController id="p62-D0-sqY" customClass="DesignYourOwnJwellery" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FrP-BA-0Er">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can create your own masterpiece in just few simple steps" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxh-a0-04b">
+                                <rect key="frame" x="16" y="74" width="288" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fxh-a0-04b" secondAttribute="height" multiplier="343:67" id="jlD-Pg-UnR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAZ-JF-i4v">
+                                <rect key="frame" x="76" y="123" width="168" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="CLICK HERE TO PROCEED">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAction:" destination="p62-D0-sqY" eventType="touchUpInside" id="sqt-yQ-0s6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wAZ-JF-i4v" firstAttribute="leading" secondItem="Ejd-pg-E0g" secondAttribute="leading" constant="76" id="5SS-Ws-RfT"/>
+                            <constraint firstItem="Ejd-pg-E0g" firstAttribute="bottom" secondItem="wAZ-JF-i4v" secondAttribute="bottom" constant="443" id="A2J-sw-7yR"/>
+                            <constraint firstItem="wAZ-JF-i4v" firstAttribute="top" secondItem="Fxh-a0-04b" secondAttribute="bottom" constant="8" id="JHJ-lo-dfW"/>
+                            <constraint firstItem="Ejd-pg-E0g" firstAttribute="trailing" secondItem="wAZ-JF-i4v" secondAttribute="trailing" constant="76" id="P1A-ZL-O7H"/>
+                            <constraint firstItem="Fxh-a0-04b" firstAttribute="top" secondItem="Ejd-pg-E0g" secondAttribute="top" constant="10" id="b1r-ff-rbd"/>
+                            <constraint firstItem="Fxh-a0-04b" firstAttribute="leading" secondItem="Ejd-pg-E0g" secondAttribute="leading" constant="16" id="sNI-zL-eTi"/>
+                            <constraint firstItem="Ejd-pg-E0g" firstAttribute="trailing" secondItem="Fxh-a0-04b" secondAttribute="trailing" constant="16" id="ugQ-FI-87o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ejd-pg-E0g"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x2N-ya-j2E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5886" y="392"/>
+        </scene>
+    </scenes>
+</document>

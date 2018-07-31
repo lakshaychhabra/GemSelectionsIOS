@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tpz-X1-dvI">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="AJS-yZ-0nY">
+            <objects>
+                <tableViewController id="Tpz-X1-dvI" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="tMJ-v4-1xG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="webroww" rowHeight="216" id="Ga3-mP-Len" customClass="WebRowinAstrology" customModule="GemSelection" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ga3-mP-Len" id="X2P-gV-ngq">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Gem Stone to Wear" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95h-M7-bpV">
+                                            <rect key="frame" x="16" y="11" width="288" height="57"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSh-oz-5y6">
+                                            <rect key="frame" x="16" y="75.5" width="288" height="129.5"/>
+                                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="jSh-oz-5y6" secondAttribute="height" multiplier="49:22" id="K61-Qa-bbj"/>
+                                            </constraints>
+                                        </webView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="jSh-oz-5y6" firstAttribute="trailing" secondItem="X2P-gV-ngq" secondAttribute="trailingMargin" id="3YR-jg-YSX"/>
+                                        <constraint firstItem="95h-M7-bpV" firstAttribute="trailing" secondItem="X2P-gV-ngq" secondAttribute="trailingMargin" id="iAa-XK-VGt"/>
+                                        <constraint firstItem="jSh-oz-5y6" firstAttribute="leading" secondItem="X2P-gV-ngq" secondAttribute="leadingMargin" id="sPW-2B-jI9"/>
+                                        <constraint firstItem="jSh-oz-5y6" firstAttribute="bottom" secondItem="X2P-gV-ngq" secondAttribute="bottomMargin" id="tFA-rf-Bgt"/>
+                                        <constraint firstItem="95h-M7-bpV" firstAttribute="leading" secondItem="X2P-gV-ngq" secondAttribute="leadingMargin" id="vLZ-fU-Xwy"/>
+                                        <constraint firstItem="jSh-oz-5y6" firstAttribute="top" secondItem="95h-M7-bpV" secondAttribute="bottom" constant="8" id="vd8-jB-1YG"/>
+                                        <constraint firstItem="95h-M7-bpV" firstAttribute="top" secondItem="X2P-gV-ngq" secondAttribute="topMargin" id="zFJ-ha-LdF"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="_webView" destination="jSh-oz-5y6" id="B1C-Kd-xDF"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="textroww" rowHeight="86" id="cc4-Q6-VJs" customClass="TextRowinAstrology" customModule="GemSelection" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="271.5" width="320" height="86"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cc4-Q6-VJs" id="gZp-IG-2fy">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0p-sO-hoz">
+                                            <rect key="frame" x="16" y="11" width="288" height="64"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="m0p-sO-hoz" firstAttribute="trailing" secondItem="gZp-IG-2fy" secondAttribute="trailingMargin" id="6JB-QW-Ckz"/>
+                                        <constraint firstItem="m0p-sO-hoz" firstAttribute="top" secondItem="gZp-IG-2fy" secondAttribute="topMargin" id="AmM-Xk-9EY"/>
+                                        <constraint firstItem="m0p-sO-hoz" firstAttribute="leading" secondItem="gZp-IG-2fy" secondAttribute="leadingMargin" id="dak-Ub-3ru"/>
+                                        <constraint firstItem="m0p-sO-hoz" firstAttribute="bottom" secondItem="gZp-IG-2fy" secondAttribute="bottomMargin" id="dgF-SK-bdh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="_label" destination="m0p-sO-hoz" id="qj0-sP-0Xw"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Tpz-X1-dvI" id="b8N-KE-2rR"/>
+                            <outlet property="delegate" destination="Tpz-X1-dvI" id="u0Z-QP-on8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="nvW-66-gga"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mjM-iB-UAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4138" y="4417"/>
+        </scene>
+    </scenes>
+</document>

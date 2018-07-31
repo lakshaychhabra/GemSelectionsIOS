@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NSy-Ew-yiA">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Jewellery-->
+        <scene sceneID="6A2-kh-4vH">
+            <objects>
+                <tableViewController id="NSy-Ew-yiA" customClass="JwelleryMain" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="9yR-Vc-yTb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="webrowinjwellery" rowHeight="252" id="dzG-SX-KmA" customClass="WebRowInJwellery" customModule="GemSelection" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="320" height="252"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dzG-SX-KmA" id="huP-51-K7d">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="252"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qlz-Iq-Jm5">
+                                            <rect key="frame" x="16" y="11" width="288" height="115"/>
+                                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="qlz-Iq-Jm5" secondAttribute="height" multiplier="343:137" id="DrO-6P-iZe"/>
+                                            </constraints>
+                                        </webView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4s3-dF-V7g">
+                                            <rect key="frame" x="16" y="134" width="610.5" height="151"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="4s3-dF-V7g" secondAttribute="height" multiplier="343:85" id="kDG-PQ-grU"/>
+                                            </constraints>
+                                            <attributedString key="attributedText">
+                                                <fragment>
+                                                    <string key="content">Why to buy Jewellery from Gem Selections App?
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="12" name="HelveticaNeue-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content">1.You can design your own jewellery using our app.
+2. Gem Selections is the only organisation in India to sell Govt. Lab Certified Gemstorns, Diamonds and Jwellery.  
+3.Buy Jewellery at real - time Gold and Silver rates using the Gem Selection App.</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="4s3-dF-V7g" firstAttribute="leading" secondItem="huP-51-K7d" secondAttribute="leadingMargin" id="NAj-wm-WHL"/>
+                                        <constraint firstItem="qlz-Iq-Jm5" firstAttribute="trailing" secondItem="huP-51-K7d" secondAttribute="trailingMargin" id="Soy-et-yA0"/>
+                                        <constraint firstItem="4s3-dF-V7g" firstAttribute="bottom" secondItem="huP-51-K7d" secondAttribute="bottomMargin" id="UMQ-1m-ti3"/>
+                                        <constraint firstItem="qlz-Iq-Jm5" firstAttribute="leading" secondItem="huP-51-K7d" secondAttribute="leadingMargin" id="X47-az-jzK"/>
+                                        <constraint firstItem="4s3-dF-V7g" firstAttribute="trailing" secondItem="huP-51-K7d" secondAttribute="trailingMargin" id="aYN-90-sng"/>
+                                        <constraint firstItem="qlz-Iq-Jm5" firstAttribute="top" secondItem="huP-51-K7d" secondAttribute="topMargin" id="v4h-M9-T9E"/>
+                                        <constraint firstItem="4s3-dF-V7g" firstAttribute="top" secondItem="qlz-Iq-Jm5" secondAttribute="bottom" constant="8" id="wLD-la-YaV"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="_labelAboutJwellery" destination="4s3-dF-V7g" id="2oP-Wm-fzS"/>
+                                    <outlet property="_webView" destination="qlz-Iq-Jm5" id="QoL-la-WVK"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="optionsrowinjwellery" rowHeight="375" id="vp3-g3-nLu" customClass="OptionsRowInJwellery" customModule="GemSelection" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="307.5" width="320" height="375"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vp3-g3-nLu" id="IET-yU-RaN">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="375"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p12-qD-oDy">
+                                            <rect key="frame" x="16" y="11" width="288" height="84"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="84" id="Xtd-EH-3p7"/>
+                                            </constraints>
+                                            <state key="normal" title="Create Your Own Jwellery">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="54D-EK-7K7" kind="show" id="YAo-bc-EhQ"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDz-lw-VqO">
+                                            <rect key="frame" x="16" y="103" width="288" height="84"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="84" id="yoN-CN-gH1"/>
+                                            </constraints>
+                                            <state key="normal" title="Diamond Jwellery">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="diamondJwellery:" destination="vp3-g3-nLu" eventType="touchUpInside" id="Shf-6r-tHh"/>
+                                                <segue destination="aT1-d8-mpr" kind="show" identifier="seguefromdiamond" id="f61-XW-1RG"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IB-ix-YLG">
+                                            <rect key="frame" x="16" y="195" width="288" height="84"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="84" id="LQE-gF-yms"/>
+                                            </constraints>
+                                            <state key="normal" title="Victorian Jwellery">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="victorianJwellery:" destination="vp3-g3-nLu" eventType="touchUpInside" id="Ihe-y2-NfH"/>
+                                                <segue destination="4PF-PM-XrD" kind="show" id="BVk-Lg-ivb"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubq-xK-mNR">
+                                            <rect key="frame" x="16" y="287" width="288" height="84"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="84" id="l9x-RO-XQX"/>
+                                            </constraints>
+                                            <state key="normal" title="Gem-Studded Jwellery">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="gemStuddedJwellery:" destination="vp3-g3-nLu" eventType="touchUpInside" id="WGd-1O-bUv"/>
+                                                <segue destination="aT1-d8-mpr" kind="show" identifier="seguefromgemstudded" id="aef-wz-Rk5"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="7IB-ix-YLG" firstAttribute="leading" secondItem="IET-yU-RaN" secondAttribute="leadingMargin" id="3Lk-ml-QwX"/>
+                                        <constraint firstItem="ubq-xK-mNR" firstAttribute="top" secondItem="7IB-ix-YLG" secondAttribute="bottom" constant="8" id="47g-Dk-Dgy"/>
+                                        <constraint firstItem="7IB-ix-YLG" firstAttribute="top" secondItem="dDz-lw-VqO" secondAttribute="bottom" constant="8" id="8aU-Fk-G2z"/>
+                                        <constraint firstItem="dDz-lw-VqO" firstAttribute="trailing" secondItem="IET-yU-RaN" secondAttribute="trailingMargin" id="SPV-m2-bdV"/>
+                                        <constraint firstItem="ubq-xK-mNR" firstAttribute="trailing" secondItem="IET-yU-RaN" secondAttribute="trailingMargin" id="ZH3-JL-T1c"/>
+                                        <constraint firstItem="p12-qD-oDy" firstAttribute="trailing" secondItem="IET-yU-RaN" secondAttribute="trailingMargin" id="fGK-Jv-XtA"/>
+                                        <constraint firstItem="p12-qD-oDy" firstAttribute="leading" secondItem="IET-yU-RaN" secondAttribute="leadingMargin" id="iMp-zj-vyb"/>
+                                        <constraint firstItem="ubq-xK-mNR" firstAttribute="leading" secondItem="IET-yU-RaN" secondAttribute="leadingMargin" id="k9y-Wg-mHG"/>
+                                        <constraint firstItem="dDz-lw-VqO" firstAttribute="leading" secondItem="IET-yU-RaN" secondAttribute="leadingMargin" id="nki-Ri-cBa"/>
+                                        <constraint firstItem="7IB-ix-YLG" firstAttribute="trailing" secondItem="IET-yU-RaN" secondAttribute="trailingMargin" id="qT1-ms-G8A"/>
+                                        <constraint firstItem="p12-qD-oDy" firstAttribute="top" secondItem="IET-yU-RaN" secondAttribute="topMargin" id="swE-hn-Hjc"/>
+                                        <constraint firstItem="dDz-lw-VqO" firstAttribute="top" secondItem="p12-qD-oDy" secondAttribute="bottom" constant="8" id="zNA-gt-05w"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="_btnCreateyourownJwellery" destination="p12-qD-oDy" id="b9b-II-i5H"/>
+                                    <outlet property="_btnDiamondJwellery" destination="dDz-lw-VqO" id="Htm-nw-ahW"/>
+                                    <outlet property="_btnGemStudded" destination="ubq-xK-mNR" id="bpy-AL-6ob"/>
+                                    <outlet property="_btnVictorianJwellery" destination="7IB-ix-YLG" id="hBP-Fn-xSW"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NSy-Ew-yiA" id="B8I-y7-7Vm"/>
+                            <outlet property="delegate" destination="NSy-Ew-yiA" id="ieb-gS-rWQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Jewellery" id="0Mg-Ha-Euy">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu" id="6iT-4C-Kha"/>
+                        <barButtonItem key="rightBarButtonItem" title="BUY NOW" id="TTX-Sx-WBo">
+                            <connections>
+                                <action selector="buyNow:" destination="NSy-Ew-yiA" id="e1b-6P-VXo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuBtn" destination="6iT-4C-Kha" id="Ej5-dK-IRo"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQT-dJ-8qN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5006" y="330"/>
+        </scene>
+        <!--DiamondTuddedJewelery-->
+        <scene sceneID="Mfv-W1-1Iv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DiamondTuddedJewelery" id="aT1-d8-mpr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qEx-QI-0kq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5724" y="-116"/>
+        </scene>
+        <!--DesignYourOwnJwell-->
+        <scene sceneID="9iM-PL-kPM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DesignYourOwnJwell" id="54D-EK-7K7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cwU-f9-694" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5723" y="-305"/>
+        </scene>
+        <!--UICollectionViewController-ZBe-1d-Khh-->
+        <scene sceneID="bdH-sE-8Hr">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UICollectionViewController-ZBe-1d-Khh" storyboardName="CollectionViewForDiamonds" referencedIdentifier="UICollectionViewController-ZBe-1d-Khh" id="4PF-PM-XrD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bl-sS-0FC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5723" y="59"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_menu" width="24" height="24"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="f61-XW-1RG"/>
+    </inferredMetricsTieBreakers>
+</document>

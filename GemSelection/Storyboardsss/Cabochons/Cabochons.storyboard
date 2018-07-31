@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hA3-Nh-pvb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cabochon Stones-->
+        <scene sceneID="Xmb-3F-9GA">
+            <objects>
+                <tableViewController id="hA3-Nh-pvb" customClass="Cabochons" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="7me-u9-zQo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="selectioncell" rowHeight="198" id="3DT-Me-BZb" customClass="SelectionRowcabo" customModule="GemSelection" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="320" height="198"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3DT-Me-BZb" id="86F-TL-e86">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="198"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Cabochons are available from 5Rt to 41Rt sizes. Prices vary from 550/Rt to 11000/Rt as per the quality of the Gemstones. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yj8-NU-ken">
+                                            <rect key="frame" x="16" y="11" width="288" height="111"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="111" id="bIV-HB-bZy"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select One :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOU-DS-6Sh">
+                                            <rect key="frame" x="16" y="130" width="288" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="LOU-DS-6Sh" secondAttribute="height" multiplier="49:3" constant="-55" id="ar2-jx-B0v"/>
+                                                <constraint firstAttribute="height" constant="21" id="pmK-cA-NNX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P3Z-LC-vxv">
+                                            <rect key="frame" x="16" y="155" width="288" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="KAS-sF-meD"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="P3Z-LC-vxv" firstAttribute="top" secondItem="LOU-DS-6Sh" secondAttribute="bottom" constant="4" id="4fg-5S-P5p"/>
+                                        <constraint firstAttribute="bottom" secondItem="P3Z-LC-vxv" secondAttribute="bottom" constant="7" id="7bc-LA-vCZ"/>
+                                        <constraint firstItem="yj8-NU-ken" firstAttribute="leading" secondItem="86F-TL-e86" secondAttribute="leadingMargin" id="IG3-Nh-usr"/>
+                                        <constraint firstItem="LOU-DS-6Sh" firstAttribute="leading" secondItem="86F-TL-e86" secondAttribute="leadingMargin" id="Qgp-cK-iv9"/>
+                                        <constraint firstItem="yj8-NU-ken" firstAttribute="trailing" secondItem="86F-TL-e86" secondAttribute="trailingMargin" id="Tdb-3z-EoQ"/>
+                                        <constraint firstItem="yj8-NU-ken" firstAttribute="top" secondItem="86F-TL-e86" secondAttribute="topMargin" id="ZFZ-O3-3vm"/>
+                                        <constraint firstItem="P3Z-LC-vxv" firstAttribute="leading" secondItem="86F-TL-e86" secondAttribute="leading" constant="16" id="g1L-Sl-ga9"/>
+                                        <constraint firstItem="LOU-DS-6Sh" firstAttribute="trailing" secondItem="86F-TL-e86" secondAttribute="trailingMargin" id="qVM-Fj-OfR"/>
+                                        <constraint firstAttribute="trailing" secondItem="P3Z-LC-vxv" secondAttribute="trailing" constant="16" id="xNY-4R-S1w"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="_textFieldSelection" destination="P3Z-LC-vxv" id="CTd-FD-oaw"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="webviewcobococel" rowHeight="440" id="Rut-TE-5it" customClass="WebViewinCabo" customModule="GemSelection" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="253.5" width="320" height="440"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rut-TE-5it" id="nou-VU-0UQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="440"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWr-O3-xaO">
+                                            <rect key="frame" x="16" y="150" width="288" height="105"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="NWr-O3-xaO" secondAttribute="height" multiplier="343:125" id="8Eq-xJ-kZd"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ehp-nz-EOf">
+                                            <rect key="frame" x="16" y="263" width="288" height="169"/>
+                                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="169" id="Xny-51-ifK"/>
+                                            </constraints>
+                                        </webView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jId-uj-2SB">
+                                            <rect key="frame" x="100" y="11" width="120" height="131"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="jId-uj-2SB" secondAttribute="height" multiplier="100:109" id="24j-cE-7jD"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="jId-uj-2SB" firstAttribute="top" secondItem="nou-VU-0UQ" secondAttribute="topMargin" id="1FL-Nx-Wcd"/>
+                                        <constraint firstItem="Ehp-nz-EOf" firstAttribute="leading" secondItem="nou-VU-0UQ" secondAttribute="leading" constant="16" id="D0U-kI-pwt"/>
+                                        <constraint firstItem="Ehp-nz-EOf" firstAttribute="top" secondItem="NWr-O3-xaO" secondAttribute="bottom" constant="8" id="Dj9-62-Fay"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ehp-nz-EOf" secondAttribute="trailing" constant="16" id="Kna-Pz-gk4"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ehp-nz-EOf" secondAttribute="bottom" constant="8" id="NKb-aP-Lze"/>
+                                        <constraint firstItem="NWr-O3-xaO" firstAttribute="top" secondItem="jId-uj-2SB" secondAttribute="bottom" constant="8" id="OBq-QH-e1o"/>
+                                        <constraint firstItem="NWr-O3-xaO" firstAttribute="trailing" secondItem="nou-VU-0UQ" secondAttribute="trailingMargin" id="ate-IA-4mP"/>
+                                        <constraint firstItem="NWr-O3-xaO" firstAttribute="leading" secondItem="nou-VU-0UQ" secondAttribute="leadingMargin" id="d1p-25-PBB"/>
+                                        <constraint firstItem="jId-uj-2SB" firstAttribute="centerX" secondItem="nou-VU-0UQ" secondAttribute="centerX" id="iKh-9U-d9v"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="_imageVIew" destination="jId-uj-2SB" id="nAe-Ta-N8q"/>
+                                    <outlet property="_label" destination="NWr-O3-xaO" id="gTB-Fr-Sr0"/>
+                                    <outlet property="_webView" destination="Ehp-nz-EOf" id="sVA-rk-Bsw"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hA3-Nh-pvb" id="QRT-VP-XAL"/>
+                            <outlet property="delegate" destination="hA3-Nh-pvb" id="Nys-ix-ZsH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Cabochon Stones" id="vJO-C8-93y">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu" id="Lc0-qc-muk"/>
+                        <barButtonItem key="rightBarButtonItem" title="Buy Now" id="MEw-MF-Y14">
+                            <connections>
+                                <action selector="buyNow:" destination="hA3-Nh-pvb" id="IN8-hh-wGS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuBtn" destination="Lc0-qc-muk" id="2Jo-yt-cSy"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8wU-EP-Xhd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2636" y="4316"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_menu" width="24" height="24"/>
+    </resources>
+</document>

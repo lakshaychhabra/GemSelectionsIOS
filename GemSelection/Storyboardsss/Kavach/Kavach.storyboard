@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uPT-Wi-GAf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kavach-->
+        <scene sceneID="J2W-h3-H8a">
+            <objects>
+                <tableViewController id="uPT-Wi-GAf" customClass="Kavach" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="UAC-Ik-fOl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shopnowrow" rowHeight="156" id="6uE-OZ-Aml" customClass="Shopnow" customModule="GemSelection" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="320" height="156"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6uE-OZ-Aml" id="U0w-hw-JWM">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Nazar-rurksha-kavach" translatesAutoresizingMaskIntoConstraints="NO" id="VU9-kq-bs3">
+                                            <rect key="frame" x="126" y="11" width="112" height="105"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zH1-Pn-S4g">
+                                            <rect key="frame" x="263" y="109" width="96" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                            <state key="normal" title="SHOP NOW">
+                                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="_shopNowBtn" destination="zH1-Pn-S4g" id="lpE-Id-SHG"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="kavachtextrow" rowHeight="224" id="Wd0-cs-V7E" customClass="KavachText" customModule="GemSelection" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="211.5" width="320" height="224"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wd0-cs-V7E" id="HHT-Go-OjU">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="224"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Dr-Lo-5kI">
+                                            <rect key="frame" x="16" y="11" width="288" height="202"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8Dr-Lo-5kI" firstAttribute="top" secondItem="HHT-Go-OjU" secondAttribute="topMargin" id="Ce2-XT-N1V"/>
+                                        <constraint firstItem="8Dr-Lo-5kI" firstAttribute="trailing" secondItem="HHT-Go-OjU" secondAttribute="trailingMargin" id="Ck1-lH-QYz"/>
+                                        <constraint firstItem="8Dr-Lo-5kI" firstAttribute="leading" secondItem="HHT-Go-OjU" secondAttribute="leadingMargin" id="gAt-1n-HVY"/>
+                                        <constraint firstItem="8Dr-Lo-5kI" firstAttribute="bottom" secondItem="HHT-Go-OjU" secondAttribute="bottomMargin" id="ykf-DE-i9g"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="_label" destination="8Dr-Lo-5kI" id="PYg-nq-LO9"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uPT-Wi-GAf" id="c4a-OC-O4I"/>
+                            <outlet property="delegate" destination="uPT-Wi-GAf" id="K2B-DP-3vL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Kavach" id="vav-gA-1MC">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="ic_menu" id="r07-cN-pBp"/>
+                        <barButtonItem key="rightBarButtonItem" title="BUY NOW" id="DOg-ya-Rct">
+                            <connections>
+                                <action selector="buynow:" destination="uPT-Wi-GAf" id="dEw-fc-1gY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuBtn" destination="r07-cN-pBp" id="6HH-bh-WEp"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xf4-ln-id0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12158" y="1736"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Nazar-rurksha-kavach" width="300" height="300"/>
+        <image name="ic_menu" width="24" height="24"/>
+    </resources>
+</document>

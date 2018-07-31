@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reveal View Controller-->
+        <scene sceneID="Lhv-I4-zvG">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-yxO-jB-jxg" id="yxO-jB-jxg" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o1Y-Y1-vBF"/>
+                        <viewControllerLayoutGuide type="bottom" id="VpC-gs-T2x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Djv-3X-Jwn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="35g-yI-dzZ"/>
+                    </view>
+                    <connections>
+                        <segue destination="oqQ-V4-hY5" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="qDC-gy-A6k"/>
+                        <segue destination="oXa-ZD-gkc" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="1e4-gD-mhT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fe8-Ww-sRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7037" y="-4932"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wh1-nv-TWx">
+            <objects>
+                <navigationController storyboardIdentifier="UINavigationController-oXa-ZD-gkc" automaticallyAdjustsScrollViewInsets="NO" id="oXa-ZD-gkc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v5D-Ac-bHw">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CLf-TB-nNc" kind="relationship" relationship="rootViewController" id="hR5-Ne-ibX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m90-PB-mnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8008" y="-4994"/>
+        </scene>
+        <!--RudrakshSideBar-->
+        <scene sceneID="OuQ-Sj-sEw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RudrakshSideBar" id="oqQ-V4-hY5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2A-Us-XEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7172" y="-4300"/>
+        </scene>
+        <!--RudrakshMain-->
+        <scene sceneID="NeB-xz-Gls">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RudrakshMain" id="CLf-TB-nNc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9nC-eV-TLk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s8w-dd-pr0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8792" y="-4994"/>
+        </scene>
+    </scenes>
+</document>

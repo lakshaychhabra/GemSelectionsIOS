@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Yarntra Table Popup-->
+        <scene sceneID="erp-6P-op5">
+            <objects>
+                <viewController storyboardIdentifier="yantratablepopup" id="1N4-0I-aI4" customClass="YarntraTablePopup" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5gu-Xd-zl5"/>
+                        <viewControllerLayoutGuide type="bottom" id="AvK-pd-KOS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LeJ-ef-SxH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="k67-FX-SPf">
+                                <rect key="frame" x="16" y="28" width="288" height="454"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="yantrarow" id="Hpc-8h-XIY" customClass="YantraTableCell" customModule="GemSelection" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="288" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hpc-8h-XIY" id="nYQ-Ch-reP">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="478-7K-Hm9">
+                                                    <rect key="frame" x="8" y="8" width="327" height="21.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="478-7K-Hm9" id="dy2-mG-EBu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1N4-0I-aI4" id="9dL-9s-K46"/>
+                                    <outlet property="delegate" destination="1N4-0I-aI4" id="hQT-cX-Ifd"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYf-Kj-iQ4">
+                                <rect key="frame" x="120" y="512" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="1jq-Ev-unt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="0.7958419323" green="0.65014070270000002" blue="0.3407031298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.7958419323" green="0.65014070270000002" blue="0.3407031298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="claseBtn:" destination="1N4-0I-aI4" eventType="touchUpInside" id="jFo-pq-xkP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NYf-Kj-iQ4" firstAttribute="centerX" secondItem="LeJ-ef-SxH" secondAttribute="centerX" id="Ydo-0w-DjP"/>
+                            <constraint firstItem="k67-FX-SPf" firstAttribute="trailing" secondItem="LeJ-ef-SxH" secondAttribute="trailingMargin" id="Z9o-di-6Pf"/>
+                            <constraint firstAttribute="bottom" secondItem="NYf-Kj-iQ4" secondAttribute="bottom" constant="16" id="adA-cr-YtM"/>
+                            <constraint firstItem="k67-FX-SPf" firstAttribute="leading" secondItem="LeJ-ef-SxH" secondAttribute="leadingMargin" id="fZK-3W-601"/>
+                            <constraint firstItem="k67-FX-SPf" firstAttribute="top" secondItem="5gu-Xd-zl5" secondAttribute="bottom" constant="8" id="ndH-PR-ZOH"/>
+                            <constraint firstItem="NYf-Kj-iQ4" firstAttribute="top" secondItem="k67-FX-SPf" secondAttribute="bottom" constant="30" id="ogV-Od-g4M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lCG-lQ-yn4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vbh-UK-Np0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972" y="3539"/>
+        </scene>
+    </scenes>
+</document>

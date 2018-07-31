@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="azp-rM-z3b">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="waf-Nx-CwS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="azp-rM-z3b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NUU-45-bax">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LcD-lF-aNV" kind="relationship" relationship="rootViewController" id="qKN-K6-VYu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sf9-9Q-cW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8833" y="2352"/>
+        </scene>
+        <!--diamondView-->
+        <scene sceneID="J8d-Ww-A5t">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="diamondView" storyboardName="Diamonds" referencedIdentifier="diamondView" id="LcD-lF-aNV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ukT-Ru-Z7q"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kiK-Eh-yEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9803" y="2351"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Return Plicy View Controller-->
+        <scene sceneID="M4n-53-uoL">
+            <objects>
+                <viewController id="cUS-dn-2H0" customClass="ReturnPlicyViewController" customModule="GemSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qbE-fW-eup">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQv-WR-n6d">
+                                <rect key="frame" x="16" y="36" width="288" height="182"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="To know about return policy of gem selections: Khanna Gems private limited, watch video" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaz-oG-WjN">
+                                <rect key="frame" x="16" y="226" width="288" height="179.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MXK-5q-Vml" firstAttribute="bottom" secondItem="qaz-oG-WjN" secondAttribute="bottom" multiplier="1.4" id="Thn-gF-Jup"/>
+                            <constraint firstItem="qaz-oG-WjN" firstAttribute="top" secondItem="ZQv-WR-n6d" secondAttribute="bottom" constant="8" id="Y1Q-a3-7qA"/>
+                            <constraint firstItem="MXK-5q-Vml" firstAttribute="trailing" secondItem="qaz-oG-WjN" secondAttribute="trailing" constant="16" id="aBy-at-Npm"/>
+                            <constraint firstItem="qaz-oG-WjN" firstAttribute="leading" secondItem="MXK-5q-Vml" secondAttribute="leading" constant="16" id="iR5-Hv-piW"/>
+                            <constraint firstItem="ZQv-WR-n6d" firstAttribute="top" secondItem="MXK-5q-Vml" secondAttribute="top" constant="16" id="mFy-Li-gQz"/>
+                            <constraint firstItem="MXK-5q-Vml" firstAttribute="trailing" secondItem="ZQv-WR-n6d" secondAttribute="trailing" constant="16" id="qio-th-kWW"/>
+                            <constraint firstItem="MXK-5q-Vml" firstAttribute="bottom" secondItem="ZQv-WR-n6d" secondAttribute="bottom" constant="350" id="tWx-jh-KC5"/>
+                            <constraint firstItem="ZQv-WR-n6d" firstAttribute="leading" secondItem="MXK-5q-Vml" secondAttribute="leading" constant="16" id="xY3-Zd-f2h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MXK-5q-Vml"/>
+                    </view>
+                    <connections>
+                        <outlet property="policyLabel" destination="qaz-oG-WjN" id="USa-Bo-CuA"/>
+                        <outlet property="webView" destination="ZQv-WR-n6d" id="ulJ-ba-EoY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1jc-VQ-a8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7281" y="4115"/>
+        </scene>
+    </scenes>
+</document>
